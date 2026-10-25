@@ -1,0 +1,953 @@
+{
+  "date": "2026-10-24T07:33:16.693Z",
+  "passed": 230,
+  "viewports": [
+    {
+      "width": 320,
+      "height": 640,
+      "passed": 46
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "passed": 46
+    },
+    {
+      "width": 402,
+      "height": 874,
+      "passed": 46
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "passed": 46
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "passed": 46
+    }
+  ],
+  "checks": [
+    {
+      "label": "Enam route operasional /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi DN",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi DN pada UI 320",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi Manifest",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi Manifest UI 320",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Berangkatkan Kendaraan",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Kendaraan Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat DN Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Penurunan DN",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan Manifest",
+      "passed": true
+    },
+    {
+      "label": "Manifest selesai belum diterima UI 320",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan bebas bottom nav 320",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Terima Barang",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan aktual ditampilkan 320",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan DN",
+      "passed": true
+    },
+    {
+      "label": "Bukti dapat menyusul UI 320",
+      "passed": true
+    },
+    {
+      "label": "Bukti privat tersedia lewat endpoint berizin 320",
+      "passed": true
+    },
+    {
+      "label": "Klaim selesai operasional 320",
+      "passed": true
+    },
+    {
+      "label": "CLOSED tidak menawarkan transisi baru 320",
+      "passed": true
+    },
+    {
+      "label": "Detail klaim tanpa overflow 320",
+      "passed": true
+    },
+    {
+      "label": "Tracking menampilkan penerimaan aktual 320",
+      "passed": true
+    },
+    {
+      "label": "Tracking berisi timeline operasional nyata 320",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan aktual 320",
+      "passed": true
+    },
+    {
+      "label": "A04 satu event pembatalan historis 320",
+      "passed": true
+    },
+    {
+      "label": "A04 alasan pembatalan terlihat 320",
+      "passed": true
+    },
+    {
+      "label": "A04 aktor event terlihat 320",
+      "passed": true
+    },
+    {
+      "label": "A04 waktu event terlihat 320",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan tanpa overflow 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 375",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/transit 375",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/receipts 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 375",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/receipts 375",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/claims 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 375",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/claims 375",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi DN",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi DN pada UI 375",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi Manifest",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi Manifest UI 375",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Berangkatkan Kendaraan",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Kendaraan Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat DN Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Penurunan DN",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan Manifest",
+      "passed": true
+    },
+    {
+      "label": "Manifest selesai belum diterima UI 375",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan bebas bottom nav 375",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Terima Barang",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan aktual ditampilkan 375",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan DN",
+      "passed": true
+    },
+    {
+      "label": "Bukti dapat menyusul UI 375",
+      "passed": true
+    },
+    {
+      "label": "Bukti privat tersedia lewat endpoint berizin 375",
+      "passed": true
+    },
+    {
+      "label": "Klaim selesai operasional 375",
+      "passed": true
+    },
+    {
+      "label": "CLOSED tidak menawarkan transisi baru 375",
+      "passed": true
+    },
+    {
+      "label": "Detail klaim tanpa overflow 375",
+      "passed": true
+    },
+    {
+      "label": "Tracking menampilkan penerimaan aktual 375",
+      "passed": true
+    },
+    {
+      "label": "Tracking berisi timeline operasional nyata 375",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan aktual 375",
+      "passed": true
+    },
+    {
+      "label": "A04 satu event pembatalan historis 375",
+      "passed": true
+    },
+    {
+      "label": "A04 alasan pembatalan terlihat 375",
+      "passed": true
+    },
+    {
+      "label": "A04 aktor event terlihat 375",
+      "passed": true
+    },
+    {
+      "label": "A04 waktu event terlihat 375",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan tanpa overflow 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 375",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 402",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/transit 402",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/receipts 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 402",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/receipts 402",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/claims 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 402",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/claims 402",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi DN",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi DN pada UI 402",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi Manifest",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi Manifest UI 402",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Berangkatkan Kendaraan",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Kendaraan Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat DN Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Penurunan DN",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan Manifest",
+      "passed": true
+    },
+    {
+      "label": "Manifest selesai belum diterima UI 402",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan bebas bottom nav 402",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Terima Barang",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan aktual ditampilkan 402",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan DN",
+      "passed": true
+    },
+    {
+      "label": "Bukti dapat menyusul UI 402",
+      "passed": true
+    },
+    {
+      "label": "Bukti privat tersedia lewat endpoint berizin 402",
+      "passed": true
+    },
+    {
+      "label": "Klaim selesai operasional 402",
+      "passed": true
+    },
+    {
+      "label": "CLOSED tidak menawarkan transisi baru 402",
+      "passed": true
+    },
+    {
+      "label": "Detail klaim tanpa overflow 402",
+      "passed": true
+    },
+    {
+      "label": "Tracking menampilkan penerimaan aktual 402",
+      "passed": true
+    },
+    {
+      "label": "Tracking berisi timeline operasional nyata 402",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan aktual 402",
+      "passed": true
+    },
+    {
+      "label": "A04 satu event pembatalan historis 402",
+      "passed": true
+    },
+    {
+      "label": "A04 alasan pembatalan terlihat 402",
+      "passed": true
+    },
+    {
+      "label": "A04 aktor event terlihat 402",
+      "passed": true
+    },
+    {
+      "label": "A04 waktu event terlihat 402",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan tanpa overflow 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 402",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 768",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/transit 768",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/receipts 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 768",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/receipts 768",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/claims 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 768",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/claims 768",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi DN",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi DN pada UI 768",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi Manifest",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi Manifest UI 768",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Berangkatkan Kendaraan",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Kendaraan Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat DN Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Penurunan DN",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan Manifest",
+      "passed": true
+    },
+    {
+      "label": "Manifest selesai belum diterima UI 768",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan bebas bottom nav 768",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Terima Barang",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan aktual ditampilkan 768",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan DN",
+      "passed": true
+    },
+    {
+      "label": "Bukti dapat menyusul UI 768",
+      "passed": true
+    },
+    {
+      "label": "Bukti privat tersedia lewat endpoint berizin 768",
+      "passed": true
+    },
+    {
+      "label": "Klaim selesai operasional 768",
+      "passed": true
+    },
+    {
+      "label": "CLOSED tidak menawarkan transisi baru 768",
+      "passed": true
+    },
+    {
+      "label": "Detail klaim tanpa overflow 768",
+      "passed": true
+    },
+    {
+      "label": "Tracking menampilkan penerimaan aktual 768",
+      "passed": true
+    },
+    {
+      "label": "Tracking berisi timeline operasional nyata 768",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan aktual 768",
+      "passed": true
+    },
+    {
+      "label": "A04 satu event pembatalan historis 768",
+      "passed": true
+    },
+    {
+      "label": "A04 alasan pembatalan terlihat 768",
+      "passed": true
+    },
+    {
+      "label": "A04 aktor event terlihat 768",
+      "passed": true
+    },
+    {
+      "label": "A04 waktu event terlihat 768",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan tanpa overflow 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 768",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/receipts 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/receipts 1366",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/claims 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/claims 1366",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi DN",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi DN pada UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi Manifest",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi Manifest UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Berangkatkan Kendaraan",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Kendaraan Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat DN Tiba",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Catat Penurunan DN",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan Manifest",
+      "passed": true
+    },
+    {
+      "label": "Manifest selesai belum diterima UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan bebas bottom nav 1366",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Terima Barang",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan aktual ditampilkan 1366",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Selesaikan DN",
+      "passed": true
+    },
+    {
+      "label": "Bukti dapat menyusul UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Bukti privat tersedia lewat endpoint berizin 1366",
+      "passed": true
+    },
+    {
+      "label": "Klaim selesai operasional 1366",
+      "passed": true
+    },
+    {
+      "label": "CLOSED tidak menawarkan transisi baru 1366",
+      "passed": true
+    },
+    {
+      "label": "Detail klaim tanpa overflow 1366",
+      "passed": true
+    },
+    {
+      "label": "Tracking menampilkan penerimaan aktual 1366",
+      "passed": true
+    },
+    {
+      "label": "Tracking berisi timeline operasional nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan aktual 1366",
+      "passed": true
+    },
+    {
+      "label": "A04 satu event pembatalan historis 1366",
+      "passed": true
+    },
+    {
+      "label": "A04 alasan pembatalan terlihat 1366",
+      "passed": true
+    },
+    {
+      "label": "A04 aktor event terlihat 1366",
+      "passed": true
+    },
+    {
+      "label": "A04 waktu event terlihat 1366",
+      "passed": true
+    },
+    {
+      "label": "A04 detail pembatalan tanpa overflow 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 1366",
+      "passed": true
+    }
+  ]
+}

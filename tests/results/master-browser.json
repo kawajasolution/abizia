@@ -1,0 +1,1437 @@
+{
+  "date": "2026-10-24T10:58:47.542Z",
+  "passed": 351,
+  "viewports": [
+    {
+      "width": 320,
+      "height": 640,
+      "passed": 60
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "passed": 60
+    },
+    {
+      "width": 402,
+      "height": 874,
+      "passed": 60
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "passed": 60
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "passed": 59
+    }
+  ],
+  "checks": [
+    {
+      "label": "Daftar nyata /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/customers 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/customers 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/customers 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/parties 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/parties 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/parties 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/routes 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/routes 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/routes 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/trucking-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/trucking-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/trucking-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/equipment-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/equipment-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/equipment-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/assets 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/assets 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/assets 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/personnel 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/personnel 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/personnel 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/items 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/items 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/items 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/suppliers 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/suppliers 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/suppliers 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 320",
+      "passed": true
+    },
+    {
+      "label": "Form terpisah dari daftar 320",
+      "passed": true
+    },
+    {
+      "label": "Simpan tidak tertutup bottom nav 320",
+      "passed": true
+    },
+    {
+      "label": "Form tanpa overflow 320",
+      "passed": true
+    },
+    {
+      "label": "Tambah/detail customer UI 320",
+      "passed": true
+    },
+    {
+      "label": "Konfirmasi edit 320",
+      "passed": true
+    },
+    {
+      "label": "Edit/detail UI 320",
+      "passed": true
+    },
+    {
+      "label": "Nonaktif UI 320",
+      "passed": true
+    },
+    {
+      "label": "Aktif kembali UI 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian UI 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS master 320",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/customers 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/customers 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/customers 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/parties 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/parties 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/parties 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/routes 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/routes 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/routes 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/trucking-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/trucking-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/trucking-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/equipment-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/equipment-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/equipment-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/assets 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/assets 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/assets 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/personnel 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/personnel 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/personnel 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/items 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/items 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/items 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/suppliers 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/suppliers 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/suppliers 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 375",
+      "passed": true
+    },
+    {
+      "label": "Form terpisah dari daftar 375",
+      "passed": true
+    },
+    {
+      "label": "Simpan tidak tertutup bottom nav 375",
+      "passed": true
+    },
+    {
+      "label": "Form tanpa overflow 375",
+      "passed": true
+    },
+    {
+      "label": "Tambah/detail customer UI 375",
+      "passed": true
+    },
+    {
+      "label": "Konfirmasi edit 375",
+      "passed": true
+    },
+    {
+      "label": "Edit/detail UI 375",
+      "passed": true
+    },
+    {
+      "label": "Nonaktif UI 375",
+      "passed": true
+    },
+    {
+      "label": "Aktif kembali UI 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian UI 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS master 375",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/customers 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/customers 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/customers 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/parties 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/parties 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/parties 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/routes 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/routes 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/routes 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/trucking-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/trucking-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/trucking-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/equipment-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/equipment-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/equipment-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/assets 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/assets 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/assets 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/personnel 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/personnel 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/personnel 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/items 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/items 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/items 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/suppliers 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/suppliers 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/suppliers 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 402",
+      "passed": true
+    },
+    {
+      "label": "Form terpisah dari daftar 402",
+      "passed": true
+    },
+    {
+      "label": "Simpan tidak tertutup bottom nav 402",
+      "passed": true
+    },
+    {
+      "label": "Form tanpa overflow 402",
+      "passed": true
+    },
+    {
+      "label": "Tambah/detail customer UI 402",
+      "passed": true
+    },
+    {
+      "label": "Konfirmasi edit 402",
+      "passed": true
+    },
+    {
+      "label": "Edit/detail UI 402",
+      "passed": true
+    },
+    {
+      "label": "Nonaktif UI 402",
+      "passed": true
+    },
+    {
+      "label": "Aktif kembali UI 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian UI 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS master 402",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/customers 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/customers 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/customers 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/parties 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/parties 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/parties 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/routes 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/routes 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/routes 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/trucking-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/trucking-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/trucking-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/equipment-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/equipment-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/equipment-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/assets 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/assets 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/assets 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/personnel 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/personnel 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/personnel 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/items 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/items 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/items 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/suppliers 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/suppliers 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/suppliers 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 768",
+      "passed": true
+    },
+    {
+      "label": "Form terpisah dari daftar 768",
+      "passed": true
+    },
+    {
+      "label": "Simpan tidak tertutup bottom nav 768",
+      "passed": true
+    },
+    {
+      "label": "Form tanpa overflow 768",
+      "passed": true
+    },
+    {
+      "label": "Tambah/detail customer UI 768",
+      "passed": true
+    },
+    {
+      "label": "Konfirmasi edit 768",
+      "passed": true
+    },
+    {
+      "label": "Edit/detail UI 768",
+      "passed": true
+    },
+    {
+      "label": "Nonaktif UI 768",
+      "passed": true
+    },
+    {
+      "label": "Aktif kembali UI 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian UI 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS master 768",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/customers 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/customers 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/customers 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/parties 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/parties 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/parties 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/routes 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/routes 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/routes 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/trucking-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/trucking-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/trucking-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/equipment-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/equipment-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/equipment-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/assets 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/assets 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/assets 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/personnel 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/personnel 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/personnel 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/items 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/items 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/items 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 1366",
+      "passed": true
+    },
+    {
+      "label": "Daftar nyata /master/suppliers 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian tersedia /master/suppliers 1366",
+      "passed": true
+    },
+    {
+      "label": "Tombol tambah terpisah /master/suppliers 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 1366",
+      "passed": true
+    },
+    {
+      "label": "Form terpisah dari daftar 1366",
+      "passed": true
+    },
+    {
+      "label": "Form tanpa overflow 1366",
+      "passed": true
+    },
+    {
+      "label": "Tambah/detail customer UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Konfirmasi edit 1366",
+      "passed": true
+    },
+    {
+      "label": "Edit/detail UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Nonaktif UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Aktif kembali UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian UI 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS master 1366",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata branches",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan branches",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow branches",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata customers",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan customers",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow customers",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata parties",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan parties",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow parties",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata locations",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan locations",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow locations",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata routes",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan routes",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow routes",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata trucking-tariffs",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan trucking-tariffs",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow trucking-tariffs",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata equipment-tariffs",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan equipment-tariffs",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow equipment-tariffs",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata vehicles",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan vehicles",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow vehicles",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata units",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan units",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow units",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata drivers",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan drivers",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow drivers",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata operators",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan operators",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow operators",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata items",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan items",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow items",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata categories",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan categories",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow categories",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata uoms",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan uoms",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow uoms",
+      "passed": true
+    },
+    {
+      "label": "Form tab nyata suppliers",
+      "passed": true
+    },
+    {
+      "label": "Form memuat data tersimpan suppliers",
+      "passed": true
+    },
+    {
+      "label": "Form mobile tab tidak overflow suppliers",
+      "passed": true
+    },
+    {
+      "label": "Pagination browser catatan berbeda",
+      "passed": true
+    },
+    {
+      "label": "Owner tidak memperoleh aksi create",
+      "passed": true
+    },
+    {
+      "label": "Owner URL create ditolak backend",
+      "passed": true
+    },
+    {
+      "label": "Tab equipment scoped tersedia sesuai izin",
+      "passed": true
+    },
+    {
+      "label": "Rute lintas endpoint ditolak backend",
+      "passed": true
+    },
+    {
+      "label": "Tab tanpa permission tidak ditampilkan",
+      "passed": true
+    },
+    {
+      "label": "Tab tanpa permission ditolak backend",
+      "passed": true
+    }
+  ]
+}

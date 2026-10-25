@@ -1,0 +1,4 @@
+CREATE TABLE eq_unit_holds (
+ id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY, asset_id INT UNSIGNED NOT NULL, branch_id INT UNSIGNED NOT NULL, source_p2h_id BIGINT UNSIGNED NOT NULL, reason VARCHAR(2000) NOT NULL, activated_by INT UNSIGNED NOT NULL, activated_at DATETIME NOT NULL, released_by INT UNSIGNED NULL, released_at DATETIME NULL, release_reason VARCHAR(2000) NULL, version INT UNSIGNED NOT NULL DEFAULT 1,
+ UNIQUE KEY uq_p2h_hold_source(source_p2h_id), KEY ix_unit_hold_active(asset_id,branch_id,released_at), CONSTRAINT fk_hold_asset FOREIGN KEY(asset_id) REFERENCES md_assets(id), CONSTRAINT fk_hold_branch FOREIGN KEY(branch_id) REFERENCES branches(id), CONSTRAINT fk_hold_p2h FOREIGN KEY(source_p2h_id) REFERENCES eq_p2h_inspections(id), CONSTRAINT fk_hold_actor FOREIGN KEY(activated_by) REFERENCES users(id), CONSTRAINT fk_hold_release FOREIGN KEY(released_by) REFERENCES users(id)
+) ENGINE=InnoDB;

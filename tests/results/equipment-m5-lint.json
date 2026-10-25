@@ -1,0 +1,459 @@
+﻿{
+    "date":  "2026-10-24T19:00:59.6847945+08:00",
+    "passed":  113,
+    "failed":  0,
+    "checks":  [
+                   {
+                       "file":  "bin\\setup-dev.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "bin\\migrate.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "bin\\bootstrap-admin.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\trucking-upgrade.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\trucking-operations.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "public\\router.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "public\\index.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\run.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-handovers.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-handover-drafts.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-development.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-contracts.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\deployment.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\database-integrity.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\dashboard.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\concurrency.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\expedition-access.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-worker.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-timesheets.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-migrations.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\expedition.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\expedition-worker.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\master-data.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\phase5-audit-repairs.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\users.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\roles.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\master-data.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\login.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\layout.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\expedition.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\error.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\equipment-timesheets.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\equipment-handovers.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\equipment-contracts.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\dashboard.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Http\\View.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Http\\Router.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Http\\Pagination.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Http\\Input.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Http\\Icons.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Http\\HttpError.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Database.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\dashboard.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\OperationsController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\MasterDataController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\FoundationController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\ExpeditionController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\EquipmentTimesheetController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\EquipmentHandoverController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\EquipmentController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\DashboardController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Controllers\\AuthController.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Config.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\bootstrap.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\card.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\breadcrumb.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\bottom-navigation.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\alert.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\claims.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\trucking-actions.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\audit.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\table.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\sidebar.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\pagination.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\page-heading.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\loading.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\header.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\field.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\empty-state.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\dashboard-pending.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\dashboard-kpi.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\dashboard-filters.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Views\\components\\confirmation.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\navigation.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Middleware\\Access.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\master-data.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\UserRepository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\TruckingRepository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\Repository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\MasterDataRepository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\ExpeditionRepository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\EquipmentTimesheetRepository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\EquipmentRepository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\EquipmentHandoverRepository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Repositories\\DashboardRepository.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentPermissions.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentMigration.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentHandovers.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentHandoverEvidence.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentContracts.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentAccess.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\DocumentNumbers.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Dashboard.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Csrf.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Claims.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\TruckingOperations.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\BootstrapAdmin.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Auth.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Audit.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\routes.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Session.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\OperationalWrite.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Navigation.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\ExpeditionPermissions.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Migrator.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\ExpeditionAccess.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\MasterService.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\Expedition.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\MasterPermissions.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentWrite.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\MasterData.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentWorkIntervals.php",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "app\\Services\\EquipmentTimesheets.php",
+                       "passed":  true
+                   }
+               ]
+}

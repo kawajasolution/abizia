@@ -1,0 +1,367 @@
+{
+  "date": "2026-10-24T11:01:25.362Z",
+  "passed": 90,
+  "failed": 0,
+  "checks": [
+    {
+      "label": "M5 daftar HTTP 320",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar responsif 320",
+      "passed": true
+    },
+    {
+      "label": "M5 penambahan interval nyata 320",
+      "passed": true
+    },
+    {
+      "label": "M5 form responsif 320",
+      "passed": true
+    },
+    {
+      "label": "M5 jam bersih lintas malam/istirahat server 320",
+      "passed": true
+    },
+    {
+      "label": "M5 HM terpisah 320",
+      "passed": true
+    },
+    {
+      "label": "M5 edit draft nyata 320",
+      "passed": true
+    },
+    {
+      "label": "M5 SUBMITTED immutable UI 320",
+      "passed": true
+    },
+    {
+      "label": "M5 antrean review 320",
+      "passed": true
+    },
+    {
+      "label": "M5 RETURNED nyata 320",
+      "passed": true
+    },
+    {
+      "label": "M5 review responsif 320",
+      "passed": true
+    },
+    {
+      "label": "M5 revisi baru menjaga row lama 320",
+      "passed": true
+    },
+    {
+      "label": "M5 APPROVED nyata 320",
+      "passed": true
+    },
+    {
+      "label": "M5 approved lama tetap efektif saat revisi pending 320",
+      "passed": true
+    },
+    {
+      "label": "M5 histori audit/revisi 320",
+      "passed": true
+    },
+    {
+      "label": "M5 detail responsif 320",
+      "passed": true
+    },
+    {
+      "label": "M5 tanpa error JS 320",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar HTTP 375",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar responsif 375",
+      "passed": true
+    },
+    {
+      "label": "M5 penambahan interval nyata 375",
+      "passed": true
+    },
+    {
+      "label": "M5 form responsif 375",
+      "passed": true
+    },
+    {
+      "label": "M5 jam bersih lintas malam/istirahat server 375",
+      "passed": true
+    },
+    {
+      "label": "M5 HM terpisah 375",
+      "passed": true
+    },
+    {
+      "label": "M5 edit draft nyata 375",
+      "passed": true
+    },
+    {
+      "label": "M5 SUBMITTED immutable UI 375",
+      "passed": true
+    },
+    {
+      "label": "M5 antrean review 375",
+      "passed": true
+    },
+    {
+      "label": "M5 RETURNED nyata 375",
+      "passed": true
+    },
+    {
+      "label": "M5 review responsif 375",
+      "passed": true
+    },
+    {
+      "label": "M5 revisi baru menjaga row lama 375",
+      "passed": true
+    },
+    {
+      "label": "M5 APPROVED nyata 375",
+      "passed": true
+    },
+    {
+      "label": "M5 approved lama tetap efektif saat revisi pending 375",
+      "passed": true
+    },
+    {
+      "label": "M5 histori audit/revisi 375",
+      "passed": true
+    },
+    {
+      "label": "M5 detail responsif 375",
+      "passed": true
+    },
+    {
+      "label": "M5 tanpa error JS 375",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar HTTP 402",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar responsif 402",
+      "passed": true
+    },
+    {
+      "label": "M5 penambahan interval nyata 402",
+      "passed": true
+    },
+    {
+      "label": "M5 form responsif 402",
+      "passed": true
+    },
+    {
+      "label": "M5 jam bersih lintas malam/istirahat server 402",
+      "passed": true
+    },
+    {
+      "label": "M5 HM terpisah 402",
+      "passed": true
+    },
+    {
+      "label": "M5 edit draft nyata 402",
+      "passed": true
+    },
+    {
+      "label": "M5 SUBMITTED immutable UI 402",
+      "passed": true
+    },
+    {
+      "label": "M5 antrean review 402",
+      "passed": true
+    },
+    {
+      "label": "M5 RETURNED nyata 402",
+      "passed": true
+    },
+    {
+      "label": "M5 review responsif 402",
+      "passed": true
+    },
+    {
+      "label": "M5 revisi baru menjaga row lama 402",
+      "passed": true
+    },
+    {
+      "label": "M5 APPROVED nyata 402",
+      "passed": true
+    },
+    {
+      "label": "M5 approved lama tetap efektif saat revisi pending 402",
+      "passed": true
+    },
+    {
+      "label": "M5 histori audit/revisi 402",
+      "passed": true
+    },
+    {
+      "label": "M5 detail responsif 402",
+      "passed": true
+    },
+    {
+      "label": "M5 tanpa error JS 402",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar HTTP 768",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar responsif 768",
+      "passed": true
+    },
+    {
+      "label": "M5 penambahan interval nyata 768",
+      "passed": true
+    },
+    {
+      "label": "M5 form responsif 768",
+      "passed": true
+    },
+    {
+      "label": "M5 jam bersih lintas malam/istirahat server 768",
+      "passed": true
+    },
+    {
+      "label": "M5 HM terpisah 768",
+      "passed": true
+    },
+    {
+      "label": "M5 edit draft nyata 768",
+      "passed": true
+    },
+    {
+      "label": "M5 SUBMITTED immutable UI 768",
+      "passed": true
+    },
+    {
+      "label": "M5 antrean review 768",
+      "passed": true
+    },
+    {
+      "label": "M5 RETURNED nyata 768",
+      "passed": true
+    },
+    {
+      "label": "M5 review responsif 768",
+      "passed": true
+    },
+    {
+      "label": "M5 revisi baru menjaga row lama 768",
+      "passed": true
+    },
+    {
+      "label": "M5 APPROVED nyata 768",
+      "passed": true
+    },
+    {
+      "label": "M5 approved lama tetap efektif saat revisi pending 768",
+      "passed": true
+    },
+    {
+      "label": "M5 histori audit/revisi 768",
+      "passed": true
+    },
+    {
+      "label": "M5 detail responsif 768",
+      "passed": true
+    },
+    {
+      "label": "M5 tanpa error JS 768",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar HTTP 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 daftar responsif 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 penambahan interval nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 form responsif 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 jam bersih lintas malam/istirahat server 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 HM terpisah 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 edit draft nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 SUBMITTED immutable UI 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 antrean review 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 RETURNED nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 review responsif 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 revisi baru menjaga row lama 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 APPROVED nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 approved lama tetap efektif saat revisi pending 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 histori audit/revisi 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 detail responsif 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 tanpa error JS 1366",
+      "passed": true
+    },
+    {
+      "label": "M5 browser own list berfungsi",
+      "passed": true
+    },
+    {
+      "label": "M5 operator melihat histori sendiri",
+      "passed": true
+    },
+    {
+      "label": "M5 browser own IDOR ditolak",
+      "passed": true
+    },
+    {
+      "label": "M5 operator tanpa grant reviewer",
+      "passed": true
+    },
+    {
+      "label": "M5 form self-approval tidak ditampilkan",
+      "passed": true
+    }
+  ]
+}

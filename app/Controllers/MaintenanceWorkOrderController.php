@@ -1,0 +1,92 @@
+<?php
+declare(strict_types=1);
+namespace Hls\Controllers;
+use Hls\Http\HttpError;
+use Hls\Http\Input;
+use Hls\Http\View;
+use Hls\Repositories\Repository;
+use Hls\Middleware\Access;
+use Hls\Services\Audit;
+use Hls\Services\Csrf;
+use Hls\Database;
+
+final class MaintenanceWorkOrderController
+{
+    public function __construct(private Repository $repo, private View $view, private Access $access, private Audit $audit) {}
+    private function scope(int $branch): void { $this->access->demandBranch($branch); }
+    private function row(int $id, bool $lock=false): array
+    {
+        $r=$this->repo->one('SELECT w.*,b.name branch_name,a.code asset_code,a.name asset_name FROM maintenance_work_orders w JOIN branches b ON b.id=w.branch_id JOIN md_assets a ON a.id=w.asset_id WHERE w.id=?'.($lock?' FOR UPDATE':''),[$id]);
+        if(!$r) throw new HttpError(404,'Work Order tidak ditemukan.'); $this->scope((int)$r['branch_id']); return $r;
+    }
+    public function handle(): void
+    {
+        $this->access->demand('maintenance.wo.view');
+        if($_SERVER['REQUEST_METHOD']==='POST') $this->post();
+        $id=Input::id($_GET,'id',true); $row=$id?$this->row($id):null; $printMode=Input::text($_GET,'mode',20,false); if($printMode&&$printMode!=='print-wo'&&$printMode!=='print-service')throw new HttpError(404,'Mode cetak tidak tersedia.');
+        $branches=$this->repo->all('SELECT id,name FROM branches WHERE active=1 ORDER BY name');
+        $assets=$this->repo->all('SELECT id,code,name,branch_id FROM md_assets WHERE active=1 ORDER BY code');
+        $items=$this->repo->all('SELECT id,code,name FROM md_items WHERE active=1 ORDER BY code');
+        $warehouses=$this->repo->all('SELECT id,code,name,branch_id FROM inv_warehouses WHERE active=1 ORDER BY code');
+        $rows=$this->repo->all('SELECT w.*,b.name branch_name,a.code asset_code FROM maintenance_work_orders w JOIN branches b ON b.id=w.branch_id JOIN md_assets a ON a.id=w.asset_id WHERE w.branch_id IN (SELECT branch_id FROM user_branches WHERE user_id=? UNION SELECT id FROM branches WHERE ?=1) ORDER BY w.id DESC',[$this->access->user['id'],$this->access->user['all_branches']]);
+        $parts=$id?$this->repo->all('SELECT p.*,i.code item_code,i.name item_name FROM maintenance_work_order_parts p JOIN md_items i ON i.id=p.item_id WHERE p.work_order_id=? ORDER BY p.id',[$id]):[];
+        $activities=$id?$this->repo->all('SELECT a.*,u.name actor_name FROM maintenance_work_order_activities a JOIN users u ON u.id=a.actor_id WHERE a.work_order_id=? ORDER BY a.created_at DESC',[$id]):[];
+        $issues=$id?$this->repo->all('SELECT x.id,x.issue_ref,x.status,x.issue_date FROM maintenance_work_order_issue_links l JOIN inv_issues x ON x.id=l.issue_id WHERE l.work_order_id=? ORDER BY x.id DESC',[$id]):[];
+        if($id&&$parts){$issued=$this->repo->all('SELECT l.item_id,SUM(l.quantity) qty FROM maintenance_work_order_issue_links wl JOIN inv_issues x ON x.id=wl.issue_id JOIN inv_issue_lines l ON l.issue_id=x.id WHERE wl.work_order_id=? AND x.status="POSTED" GROUP BY l.item_id',[$id]);$map=[];foreach($issued as $v)$map[(int)$v['item_id']] = (float)$v['qty'];foreach($parts as &$p)$p['quantity_issued']=$map[(int)$p['item_id']]??0;unset($p);}
+        $holds=$row?$this->repo->all('SELECT * FROM eq_unit_holds WHERE asset_id=? ORDER BY id DESC',[$row['asset_id']]):[];
+        $costs=$id?$this->repo->all('SELECT category,source_type,source_ref,description,quantity,unit_cost,total_cost,valuation_status,payment_status,created_at FROM maintenance_cost_entries WHERE work_order_id=? ORDER BY id',[$id]):[];
+        $external=$id?$this->repo->all('SELECT * FROM maintenance_external_services WHERE work_order_id=? ORDER BY id DESC',[$id]):[];
+        $costTotal=0.0;$costIncomplete=false;foreach($costs as $c){if($c['valuation_status']==='VALUED')$costTotal+=(float)$c['total_cost'];else $costIncomplete=true;}
+        if($printMode&&$row){$people=$this->repo->one('SELECT m.name mechanic_name,s.name supervisor_name FROM maintenance_work_orders w LEFT JOIN users m ON m.id=w.mechanic_id LEFT JOIN users s ON s.id=w.supervisor_id WHERE w.id=?',[$id])??[];$this->view->render('maintenance-work-order-print',compact('row','parts','activities','issues','holds','people','printMode'));return;}
+        $this->view->render('maintenance-work-orders',compact('rows','row','branches','assets','items','warehouses','parts','activities','issues','holds','costs','costTotal','costIncomplete','external','printMode'));
+    }
+    private function pmVerified(array $w,int $id,string $next,int $actor): void
+    {
+        if ($next !== 'VERIFIED' || ($w['work_type'] ?? '') !== 'PREVENTIVE' || empty($w['pm_schedule_id'])) return;
+        $s=$this->repo->one('SELECT * FROM maintenance_pm_schedules WHERE id=? FOR UPDATE',[$w['pm_schedule_id']]);
+        if (!$s || !$s['active'] || (int)$s['asset_id'] !== (int)$w['asset_id'] || (int)$s['branch_id'] !== (int)$w['branch_id']) throw new HttpError(409,'Jadwal PM tidak sesuai Work Order.');
+        if ($this->repo->one('SELECT id FROM maintenance_pm_histories WHERE schedule_id=? AND work_order_id=? FOR UPDATE',[$s['id'],$id])) throw new HttpError(409,'Work Order PM sudah dicatat sebagai servis.');
+        $meter=$w['hm_km']!==null?(float)$w['hm_km']:null;
+        if ($s['basis']!=='CALENDAR' && $meter===null) throw new HttpError(422,'Pembacaan HM/KM servis belum tersedia.');
+        $previous=$s['basis']==='CALENDAR'?null:(float)($s['next_target']??0);
+        $nextTarget=$s['basis']==='CALENDAR'?null:($s['calculation_policy']==='FIXED_CYCLE'?$previous+$s['interval_value']:$meter+$s['interval_value']);
+        $nextDate=null; if($s['basis']==='CALENDAR' && $s['next_due_date']) $nextDate=(new \DateTimeImmutable($s['next_due_date']))->modify('+'.(int)$s['interval_value'].' months')->format('Y-m-d');
+        $this->repo->run('INSERT INTO maintenance_pm_histories(schedule_id,work_order_id,performed_on,meter_value,target_previous,target_next,mechanic_id,supervisor_id,unit_id,branch_id,verified_at,created_by) VALUES(?,?,?,?,?,?,?,?,?,?,NOW(),?)',[$s['id'],$id,date('Y-m-d'),$meter,$previous,$nextTarget,$w['mechanic_id']?:null,$actor,$w['asset_id'],$w['branch_id'],$actor]);
+        $this->repo->run('UPDATE maintenance_pm_schedules SET next_target=?,next_due_date=?,version=version+1 WHERE id=?',[$nextTarget,$nextDate,$s['id']]);
+    }    private function post(): void
+    {
+        $action=Input::text($_POST,'action',20); $requestedStatus=Input::text($_POST,'status',20,false); $permission=$action==='create'?'maintenance.wo.create':($action==='cost_sync'?'maintenance.cost.manage':($action==='external_create'?'maintenance.cost.create':($action==='external_status'?'maintenance.cost.approve':($action==='status'&&in_array($requestedStatus,['VERIFIED'],true)?'maintenance.wo.verify':($action==='status'&&$requestedStatus==='CLOSED'?'maintenance.wo.close':'maintenance.wo.update'))))); $this->access->demand($permission);
+        Csrf::verify($_POST['csrf']??null);
+        $this->repo->db->beginTransaction();
+        try {
+            $actor=(int)$this->access->user['id'];
+            if($action==='create'){
+                $branch=Input::id($_POST,'branch_id');$asset=Input::id($_POST,'asset_id');$this->scope($branch);
+                $a=$this->repo->one('SELECT * FROM md_assets WHERE id=? AND active=1 FOR UPDATE',[$asset]);if(!$a||(int)$a['branch_id']!==$branch)throw new HttpError(422,'Unit tidak valid untuk cabang.');
+                $type=Input::text($_POST,'work_type',20);$priority=Input::text($_POST,'priority',10);if(!in_array($type,['CORRECTIVE','PREVENTIVE','INSPECTION','EMERGENCY'],true)||!in_array($priority,['LOW','NORMAL','HIGH','CRITICAL'],true))throw new HttpError(422,'Jenis atau prioritas tidak valid.');
+                $p2h=Input::id($_POST,'source_p2h_id',true);$hold=Input::id($_POST,'source_hold_id',true);if($p2h&&!$this->repo->one('SELECT id FROM eq_p2h_inspections WHERE id=? AND asset_id=? AND branch_id=?',[$p2h,$asset,$branch]))throw new HttpError(422,'Referensi P2H tidak sesuai unit/cabang.');if($hold&&!$this->repo->one('SELECT id FROM eq_unit_holds WHERE id=? AND asset_id=? AND branch_id=?',[$hold,$asset,$branch]))throw new HttpError(422,'Referensi HOLD tidak sesuai unit/cabang.');
+                $number='WO-'.date('Ymd').'-'.strtoupper(bin2hex(random_bytes(4)));$this->repo->run('INSERT INTO maintenance_work_orders(wo_number,branch_id,asset_id,source_p2h_id,source_hold_id,created_by,work_type,priority,location,hm_km,problem_description,target_date) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)',[$number,$branch,$asset,$p2h?:null,$hold?:null,$actor,$type,$priority,Input::text($_POST,'location',255,false),Input::text($_POST,'hm_km',20,false)===''?null:(float)$_POST['hm_km'],Input::text($_POST,'problem_description',4000),Input::text($_POST,'target_date',10,false)?:null]);$id=(int)$this->repo->db->lastInsertId();$this->audit->record($actor,'maintenance_wo_created','maintenance_work_orders',$id,['number'=>$number]);
+            } elseif($action==='status') {
+                $id=Input::id($_POST,'id');$w=$this->row($id,true);$next=Input::text($_POST,'status',20);$allowed=['DRAFT'=>['OPEN','CANCELLED'],'OPEN'=>['ASSIGNED','CANCELLED'],'ASSIGNED'=>['IN_PROGRESS'],'IN_PROGRESS'=>['COMPLETED'],'COMPLETED'=>['IN_PROGRESS','VERIFIED'],'VERIFIED'=>['CLOSED']];if(!in_array($next,$allowed[$w['status']]??[],true))throw new HttpError(409,'Transisi status tidak diizinkan.');if($next==='ASSIGNED'&&!Input::id($_POST,'mechanic_id',true))throw new HttpError(422,'Mekanik wajib untuk penugasan.');$mechanic=Input::id($_POST,'mechanic_id',true);$this->repo->run('UPDATE maintenance_work_orders SET status=?,mechanic_id=COALESCE(?,mechanic_id),assigned_at=CASE WHEN ?="ASSIGNED" THEN NOW() ELSE assigned_at END,started_at=CASE WHEN ?="IN_PROGRESS" THEN NOW() ELSE started_at END,completed_at=CASE WHEN ?="COMPLETED" THEN NOW() ELSE completed_at END,verified_at=CASE WHEN ?="VERIFIED" THEN NOW() ELSE verified_at END,closed_at=CASE WHEN ?="CLOSED" THEN NOW() ELSE closed_at END,version=version+1 WHERE id=?',[$next,$mechanic?:null,$next,$next,$next,$next,$next,$id]);$this->pmVerified($w,$id,$next,$actor);$this->audit->record($actor,'maintenance_wo_status','maintenance_work_orders',$id,['from'=>$w['status'],'to'=>$next]);
+            } elseif($action==='activity') {
+                $id=Input::id($_POST,'id');$this->row($id,true);$this->repo->run('INSERT INTO maintenance_work_order_activities(work_order_id,actor_id,activity_type,diagnosis,action_taken,duration_minutes,notes) VALUES(?,?,?,?,?,?,?)',[$id,$actor,Input::text($_POST,'activity_type',30),Input::text($_POST,'diagnosis',4000,false),Input::text($_POST,'action_taken',4000,false),Input::id($_POST,'duration_minutes',true)?:null,Input::text($_POST,'notes',4000,false)]);$this->audit->record($actor,'maintenance_wo_activity','maintenance_work_orders',$id,[]);
+            } elseif($action==='part') {
+                $id=Input::id($_POST,'id');$w=$this->row($id,true);$item=Input::id($_POST,'item_id');$qty=(float)($_POST['quantity_required']??0);if($qty<=0)throw new HttpError(422,'Jumlah spare part harus positif.');if(!$this->repo->one('SELECT id FROM md_items WHERE id=? AND active=1',[$item]))throw new HttpError(422,'Barang tidak aktif.');$warehouse=Input::id($_POST,'warehouse_id',true);if($warehouse&&!$this->repo->one('SELECT id FROM inv_warehouses WHERE id=? AND branch_id=? AND active=1',[$warehouse,$w['branch_id']]))throw new HttpError(422,'Gudang tidak sesuai cabang.');$this->repo->run('INSERT INTO maintenance_work_order_parts(work_order_id,item_id,warehouse_id,quantity_required,unit_name) SELECT ?,i.id,?,?,u.name FROM md_items i JOIN md_units u ON u.id=i.unit_id WHERE i.id=?',[$id,$warehouse?:null,$qty,$item]);$this->audit->record($actor,'maintenance_wo_part_requested','maintenance_work_orders',$id,['item_id'=>$item,'quantity'=>$qty]);
+            } elseif($action==='issue') {
+                $id=Input::id($_POST,'id');$w=$this->row($id,true);$warehouse=Input::id($_POST,'warehouse_id');if(!$this->repo->one('SELECT id FROM inv_warehouses WHERE id=? AND branch_id=? AND active=1',[$warehouse,$w['branch_id']]))throw new HttpError(422,'Gudang tidak sesuai cabang.');$items=$_POST['item_id']??[];$qty=$_POST['quantity']??[];$lines=[];foreach(is_array($items)?$items:[] as $i=>$item){$q=(float)($qty[$i]??0);if($q>0&&$this->repo->one('SELECT id FROM md_items WHERE id=? AND active=1',[(int)$item]))$lines[]=[(int)$item,$q];}if(!$lines)throw new HttpError(422,'Item issue wajib diisi.');$ref='ISS-WO-'.$w['id'].'-'.strtoupper(bin2hex(random_bytes(4)));$this->repo->run('INSERT INTO inv_issues(issue_ref,issue_date,branch_id,warehouse_id,recipient,document_ref,note,status,created_by,created_at) VALUES(?,?,?,?,?,?,?,"DRAFT",?,NOW())',[$ref,date('Y-m-d'),$w['branch_id'],$warehouse,'Maintenance','WO-'.$w['wo_number'],'Pemakaian spare part '.$w['wo_number'],$actor]);$issue=(int)$this->repo->db->lastInsertId();foreach($lines as $l)$this->repo->run('INSERT INTO inv_issue_lines(issue_id,item_id,quantity,created_at) VALUES(?,?,?,NOW())',[$issue,$l[0],$l[1]]);$this->repo->run('INSERT INTO maintenance_work_order_issue_links(work_order_id,issue_id,created_by) VALUES(?,?,?)',[$id,$issue,$actor]);$this->audit->record($actor,'maintenance_wo_issue_created','maintenance_work_orders',$id,['issue_id'=>$issue]);
+            } elseif($action==='cost_sync') {
+                $id=Input::id($_POST,'id');$w=$this->row($id,true);
+                $issued=$this->repo->all('SELECT l.id line_id,l.item_id,l.quantity,x.issue_ref FROM maintenance_work_order_issue_links wl JOIN inv_issues x ON x.id=wl.issue_id AND x.status="POSTED" JOIN inv_issue_lines l ON l.issue_id=x.id WHERE wl.work_order_id=?',[$id]);
+                foreach($issued as $line){$this->repo->run('INSERT IGNORE INTO maintenance_cost_entries(work_order_id,branch_id,asset_id,category,source_type,source_id,source_ref,description,quantity,valuation_status,payment_status,created_by) SELECT ?,?,?,"SPARE_PART","INV_ISSUE_LINE",?,?,CONCAT("Spare part item ",l.item_id),l.quantity,"UNVALUED","NOT_APPLICABLE",? FROM inv_issue_lines l WHERE l.id=?',[$id,$w['branch_id'],$w['asset_id'],$line['line_id'],$line['issue_ref'],$actor,$line['line_id']]);}
+                $acts=$this->repo->all('SELECT id,duration_minutes,created_at,actor_id FROM maintenance_work_order_activities WHERE work_order_id=? AND duration_minutes>0',[$id]);
+                foreach($acts as $a){$rate=$this->repo->one('SELECT rate_per_hour,rate_code FROM maintenance_cost_rates WHERE active=1 AND (branch_id IS NULL OR branch_id=?) AND effective_from<=DATE(?) AND (effective_until IS NULL OR effective_until>=DATE(?)) ORDER BY branch_id DESC,effective_from DESC LIMIT 1',[$w['branch_id'],$a['created_at'],$a['created_at']]);$unit=$rate?(float)$rate['rate_per_hour']:null;$total=$unit===null?null:round(((float)$a['duration_minutes']/60)*$unit,2);$this->repo->run('INSERT IGNORE INTO maintenance_cost_entries(work_order_id,branch_id,asset_id,category,source_type,source_id,source_ref,description,quantity,unit_cost,total_cost,valuation_status,payment_status,created_by) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?)',[$id,$w['branch_id'],$w['asset_id'],'LABOR','WORK_ORDER_ACTIVITY',$a['id'],$rate['rate_code']??null,'Aktivitas mekanik',((float)$a['duration_minutes']/60),$unit,$total,$unit===null?'UNVALUED':'VALUED','NOT_APPLICABLE',$actor]);}
+                $this->audit->record($actor,'maintenance_cost_synced','maintenance_work_orders',$id,['spare_parts'=>count($issued),'activities'=>count($acts)]);
+            } elseif($action==='external_create') {
+                $id=Input::id($_POST,'id');$w=$this->row($id,true);$ref=trim((string)($_POST['service_ref']??''));$desc=trim((string)($_POST['description']??''));$provider=trim((string)($_POST['provider_name']??''));$date=Input::text($_POST,'service_date',10);$amount=trim((string)($_POST['amount']??''));$value=$amount===''?null:(float)$amount;if($ref===''||$desc===''||$provider===''||!preg_match('/^\d{4}-\d{2}-\d{2}$/',$date)||($value!==null&&$value<0))throw new HttpError(422,'Data jasa eksternal tidak valid.');$this->repo->run('INSERT INTO maintenance_external_services(work_order_id,branch_id,provider_name,service_ref,document_ref,description,amount,service_date,note,status,created_by) VALUES(?,?,?,?,?,?,?,?,?,"DRAFT",?)',[$id,$w['branch_id'],$provider,$ref,Input::text($_POST,'document_ref',100,false),$desc,$value,$date,Input::text($_POST,'note',255,false),$actor]);$this->audit->record($actor,'maintenance_external_created','maintenance_external_services',(int)$this->repo->db->lastInsertId(),['work_order_id'=>$id]);
+            } elseif($action==='external_status') {
+                $sid=Input::id($_POST,'service_id');$s=$this->repo->one('SELECT * FROM maintenance_external_services WHERE id=? FOR UPDATE',[$sid]);if(!$s||!$this->access->branch((int)$s['branch_id']))throw new HttpError(404,'Jasa eksternal tidak ditemukan.');$next=Input::text($_POST,'status',20);$allowed=['DRAFT'=>['SUBMITTED'],'SUBMITTED'=>['APPROVED','RETURNED'],'RETURNED'=>['SUBMITTED']];if(!in_array($next,$allowed[$s['status']]??[],true))throw new HttpError(409,'Transisi jasa eksternal tidak diizinkan.');$this->repo->run('UPDATE maintenance_external_services SET status=?,approved_by=CASE WHEN ?="APPROVED" THEN ? ELSE approved_by END,approved_at=CASE WHEN ?="APPROVED" THEN NOW() ELSE approved_at END WHERE id=?',[$next,$next,$actor,$next,$sid]);if($next==='APPROVED'){$this->repo->run('INSERT IGNORE INTO maintenance_cost_entries(work_order_id,branch_id,asset_id,category,source_type,source_id,source_ref,description,quantity,unit_cost,total_cost,valuation_status,payment_status,created_by) SELECT s.work_order_id,s.branch_id,w.asset_id,"EXTERNAL_SERVICE","EXTERNAL_SERVICE",s.id,s.service_ref,s.description,1,s.amount,s.amount,CASE WHEN s.amount IS NULL THEN "UNVALUED" ELSE "VALUED" END,"UNPAID",? FROM maintenance_external_services s JOIN maintenance_work_orders w ON w.id=s.work_order_id WHERE s.id=?',[$actor,$sid]);}$this->audit->record($actor,'maintenance_external_status','maintenance_external_services',$sid,['status'=>$next]);
+            } else { throw new HttpError(422,'Aksi Work Order tidak dikenal.'); }
+            $this->repo->db->commit();$this->view->redirect('/maintenance/work-orders'.($id?'?id='.$id:''));
+        } catch(\Throwable $e){if($this->repo->db->inTransaction())$this->repo->db->rollBack();throw $e;}
+    }
+}

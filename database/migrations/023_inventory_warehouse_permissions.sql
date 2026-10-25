@@ -1,0 +1,1 @@
+INSERT IGNORE INTO permissions(code,name) VALUES ('inventory.warehouse.view','Lihat gudang'),('inventory.warehouse.create','Tambah gudang'),('inventory.warehouse.update','Ubah gudang'); INSERT IGNORE INTO role_permissions(role_id,permission_id) SELECT r.id,p.id FROM roles r JOIN permissions p ON p.code='inventory.warehouse.view' WHERE r.name='Owner';

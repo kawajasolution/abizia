@@ -1,0 +1,19 @@
+Probe tambahan audit; dijalankan setelah fixture backend tests/run.php dan trucking-operations.php pada database disposable tersendiri. Tidak diterapkan ke kode aplikasi. Variabel fixture mengikuti runner tersebut.
+
+    $auditFindings=[];
+    $probe=function(string $name,callable $work)use(&$auditFindings):void{try{$r=$work();$auditFindings[]=['name'=>$name,'passed'=>$r['passed'],'observed'=>$r['observed']];}catch(Throwable $e){$auditFindings[]=['name'=>$name,'passed'=>false,'observed'=>get_class($e).': '.$e->getMessage()];}};
+    $originLocation=(int)$repo->one('SELECT origin_location_id FROM md_routes WHERE id=?',[$expRoute])['origin_location_id'];
+    $probe('A01 Konfirmasi DN menolak lokasi asal nonaktif',function()use($exp,$ops,$dnInput,$key,$vDn,$repo,$originLocation):array{
+        $id=$exp->save('dn',array_replace($dnInput,['request_key'=>$key()]));$repo->run('UPDATE md_locations SET active=0 WHERE id=?',[$originLocation]);
+        try{try{$ops->confirmDn($id,$vDn($id),$key());return ['passed'=>false,'observed'=>'Konfirmasi berhasil, status='.$exp->data->find('dn',$id)['status']];}catch(Hls\Http\HttpError $e){return ['passed'=>in_array($e->status,[403,409,422],true),'observed'=>'Ditolak HTTP '.$e->status];}}finally{$repo->run('UPDATE md_locations SET active=1 WHERE id=?',[$originLocation]);}
+    });
+    $probe('A02 Konfirmasi DN memvalidasi ulang peran pengirim',function()use($exp,$ops,$dnInput,$key,$vDn,$repo):array{
+        $id=$exp->save('dn',array_replace($dnInput,['request_key'=>$key()]));$sender=(int)$dnInput['sender_id'];$old=$repo->one('SELECT party_role FROM md_parties WHERE id=?',[$sender])['party_role'];$repo->run("UPDATE md_parties SET party_role='receiver' WHERE id=?",[$sender]);
+        try{try{$ops->confirmDn($id,$vDn($id),$key());return ['passed'=>false,'observed'=>'Konfirmasi berhasil untuk sender dengan party_role=receiver'];}catch(Hls\Http\HttpError $e){return ['passed'=>in_array($e->status,[403,409,422],true),'observed'=>'Ditolak HTTP '.$e->status];}}finally{$repo->run('UPDATE md_parties SET party_role=? WHERE id=?',[$old,$sender]);}
+    });
+    $probe('A03 Keberangkatan menolak lokasi muat nonaktif',function()use($exp,$ops,$dnInput,$manifestInput,$key,$vDn,$vMf,$repo,$originLocation):array{
+        $id=$exp->save('dn',array_replace($dnInput,['request_key'=>$key()]));$ops->confirmDn($id,$vDn($id),$key());$mf=$exp->save('manifest',array_replace($manifestInput,['request_key'=>$key()]));$ops->attach($mf,[(string)$id],$vMf($mf),$key());$ops->manifest($mf,'confirm',$vMf($mf),$key());$repo->run('UPDATE md_locations SET active=0 WHERE id=?',[$originLocation]);
+        try{try{$ops->manifest($mf,'depart',$vMf($mf),$key());return ['passed'=>false,'observed'=>'Keberangkatan berhasil, status='.$exp->data->find('manifest',$mf)['status']];}catch(Hls\Http\HttpError $e){return ['passed'=>in_array($e->status,[403,409,422],true),'observed'=>'Ditolak HTTP '.$e->status];}}finally{$repo->run('UPDATE md_locations SET active=1 WHERE id=?',[$originLocation]);}
+    });
+    $probe('A04 Detail Manifest menampilkan alasan pembatalan historis',function()use($cancelTrip,$anonJar):array{$r=http('/trucking/manifests?mode=detail&id='.$cancelTrip,$anonJar);$present=str_contains($r['body'],'Armada diganti, seluruh DN dipindah');return ['passed'=>$r['status']===200&&$present,'observed'=>'HTTP '.$r['status'].'; alasan pembatalan terlihat='.($present?'ya':'tidak')];});
+    file_put_contents('D:/xampp/htdocs/hls-v2/tests'.'/results/audit-final-probes.json',json_encode(['date'=>date(DATE_ATOM),'passed'=>count(array_filter($auditFindings,fn($r)=>$r['passed'])),'failed'=>count(array_filter($auditFindings,fn($r)=>!$r['passed'])),'checks'=>$auditFindings],JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));

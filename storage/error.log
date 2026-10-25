@@ -1,0 +1,158 @@
+[23-Oct-2026 19:00:09 Asia/Makassar] PHP Warning:  session_start(): open(D:\xampp\tmp\sess_jh2h2ss30u9ruri5qi9506j30b, O_RDWR) failed: Permission denied (13) in D:\xampp\htdocs\hls-v2\tests\run.php on line 68
+[23-Oct-2026 19:00:09 Asia/Makassar] PHP Warning:  session_start(): Failed to read session data: files (path: D:\xampp\tmp) in D:\xampp\htdocs\hls-v2\tests\run.php on line 68
+[23-Oct-2026 19:00:09 Asia/Makassar] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in D:\xampp\htdocs\hls-v2\app\Services\Auth.php on line 42
+[23-Oct-2026 19:00:09 Asia/Makassar] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in D:\xampp\htdocs\hls-v2\app\Services\Auth.php on line 18
+[23-Oct-2026 19:00:09 Asia/Makassar] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in D:\xampp\htdocs\hls-v2\app\Services\Auth.php on line 42
+[23-Oct-2026 19:00:09 Asia/Makassar] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in D:\xampp\htdocs\hls-v2\app\Services\Auth.php on line 18
+[23-Oct-2026 19:00:09 Asia/Makassar] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in D:\xampp\htdocs\hls-v2\app\Services\Auth.php on line 42
+[23-Oct-2026 19:00:09 Asia/Makassar] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in D:\xampp\htdocs\hls-v2\app\Services\Auth.php on line 18
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): open(D:\xampp\tmp\sess_9n8dknl9u2qeonaprtqck30k92, O_RDWR) failed: Permission denied (13) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): Failed to read session data: files (path: D:\xampp\tmp) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): open(D:\xampp\tmp\sess_ogfqjpvdq27kjciu7p6ni3v8uq, O_RDWR) failed: Permission denied (13) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): Failed to read session data: files (path: D:\xampp\tmp) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): open(D:\xampp\tmp\sess_hd04ggv8s1dopjfetggd5o28m9, O_RDWR) failed: Permission denied (13) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): Failed to read session data: files (path: D:\xampp\tmp) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): open(D:\xampp\tmp\sess_4q87bu0i5mm73qc18ndja5u88t, O_RDWR) failed: Permission denied (13) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): Failed to read session data: files (path: D:\xampp\tmp) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): open(D:\xampp\tmp\sess_ovbt6t7t0ghrlbscdj6dhefln7, O_RDWR) failed: Permission denied (13) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[23-Oct-2026 19:00:10 Asia/Makassar] PHP Warning:  session_start(): Failed to read session data: files (path: D:\xampp\tmp) in D:\xampp\htdocs\hls-v2\public\index.php on line 19
+[24-Oct-2026 05:38:17 Asia/Makassar] PHP Warning:  Array to string conversion in D:\xampp\htdocs\hls-v2\tests\run.php on line 23
+[24-Oct-2026 08:12:33 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 08:17:41 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 08:23:13 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 12:53:31 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 13:02:04 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 13:04:39 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 13:46:01 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 13:47:35 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 13:49:09 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 13:52:35 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 13:53:45 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 13:57:58 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 15:29:05 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 15:41:39 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 16:31:18 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 16:33:18 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 17:07:08 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 17:13:16 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 17:22:07 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 17:28:16 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 17:52:25 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 17:57:06 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:05:39 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:07:05 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:07:24 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:13:22 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:13:40 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:31:43 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:32:05 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:43:14 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:43:33 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:45:31 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:45:50 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:47:52 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:48:11 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:55:20 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 18:55:42 Asia/Makassar] HLS v2 request failed: PDOException code=45000
+[24-Oct-2026 20:08:21 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Target database harus development, demo, main, atau test HLS v2. in D:\xampp\htdocs\hls-v2\app\Config.php:18
+Stack trace:
+#0 D:\xampp\htdocs\hls-v2\app\Database.php(8): Hls\Config::databaseName('hls_v2')
+#1 D:\xampp\htdocs\hls-v2\bin\verify-main.php(2): Hls\Database::connect(Array)
+#2 {main}
+  thrown in D:\xampp\htdocs\hls-v2\app\Config.php on line 18
+[24-Oct-2026 20:08:24 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Target database harus development, demo, main, atau test HLS v2. in D:\xampp\htdocs\hls-v2\app\Config.php:18
+Stack trace:
+#0 D:\xampp\htdocs\hls-v2\app\Database.php(8): Hls\Config::databaseName('hls_v2')
+#1 D:\xampp\htdocs\hls-v2\bin\verify-main.php(2): Hls\Database::connect(Array)
+#2 {main}
+  thrown in D:\xampp\htdocs\hls-v2\app\Config.php on line 18
+[24-Oct-2026 20:08:35 Asia/Makassar] PHP Warning:  Undefined array key "host" in D:\xampp\htdocs\hls-v2\app\Database.php on line 9
+[24-Oct-2026 20:08:35 Asia/Makassar] PHP Warning:  Undefined array key "port" in D:\xampp\htdocs\hls-v2\app\Database.php on line 9
+[24-Oct-2026 20:08:35 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'hls_v2_app'@'localhost' (using password: YES) in D:\xampp\htdocs\hls-v2\app\Database.php:9
+Stack trace:
+#0 D:\xampp\htdocs\hls-v2\app\Database.php(9): PDO->__construct('mysql:host=;por...', 'hls_v2_app', Object(SensitiveParameterValue), Array)
+#1 D:\xampp\htdocs\hls-v2\bin\verify-main.php(2): Hls\Database::connect(Array)
+#2 {main}
+  thrown in D:\xampp\htdocs\hls-v2\app\Database.php on line 9
+[25-Oct-2026 01:58:41 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 01:58:41 Asia/Makassar] PHP Warning:  foreach() argument must be of type array|object, null given in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 01:58:41 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 01:58:51 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 01:58:51 Asia/Makassar] PHP Warning:  foreach() argument must be of type array|object, null given in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 01:58:51 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:02:17 Asia/Makassar] PHP Warning:  foreach() argument must be of type array|object, string given in D:\xampp\htdocs\hls-v2\app\Controllers\FinanceInvoiceController.php on line 9
+[25-Oct-2026 02:02:22 Asia/Makassar] PHP Warning:  foreach() argument must be of type array|object, string given in D:\xampp\htdocs\hls-v2\app\Controllers\FinanceInvoiceController.php on line 9
+[25-Oct-2026 02:02:28 Asia/Makassar] PHP Warning:  foreach() argument must be of type array|object, string given in D:\xampp\htdocs\hls-v2\app\Controllers\FinanceInvoiceController.php on line 9
+[25-Oct-2026 02:03:21 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:03:21 Asia/Makassar] PHP Warning:  foreach() argument must be of type array|object, null given in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:03:21 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:03:25 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:03:25 Asia/Makassar] PHP Warning:  foreach() argument must be of type array|object, null given in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:03:25 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:03:31 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:03:31 Asia/Makassar] PHP Warning:  foreach() argument must be of type array|object, null given in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:03:31 Asia/Makassar] PHP Warning:  Undefined variable $rows in D:\xampp\htdocs\hls-v2\app\Views\finance-payments.php on line 4
+[25-Oct-2026 02:15:29 Asia/Makassar] HLS v2 request failed: PDOException code=21S01
+[25-Oct-2026 02:15:33 Asia/Makassar] HLS v2 request failed: PDOException code=21S01
+[25-Oct-2026 02:15:55 Asia/Makassar] HLS v2 request failed: PDOException code=21S01
+[25-Oct-2026 02:19:01 Asia/Makassar] HLS v2 request failed: Error code=0
+[25-Oct-2026 02:27:39 Asia/Makassar] HLS v2 request failed: Error code=0
+[25-Oct-2026 02:29:20 Asia/Makassar] HLS v2 request failed: PDOException code=21S01
+[25-Oct-2026 05:05:22 Asia/Makassar] HLS v2 request failed: PDOException code=42S22
+[25-Oct-2026 05:05:39 Asia/Makassar] HLS v2 request failed: Error code=0
+[25-Oct-2026 05:51:42 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Hanya development V2. in D:\xampp\htdocs\hls-v2\tests\equipment-development.php:6
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\hls-v2\tests\equipment-development.php on line 6
+[25-Oct-2026 06:09:51 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'migration' in 'field list' in D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php:6
+Stack trace:
+#0 D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php(6): PDO->prepare('SELECT migratio...')
+#1 {main}
+  thrown in D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php on line 6
+[25-Oct-2026 06:09:54 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'migration' in 'field list' in D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php:6
+Stack trace:
+#0 D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php(6): PDO->prepare('SELECT migratio...')
+#1 {main}
+  thrown in D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php on line 6
+[25-Oct-2026 06:09:59 Asia/Makassar] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'migration' in 'field list' in D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php:6
+Stack trace:
+#0 D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php(6): PDO->prepare('SELECT migratio...')
+#1 {main}
+  thrown in D:\xampp\htdocs\hls-v2\tests\p2h-migration-status.php on line 6
+[25-Oct-2026 06:36:36 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Hanya development V2. in D:\xampp\htdocs\hls-v2\tests\equipment-development.php:6
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\hls-v2\tests\equipment-development.php on line 6
+[25-Oct-2026 06:44:21 Asia/Makassar] PHP Warning:  Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 2
+[25-Oct-2026 06:44:21 Asia/Makassar] PHP Warning:  compact(): Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 5
+[25-Oct-2026 06:44:21 Asia/Makassar] PHP Warning:  Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\components\header.php on line 3
+[25-Oct-2026 06:44:21 Asia/Makassar] PHP Warning:  compact(): Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 5
+[25-Oct-2026 06:44:22 Asia/Makassar] PHP Warning:  Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 2
+[25-Oct-2026 06:44:22 Asia/Makassar] PHP Warning:  compact(): Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 5
+[25-Oct-2026 06:44:22 Asia/Makassar] PHP Warning:  Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\components\header.php on line 3
+[25-Oct-2026 06:44:22 Asia/Makassar] PHP Warning:  compact(): Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 5
+[25-Oct-2026 06:47:11 Asia/Makassar] PHP Warning:  Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 2
+[25-Oct-2026 06:47:11 Asia/Makassar] PHP Warning:  compact(): Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 5
+[25-Oct-2026 06:47:11 Asia/Makassar] PHP Warning:  Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\components\header.php on line 3
+[25-Oct-2026 06:47:11 Asia/Makassar] PHP Warning:  compact(): Undefined variable $title in D:\xampp\htdocs\hls-v2\app\Views\layout.php on line 5
+[25-Oct-2026 06:56:32 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Dependensi non-FK ditemukan: md_items.unit_id in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php:9
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php on line 9
+[25-Oct-2026 06:56:44 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Dependensi non-FK ditemukan: md_items.unit_id in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php:9
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php on line 9
+[25-Oct-2026 06:56:52 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Dependensi non-FK ditemukan: md_items.unit_id in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php:9
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php on line 9
+[25-Oct-2026 06:57:08 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Target berubah/tidak cocok: md_personnel#1 in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php:9
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php on line 9
+[25-Oct-2026 06:57:17 Asia/Makassar] PHP Fatal error:  Uncaught RuntimeException: Target berubah/tidak cocok: md_personnel#1 in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php:9
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\hls-v2\bin\cleanup-demo.php on line 9
+[25-Oct-2026 07:01:09 Asia/Makassar] HLS v2 request failed: TypeError code=0

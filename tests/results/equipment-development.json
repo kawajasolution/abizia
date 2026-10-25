@@ -1,0 +1,660 @@
+{
+    "date": "2026-10-24T19:07:14+08:00",
+    "read_only": true,
+    "passed": 86,
+    "failed": 0,
+    "counts": {
+        "audit_logs": 0,
+        "branches": 0,
+        "eq_branch_authorizations": 0,
+        "eq_contract_units": 0,
+        "eq_contracts": 0,
+        "eq_document_sequences": 0,
+        "eq_events": 0,
+        "eq_evidence": 0,
+        "eq_handover_documents": 0,
+        "eq_handover_units": 0,
+        "eq_meter_corrections": 0,
+        "eq_operator_assignments": 0,
+        "eq_requests": 0,
+        "eq_timesheet_revisions": 0,
+        "eq_timesheet_verifications": 0,
+        "eq_timesheet_work_entries": 0,
+        "eq_timesheets": 0,
+        "eq_unit_periods": 0,
+        "exp_claim_events": 0,
+        "exp_claims": 0,
+        "exp_dns": 0,
+        "exp_events": 0,
+        "exp_evidence": 0,
+        "exp_manifest_items": 0,
+        "exp_manifests": 0,
+        "exp_receipts": 0,
+        "exp_requests": 0,
+        "exp_sequences": 0,
+        "exp_trip_legs": 0,
+        "login_attempts": 0,
+        "md_assets": 0,
+        "md_categories": 0,
+        "md_customers": 0,
+        "md_equipment_tariffs": 0,
+        "md_items": 0,
+        "md_locations": 0,
+        "md_parties": 0,
+        "md_personnel": 0,
+        "md_routes": 0,
+        "md_suppliers": 0,
+        "md_trucking_tariffs": 0,
+        "md_units": 0,
+        "permissions": 106,
+        "role_permissions": 215,
+        "roles": 10,
+        "schema_migrations": 43,
+        "user_branches": 0,
+        "users": 0
+    },
+    "equipment_grants": [
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.assignment.manage"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.contract.activate"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.contract.cancel"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.contract.close"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.contract.confirm"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.contract.create"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.contract.update"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.contract.view"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.cross_branch.request"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.evidence.add"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.evidence.view"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.handover.cancel"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.handover.confirm"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.handover.create"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.handover.update"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.handover.view"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.timesheet.create_scoped"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.timesheet.revise_scoped"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.timesheet.submit_scoped"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.timesheet.update_scoped"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.timesheet.view_scoped"
+        },
+        {
+            "name": "Admin Sewa",
+            "code": "equipment.unit.view"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.assignment.manage"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.activate"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.cancel"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.close"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.confirm"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.create"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.extend"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.terminate"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.update"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.contract.view"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.cross_branch.request"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.evidence.add"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.evidence.view"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.handover.cancel"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.handover.confirm"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.handover.create"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.handover.update"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.handover.view"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.timesheet.create_scoped"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.timesheet.revise_scoped"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.timesheet.submit_scoped"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.timesheet.update_scoped"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.timesheet.view_scoped"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.unit.view"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.verification.decide"
+        },
+        {
+            "name": "Administrator",
+            "code": "equipment.verification.view"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.contract.view_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.evidence.add_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.evidence.view_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.handover.view_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.timesheet.create_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.timesheet.revise_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.timesheet.submit_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.timesheet.update_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.timesheet.view_own"
+        },
+        {
+            "name": "Operator Alat Berat",
+            "code": "equipment.unit.view_own"
+        },
+        {
+            "name": "Owner",
+            "code": "equipment.contract.view"
+        },
+        {
+            "name": "Owner",
+            "code": "equipment.evidence.view"
+        },
+        {
+            "name": "Owner",
+            "code": "equipment.handover.view"
+        },
+        {
+            "name": "Owner",
+            "code": "equipment.timesheet.view_scoped"
+        },
+        {
+            "name": "Owner",
+            "code": "equipment.unit.view"
+        },
+        {
+            "name": "Owner",
+            "code": "equipment.verification.view"
+        }
+    ],
+    "checks": [
+        {
+            "name": "Existing rows identik: audit_logs",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: audit_logs",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: branches",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: branches",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_claim_events",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_claim_events",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_claims",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_claims",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_dns",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_dns",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_events",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_events",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_evidence",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_evidence",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_manifest_items",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_manifest_items",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_manifests",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_manifests",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_requests",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_requests",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_trip_legs",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_trip_legs",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: login_attempts",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: login_attempts",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_assets",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_assets",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_categories",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_categories",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_customers",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_customers",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_equipment_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_equipment_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_items",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_items",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_locations",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_locations",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_parties",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_parties",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_personnel",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_personnel",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_routes",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_routes",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_suppliers",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_suppliers",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_trucking_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_trucking_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_units",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_units",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: permissions",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: permissions",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: role_permissions",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: role_permissions",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: roles",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: roles",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: schema_migrations",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: schema_migrations",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: user_branches",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: user_branches",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: users",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: users",
+            "passed": true
+        },
+        {
+            "name": "48 tabel aktual",
+            "passed": true
+        },
+        {
+            "name": "16 nama tabel development tepat sesuai desain final",
+            "passed": true
+        },
+        {
+            "name": "verification.decide development hanya Administrator sel Y",
+            "passed": true
+        },
+        {
+            "name": "Seluruh C khusus development tanpa grant termasuk Administrator",
+            "passed": true
+        },
+        {
+            "name": "Admin Sewa C tetap deny development",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_branch_authorizations",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_contract_units",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_contracts",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_document_sequences",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_events",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_evidence",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_handover_documents",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_handover_units",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_meter_corrections",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_operator_assignments",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_requests",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_timesheet_revisions",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_timesheet_verifications",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_timesheet_work_entries",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_timesheets",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_unit_periods",
+            "passed": true
+        },
+        {
+            "name": "Tanpa akun\/cabang development palsu",
+            "passed": true
+        }
+    ]
+}

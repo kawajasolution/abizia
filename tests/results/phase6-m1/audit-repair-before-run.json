@@ -1,0 +1,2545 @@
+{
+    "date": "2026-10-24T13:46:07+08:00",
+    "database_engine": "MariaDB",
+    "checks": [
+        {
+            "name": "Fresh migration pada DB kosong",
+            "passed": true
+        },
+        {
+            "name": "Migration ulang idempoten",
+            "passed": true
+        },
+        {
+            "name": "Fondasi\/master dan empat tabel dokumen Trucking",
+            "passed": true
+        },
+        {
+            "name": "Migration tanpa akun\/password bawaan",
+            "passed": true
+        },
+        {
+            "name": "Target database lama ditolak",
+            "passed": true
+        },
+        {
+            "name": "Target database sistem ditolak",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap menolak password lemah",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap administrator melalui CLI dan STDIN berhasil",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap CLI tidak membocorkan password",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap menyimpan hash password",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap tidak mereset\/membuat admin kedua",
+            "passed": true
+        },
+        {
+            "name": "Sepuluh role fondasi tersedia",
+            "passed": true
+        },
+        {
+            "name": "Service menolak edit cabang lain",
+            "passed": true
+        },
+        {
+            "name": "Service menolak create cabang oleh admin scoped",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped boleh mengubah cabang sendiri",
+            "passed": true
+        },
+        {
+            "name": "Service menolak perubahan akun sendiri",
+            "passed": true
+        },
+        {
+            "name": "Role tanpa izin ditolak server-side",
+            "passed": true
+        },
+        {
+            "name": "User scoped wajib memiliki cabang",
+            "passed": true
+        },
+        {
+            "name": "ID registry navigasi unik",
+            "passed": true
+        },
+        {
+            "name": "Registry mengekspos empat belas route nyata termasuk master",
+            "passed": true
+        },
+        {
+            "name": "Shortcut admin dari registry yang sama",
+            "passed": true
+        },
+        {
+            "name": "Registry memeriksa cakupan global",
+            "passed": true
+        },
+        {
+            "name": "Registry Owner hanya dashboard dan sepuluh master baca berizin",
+            "passed": true
+        },
+        {
+            "name": "Cakupan global tidak memberikan permission menu",
+            "passed": true
+        },
+        {
+            "name": "Pagination mengiris data nyata dengan benar",
+            "passed": true
+        },
+        {
+            "name": "Pagination invalid ditolak",
+            "passed": true
+        },
+        {
+            "name": "Mutasi gagal ketika audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Rollback master saat audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Pembuatan pengguna gagal jika audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Rollback pengguna dan cabangnya saat audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Session login valid",
+            "passed": true
+        },
+        {
+            "name": "Session idle timeout 30 menit",
+            "passed": true
+        },
+        {
+            "name": "Session user nonaktif dibatalkan",
+            "passed": true
+        },
+        {
+            "name": "Login user nonaktif ditolak",
+            "passed": true
+        },
+        {
+            "name": "Perubahan akses mengakhiri sesi lama",
+            "passed": true
+        },
+        {
+            "name": "Reset password melalui master membatalkan sesi",
+            "passed": true
+        },
+        {
+            "name": "Password lama ditolak setelah reset",
+            "passed": true
+        },
+        {
+            "name": "Password baru dapat login",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 1",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 2",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 3",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 4",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 5",
+            "passed": true
+        },
+        {
+            "name": "Rate limit per email lintas IP",
+            "passed": true
+        },
+        {
+            "name": "Server HTTP uji tersedia",
+            "passed": true
+        },
+        {
+            "name": "Anonim dialihkan ke login",
+            "passed": true
+        },
+        {
+            "name": "Login tanpa CSRF ditolak",
+            "passed": true
+        },
+        {
+            "name": "Login CSRF salah ditolak",
+            "passed": true
+        },
+        {
+            "name": "Login password salah ditolak",
+            "passed": true
+        },
+        {
+            "name": "Login HTTP berhasil",
+            "passed": true
+        },
+        {
+            "name": "ID sesi diregenerasi saat login",
+            "passed": true
+        },
+        {
+            "name": "Cookie HttpOnly dan SameSite",
+            "passed": true
+        },
+        {
+            "name": "Halaman privat no-store",
+            "passed": true
+        },
+        {
+            "name": "Administrator login",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped login",
+            "passed": true
+        },
+        {
+            "name": "Owner login",
+            "passed": true
+        },
+        {
+            "name": "Route administrator \/users",
+            "passed": true
+        },
+        {
+            "name": "Route administrator \/branches",
+            "passed": true
+        },
+        {
+            "name": "Route administrator \/roles",
+            "passed": true
+        },
+        {
+            "name": "Route administrator \/audit",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped dilarang \/users",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped dilarang \/roles",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped dilarang \/audit",
+            "passed": true
+        },
+        {
+            "name": "Owner tanpa permission dilarang \/users",
+            "passed": true
+        },
+        {
+            "name": "Owner tanpa permission dilarang \/roles",
+            "passed": true
+        },
+        {
+            "name": "Owner tanpa permission dilarang \/audit",
+            "passed": true
+        },
+        {
+            "name": "Daftar cabang tidak bocor lintas cakupan",
+            "passed": true
+        },
+        {
+            "name": "ID cabang lain ditolak melalui URL",
+            "passed": true
+        },
+        {
+            "name": "POST cabang lain ditolak",
+            "passed": true
+        },
+        {
+            "name": "POST pengguna oleh admin scoped ditolak",
+            "passed": true
+        },
+        {
+            "name": "POST pengguna oleh pembaca ditolak",
+            "passed": true
+        },
+        {
+            "name": "Mutasi master tanpa CSRF ditolak",
+            "passed": true
+        },
+        {
+            "name": "Create cabang HTTP berhasil",
+            "passed": true
+        },
+        {
+            "name": "Output disimpan di-escape",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi cabang ditolak tanpa error SQL bocor",
+            "passed": true
+        },
+        {
+            "name": "Input array tidak valid ditolak",
+            "passed": true
+        },
+        {
+            "name": "Payload SQL tidak lolos validasi",
+            "passed": true
+        },
+        {
+            "name": "Logout GET ditolak",
+            "passed": true
+        },
+        {
+            "name": "Logout tanpa CSRF ditolak",
+            "passed": true
+        },
+        {
+            "name": "Logout POST berhasil",
+            "passed": true
+        },
+        {
+            "name": "Sesi logout tidak dapat mengakses halaman",
+            "passed": true
+        },
+        {
+            "name": "Cookie lama tidak menghidupkan sesi logout",
+            "passed": true
+        },
+        {
+            "name": "CSRF lama tidak dapat dipakai setelah logout",
+            "passed": true
+        },
+        {
+            "name": "Route tak dikenal 404",
+            "passed": true
+        },
+        {
+            "name": "Metode route tidak tersedia 405",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/config\/local.php",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/app\/bootstrap.php",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/database\/migrations\/001_foundation.sql",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/storage\/error.log",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/tests\/run.php",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/bin\/bootstrap-admin.php",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 1",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 2",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 3",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 4",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 5",
+            "passed": true
+        },
+        {
+            "name": "Rate limit IP melindungi akun lain",
+            "passed": true
+        },
+        {
+            "name": "Lima kegagalan tersimpan",
+            "passed": true
+        },
+        {
+            "name": "Audit event administrator_bootstrapped",
+            "passed": true
+        },
+        {
+            "name": "Audit event master_created",
+            "passed": true
+        },
+        {
+            "name": "Audit event user_created",
+            "passed": true
+        },
+        {
+            "name": "Audit event login_failed",
+            "passed": true
+        },
+        {
+            "name": "Audit event login_succeeded",
+            "passed": true
+        },
+        {
+            "name": "Audit event login_limited",
+            "passed": true
+        },
+        {
+            "name": "Audit event logout",
+            "passed": true
+        },
+        {
+            "name": "Audit event session_invalidated",
+            "passed": true
+        },
+        {
+            "name": "Audit tanpa password\/hash\/token",
+            "passed": true
+        },
+        {
+            "name": "Ketersediaan sumber diperiksa dari database v2 aktual",
+            "passed": true
+        },
+        {
+            "name": "Dashboard pengguna aktif sesuai query sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard cabang sesuai query sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard matriks role\/permission nyata",
+            "passed": true
+        },
+        {
+            "name": "Administrator tidak mendapat widget finansial tanpa sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard hanya delapan audit terbaru",
+            "passed": true
+        },
+        {
+            "name": "Distribusi role merekonsiliasi pengguna aktif",
+            "passed": true
+        },
+        {
+            "name": "Dashboard scoped hanya memuat cabang sendiri",
+            "passed": true
+        },
+        {
+            "name": "Dashboard admin scoped tanpa jumlah pengguna\/role global",
+            "passed": true
+        },
+        {
+            "name": "Dashboard admin scoped tanpa audit dan distribusi akun",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak filter cabang lain",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak periode audit tanpa cakupan global",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak cabang tidak tersedia",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak filter array",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak tanggal tidak nyata",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak rentang terbalik",
+            "passed": true
+        },
+        {
+            "name": "Filter cabang mengubah KPI akun\/cabang sesuai definisi",
+            "passed": true
+        },
+        {
+            "name": "Filter cabang tidak menampilkan audit global yang tak dapat diatribusikan",
+            "passed": true
+        },
+        {
+            "name": "Cabang nonaktif nyata muncul sebagai tindak lanjut",
+            "passed": true
+        },
+        {
+            "name": "Tindak lanjut cabang lain tidak bocor ke admin scoped",
+            "passed": true
+        },
+        {
+            "name": "KPI bereaksi pada perubahan status akun nyata",
+            "passed": true
+        },
+        {
+            "name": "Pengguna nonaktif nyata muncul sebagai tindak lanjut",
+            "passed": true
+        },
+        {
+            "name": "Penetapan cabang kosong terdeteksi tanpa mengarang aturan",
+            "passed": true
+        },
+        {
+            "name": "Periode audit inklusif dua batas hari WITA",
+            "passed": true
+        },
+        {
+            "name": "Periode audit tidak mengubah KPI keadaan saat ini",
+            "passed": true
+        },
+        {
+            "name": "Periode audit tanpa data benar-benar kosong",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Penerima\/receipts",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Penerima\/claims",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Pengirim\/dispatch",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Pengirim\/drafts",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Sewa\/contracts",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Sewa\/timesheets",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Transit\/manifests",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Transit\/transit",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Administrator",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Customer",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Customer",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Customer",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Customer\/customer-tracking",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Finance",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Finance",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Finance",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/invoices",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/payments",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/pettycash",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Gudang",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Gudang",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Gudang",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Gudang\/inventory",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Gudang\/transfers",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Operator Alat Berat\/assignments",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Operator Alat Berat\/my-timesheets",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Owner",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Owner",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Owner",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/operations",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/finance",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/monitoring",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/attention",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/trends",
+            "passed": true
+        },
+        {
+            "name": "Repository KPI pengguna memeriksa izin",
+            "passed": true
+        },
+        {
+            "name": "Repository role memeriksa global scope",
+            "passed": true
+        },
+        {
+            "name": "Repository audit memeriksa izin",
+            "passed": true
+        },
+        {
+            "name": "Owner global tidak mendapat grant dari nama\/cakupan",
+            "passed": true
+        },
+        {
+            "name": "Akun tanpa penetapan cabang tidak membaca semua cabang",
+            "passed": true
+        },
+        {
+            "name": "Dashboard service memeriksa foundation.view",
+            "passed": true
+        },
+        {
+            "name": "HTTP dashboard memeriksa foundation.view sebelum widget",
+            "passed": true
+        },
+        {
+            "name": "HTTP dashboard menolak filter cabang lintas akses",
+            "passed": true
+        },
+        {
+            "name": "HTTP dashboard menolak tanggal tidak sah",
+            "passed": true
+        },
+        {
+            "name": "HTTP Owner langsung ke dashboard sendiri",
+            "passed": true
+        },
+        {
+            "name": "HTTP Owner tanpa KPI terlarang\/cabang lain",
+            "passed": true
+        },
+        {
+            "name": "HTTP Owner menandai sumber data belum tersedia",
+            "passed": true
+        },
+        {
+            "name": "Migration upgrade dari fondasi lama berhasil",
+            "passed": true
+        },
+        {
+            "name": "Upgrade mempertahankan ID\/nilai cabang lama",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak menghapus\/mengubah audit lama",
+            "passed": true
+        },
+        {
+            "name": "Cabang lama tidak diberi tanggal penciptaan rekaan",
+            "passed": true
+        },
+        {
+            "name": "Upgrade ulang idempoten",
+            "passed": true
+        },
+        {
+            "name": "Migration tidak mengisi master\/customer dummy",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata branches",
+            "passed": true
+        },
+        {
+            "name": "Edit master branches",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak branches",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus branches",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali branches",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak branches",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created branches",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated branches",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated branches",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated branches",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat branches",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif branches",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata categories",
+            "passed": true
+        },
+        {
+            "name": "Edit master categories",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak categories",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus categories",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali categories",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak categories",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created categories",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated categories",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated categories",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated categories",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat categories",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif categories",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata uoms",
+            "passed": true
+        },
+        {
+            "name": "Edit master uoms",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak uoms",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus uoms",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali uoms",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak uoms",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created uoms",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated uoms",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated uoms",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated uoms",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat uoms",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif uoms",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata items",
+            "passed": true
+        },
+        {
+            "name": "Edit master items",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak items",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus items",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali items",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak items",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created items",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated items",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated items",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated items",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat items",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif items",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata customers",
+            "passed": true
+        },
+        {
+            "name": "Edit master customers",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak customers",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus customers",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali customers",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak customers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created customers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated customers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated customers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated customers",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat customers",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif customers",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata parties",
+            "passed": true
+        },
+        {
+            "name": "Edit master parties",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak parties",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus parties",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali parties",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak parties",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created parties",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated parties",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated parties",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated parties",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat parties",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif parties",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata locations",
+            "passed": true
+        },
+        {
+            "name": "Edit master locations",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak locations",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus locations",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali locations",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak locations",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created locations",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated locations",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated locations",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated locations",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat locations",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif locations",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata routes",
+            "passed": true
+        },
+        {
+            "name": "Edit master routes",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak routes",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus routes",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali routes",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak routes",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created routes",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated routes",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated routes",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated routes",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat routes",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif routes",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata vehicles",
+            "passed": true
+        },
+        {
+            "name": "Edit master vehicles",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak vehicles",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus vehicles",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali vehicles",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak vehicles",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created vehicles",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated vehicles",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated vehicles",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated vehicles",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat vehicles",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif vehicles",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata units",
+            "passed": true
+        },
+        {
+            "name": "Edit master units",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak units",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus units",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali units",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak units",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created units",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated units",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated units",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated units",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat units",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif units",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata drivers",
+            "passed": true
+        },
+        {
+            "name": "Edit master drivers",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak drivers",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus drivers",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali drivers",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak drivers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created drivers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated drivers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated drivers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated drivers",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat drivers",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif drivers",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata operators",
+            "passed": true
+        },
+        {
+            "name": "Edit master operators",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak operators",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus operators",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali operators",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak operators",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created operators",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated operators",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated operators",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated operators",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat operators",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif operators",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Edit master trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Edit master equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata suppliers",
+            "passed": true
+        },
+        {
+            "name": "Edit master suppliers",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak suppliers",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus suppliers",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali suppliers",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak suppliers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created suppliers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated suppliers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated suppliers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated suppliers",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat suppliers",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif suppliers",
+            "passed": true
+        },
+        {
+            "name": "Field wajib kosong ditolak",
+            "passed": true
+        },
+        {
+            "name": "Format email ditolak",
+            "passed": true
+        },
+        {
+            "name": "Referensi tidak ditemukan ditolak",
+            "passed": true
+        },
+        {
+            "name": "Foreign key DB menolak data yatim",
+            "passed": true
+        },
+        {
+            "name": "Detail cabang lain ditolak",
+            "passed": true
+        },
+        {
+            "name": "Rute lintas cabang tidak bocor jika hanya satu endpoint diizinkan",
+            "passed": true
+        },
+        {
+            "name": "Owner baca tidak mendapat hak tulis",
+            "passed": true
+        },
+        {
+            "name": "Katalog global tidak dapat diubah admin scoped",
+            "passed": true
+        },
+        {
+            "name": "Edit tidak dapat memindahkan pemilik cabang",
+            "passed": true
+        },
+        {
+            "name": "Lokasi rute harus sesuai cabang",
+            "passed": true
+        },
+        {
+            "name": "Identitas unit tertaut tarif tidak berubah diam-diam",
+            "passed": true
+        },
+        {
+            "name": "Identitas pihak sama tidak diduplikasi per peran",
+            "passed": true
+        },
+        {
+            "name": "Tarif kosong tetap NULL",
+            "passed": true
+        },
+        {
+            "name": "Tarif nol manual berbeda dari NULL",
+            "passed": true
+        },
+        {
+            "name": "Tarif harian yang belum disetujui tidak diaktifkan",
+            "passed": true
+        },
+        {
+            "name": "Presisi uang lebih dari dua desimal ditolak",
+            "passed": true
+        },
+        {
+            "name": "Personel tertaut memakai nama akun tanpa duplikasi identitas",
+            "passed": true
+        },
+        {
+            "name": "Satu akun tidak diduplikasi di personel",
+            "passed": true
+        },
+        {
+            "name": "Kegagalan audit menggagalkan master",
+            "passed": true
+        },
+        {
+            "name": "Rollback master saat audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Pagination database 10\/2 tanpa hilang\/duplikasi",
+            "passed": true
+        },
+        {
+            "name": "Wildcard pencarian literal tidak membuka seluruh data",
+            "passed": true
+        },
+        {
+            "name": "FK mencegah penghapusan master yang sudah direferensikan",
+            "passed": true
+        },
+        {
+            "name": "Referensi nonaktif ditolak untuk data baru",
+            "passed": true
+        },
+        {
+            "name": "Relasi nonaktif historis tidak dihapus atau diganti",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/branches",
+            "passed": true
+        },
+        {
+            "name": "Route detail branches",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah branches",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah branches",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master branches",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/customers",
+            "passed": true
+        },
+        {
+            "name": "Route detail customers",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah customers",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah customers",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master customers",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/parties",
+            "passed": true
+        },
+        {
+            "name": "Route detail parties",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah parties",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah parties",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master parties",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/routes",
+            "passed": true
+        },
+        {
+            "name": "Route detail locations",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah locations",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah locations",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master locations",
+            "passed": true
+        },
+        {
+            "name": "Route detail routes",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah routes",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah routes",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master routes",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route detail trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route detail equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/assets",
+            "passed": true
+        },
+        {
+            "name": "Route detail vehicles",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah vehicles",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah vehicles",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master vehicles",
+            "passed": true
+        },
+        {
+            "name": "Route detail units",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah units",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah units",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master units",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/personnel",
+            "passed": true
+        },
+        {
+            "name": "Route detail drivers",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah drivers",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah drivers",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master drivers",
+            "passed": true
+        },
+        {
+            "name": "Route detail operators",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah operators",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah operators",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master operators",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/items",
+            "passed": true
+        },
+        {
+            "name": "Route detail items",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah items",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah items",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master items",
+            "passed": true
+        },
+        {
+            "name": "Route detail categories",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah categories",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah categories",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master categories",
+            "passed": true
+        },
+        {
+            "name": "Route detail uoms",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah uoms",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah uoms",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master uoms",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/suppliers",
+            "passed": true
+        },
+        {
+            "name": "Route detail suppliers",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah suppliers",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah suppliers",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master suppliers",
+            "passed": true
+        },
+        {
+            "name": "Owner tidak melihat form tambah melalui URL",
+            "passed": true
+        },
+        {
+            "name": "Owner baca tab kendaraan dalam cakupan",
+            "passed": true
+        },
+        {
+            "name": "HTTP rute lintas endpoint dicegah",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada endpoint hard delete master",
+            "passed": true
+        },
+        {
+            "name": "Permintaan hapus tidak menghilangkan data",
+            "passed": true
+        },
+        {
+            "name": "Operasional: akun\/cabang\/penetapan aktif diterima",
+            "passed": true
+        },
+        {
+            "name": "Operasional: cabang di luar penetapan ditolak",
+            "passed": true
+        },
+        {
+            "name": "Operasional: izin backend tetap wajib",
+            "passed": true
+        },
+        {
+            "name": "Operasional: current locking read akun\/cabang\/penetapan berhasil",
+            "passed": true
+        },
+        {
+            "name": "Operasional: penetapan dicabut menolak principal lama",
+            "passed": true
+        },
+        {
+            "name": "Operasional: cabang nonaktif ditolak",
+            "passed": true
+        },
+        {
+            "name": "Operasional: cakupan global tidak melewati cabang nonaktif",
+            "passed": true
+        },
+        {
+            "name": "Operasional: akun nonaktif ditolak meski principal lama aktif",
+            "passed": true
+        },
+        {
+            "name": "Operasional: versi otorisasi lama ditolak",
+            "passed": true
+        },
+        {
+            "name": "Operasional: grant dicabut ditolak pada current read",
+            "passed": true
+        },
+        {
+            "name": "DN awal dibuat oleh cabang asal dengan pilihan tujuan terikat rute",
+            "passed": true
+        },
+        {
+            "name": "DN awal mempertahankan NULL versus nol tanpa status perjalanan",
+            "passed": true
+        },
+        {
+            "name": "DN memakai identifier internal Q04",
+            "passed": true
+        },
+        {
+            "name": "Replay create DN idempoten",
+            "passed": true
+        },
+        {
+            "name": "Token create tidak dipakai payload berbeda",
+            "passed": true
+        },
+        {
+            "name": "Replay tidak menggandakan event",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN quantity",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN weight",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN volume",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN document_date",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN sender_id",
+            "passed": true
+        },
+        {
+            "name": "Owner tidak memiliki mutasi DN",
+            "passed": true
+        },
+        {
+            "name": "DN awal dapat diedit dengan version",
+            "passed": true
+        },
+        {
+            "name": "Edit stale ditolak",
+            "passed": true
+        },
+        {
+            "name": "Identifier DN tidak berubah setelah edit",
+            "passed": true
+        },
+        {
+            "name": "Manifest draf dan replay idempoten",
+            "passed": true
+        },
+        {
+            "name": "Batch dengan satu DN tidak tersedia ditolak atomik",
+            "passed": true
+        },
+        {
+            "name": "Batch gagal tidak meninggalkan anggota parsial",
+            "passed": true
+        },
+        {
+            "name": "Manifest menampung banyak DN sesuai rute persis",
+            "passed": true
+        },
+        {
+            "name": "Replay attach\/version usang ditolak",
+            "passed": true
+        },
+        {
+            "name": "DN dalam manifest tidak dapat diedit",
+            "passed": true
+        },
+        {
+            "name": "Keanggotaan tidak membuat status keberangkatan\/tiba\/diterima",
+            "passed": true
+        },
+        {
+            "name": "Satu DN tidak masuk dua manifest aktif",
+            "passed": true
+        },
+        {
+            "name": "Unique active DN melindungi di database",
+            "passed": true
+        },
+        {
+            "name": "FK mempertahankan DN dengan histori",
+            "passed": true
+        },
+        {
+            "name": "Composite FK menolak penerima dari cabang yang salah",
+            "passed": true
+        },
+        {
+            "name": "Kegagalan audit menolak pembuatan DN",
+            "passed": true
+        },
+        {
+            "name": "Rollback audit tidak meninggalkan dokumen\/event",
+            "passed": true
+        },
+        {
+            "name": "Pagination DN memakai query database",
+            "passed": true
+        },
+        {
+            "name": "Pencarian nomor DN",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada penerimaan fiktif",
+            "passed": true
+        },
+        {
+            "name": "Filter cabang terlarang ditolak",
+            "passed": true
+        },
+        {
+            "name": "Rentang tanggal terbalik ditolak",
+            "passed": true
+        },
+        {
+            "name": "ID DN cabang tidak terlibat ditolak",
+            "passed": true
+        },
+        {
+            "name": "Daftar DN cabang lain kosong",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Dua proses bersamaan hanya satu manifest aktif",
+            "passed": true
+        },
+        {
+            "name": "Hasil concurrency mempertahankan satu anggota aktif",
+            "passed": true
+        },
+        {
+            "name": "Route Trucking aktual \/trucking\/dns",
+            "passed": true
+        },
+        {
+            "name": "Owner baca sesuai scope \/trucking\/dns",
+            "passed": true
+        },
+        {
+            "name": "Route Trucking aktual \/trucking\/manifests",
+            "passed": true
+        },
+        {
+            "name": "Owner baca sesuai scope \/trucking\/manifests",
+            "passed": true
+        },
+        {
+            "name": "Route Trucking aktual \/trucking\/tracking",
+            "passed": true
+        },
+        {
+            "name": "Owner baca sesuai scope \/trucking\/tracking",
+            "passed": true
+        },
+        {
+            "name": "POST DN tanpa CSRF ditolak",
+            "passed": true
+        },
+        {
+            "name": "Manifest draf belum dikonfirmasi tidak dapat berangkat",
+            "passed": true
+        },
+        {
+            "name": "Owner POST ditolak backend",
+            "passed": true
+        },
+        {
+            "name": "Tracking internal menampilkan event aktual",
+            "passed": true
+        },
+        {
+            "name": "Tracking tidak menampilkan detail JSON event rahasia",
+            "passed": true
+        },
+        {
+            "name": "Route operasional nyata \/trucking\/transit",
+            "passed": true
+        },
+        {
+            "name": "Route operasional nyata \/trucking\/receipts",
+            "passed": true
+        },
+        {
+            "name": "Route operasional nyata \/trucking\/claims",
+            "passed": true
+        },
+        {
+            "name": "Tujuan berbeda tidak otomatis dianggap berada pada lintasan",
+            "passed": true
+        },
+        {
+            "name": "Trip menolak leg yang tidak berkesinambungan",
+            "passed": true
+        },
+        {
+            "name": "Trip menyimpan dua leg eksplisit dari master",
+            "passed": true
+        },
+        {
+            "name": "Satu trip memuat DN dengan tujuan berbeda yang sah",
+            "passed": true
+        },
+        {
+            "name": "Nomor resmi DN diterbitkan terpisah dan identifier lama tetap",
+            "passed": true
+        },
+        {
+            "name": "Manifest menolak DN yang belum dikonfirmasi",
+            "passed": true
+        },
+        {
+            "name": "Konfirmasi gagal tidak menerbitkan nomor",
+            "passed": true
+        },
+        {
+            "name": "Manifest menerbitkan nomor resmi saat konfirmasi",
+            "passed": true
+        },
+        {
+            "name": "Lintasan dibekukan setelah konfirmasi",
+            "passed": true
+        },
+        {
+            "name": "DN terkonfirmasi tidak bisa diedit",
+            "passed": true
+        },
+        {
+            "name": "Replay keberangkatan tidak menggandakan event",
+            "passed": true
+        },
+        {
+            "name": "Keberangkatan ganda ditolak",
+            "passed": true
+        },
+        {
+            "name": "Manifest bergerak tidak boleh diselesaikan",
+            "passed": true
+        },
+        {
+            "name": "Kedatangan tidak dapat dicatat cabang asal tanpa akses B",
+            "passed": true
+        },
+        {
+            "name": "Kendaraan tiba tidak otomatis membuat DN tiba\/diterima",
+            "passed": true
+        },
+        {
+            "name": "Penerimaan sebelum kedatangan DN ditolak",
+            "passed": true
+        },
+        {
+            "name": "Leg berikutnya menunggu pencatatan DN aktual",
+            "passed": true
+        },
+        {
+            "name": "Hanya DN yang dipilih benar-benar dicatat tiba",
+            "passed": true
+        },
+        {
+            "name": "Pencatatan tiba DN ganda ditolak",
+            "passed": true
+        },
+        {
+            "name": "DN tujuan lanjutan berstatus transit pada stop perantara",
+            "passed": true
+        },
+        {
+            "name": "DN tujuan stop ini harus diturunkan sebelum melanjutkan",
+            "passed": true
+        },
+        {
+            "name": "Penerimaan tanpa konfirmasi utuh ditolak",
+            "passed": true
+        },
+        {
+            "name": "Replay penerimaan hanya menghasilkan satu record aktual",
+            "passed": true
+        },
+        {
+            "name": "Penerimaan ganda dengan token baru ditolak",
+            "passed": true
+        },
+        {
+            "name": "Penyelesaian DN memerlukan penerimaan aktual",
+            "passed": true
+        },
+        {
+            "name": "DN diterima tidak dapat dipindah ke manifest lain",
+            "passed": true
+        },
+        {
+            "name": "Pergantian kendaraan menggunakan manifest baru",
+            "passed": true
+        },
+        {
+            "name": "Histori asal\/tujuan\/alasan\/aktor\/waktu dipertahankan",
+            "passed": true
+        },
+        {
+            "name": "Manifest lama selesai tidak menghasilkan penerimaan DN yang dipindah",
+            "passed": true
+        },
+        {
+            "name": "Manifest selesai tidak membuat record penerimaan aktual",
+            "passed": true
+        },
+        {
+            "name": "Penerima B tidak dapat menerima DN tujuan C",
+            "passed": true
+        },
+        {
+            "name": "Tracking memakai event transit\/pindah\/penerimaan nyata",
+            "passed": true
+        },
+        {
+            "name": "Tracking cabang tidak terlibat tetap ditolak",
+            "passed": true
+        },
+        {
+            "name": "Tanggal mundur tidak mengubah tahun waktu penerbitan",
+            "passed": true
+        },
+        {
+            "name": "Manifest berisi DN tidak dibatalkan diam-diam",
+            "passed": true
+        },
+        {
+            "name": "CANCELLED menyimpan nomor resmi dan histori",
+            "passed": true
+        },
+        {
+            "name": "Nomor Manifest dibatalkan tidak dipakai ulang",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Dua konfirmasi terbit melalui proses\/aktor berbeda",
+            "passed": true
+        },
+        {
+            "name": "Sequence nomor unik pada konkurensi dua proses",
+            "passed": true
+        },
+        {
+            "name": "Kode cabang setelah nomor resmi pertama dikunci",
+            "passed": true
+        },
+        {
+            "name": "Nama cabang tetap dapat diedit setelah penomoran",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Dua petugas bersamaan menghasilkan tepat satu penerimaan",
+            "passed": true
+        },
+        {
+            "name": "Armada draf dapat ditetapkan tanpa mengganti lintasan\/histori",
+            "passed": true
+        },
+        {
+            "name": "Armada setelah konfirmasi tidak diedit di tempat",
+            "passed": true
+        },
+        {
+            "name": "Pelaporan klaim idempoten",
+            "passed": true
+        },
+        {
+            "name": "Klaim dapat dilaporkan dengan bukti menyusul",
+            "passed": true
+        },
+        {
+            "name": "Owner tidak boleh melapor klaim tanpa grant",
+            "passed": true
+        },
+        {
+            "name": "Klaim tidak boleh melompati state machine",
+            "passed": true
+        },
+        {
+            "name": "Replay status klaim tidak menggandakan histori",
+            "passed": true
+        },
+        {
+            "name": "Versi klaim lama ditolak",
+            "passed": true
+        },
+        {
+            "name": "Alur REPORTED REVIEWING APPROVED CLOSED lengkap",
+            "passed": true
+        },
+        {
+            "name": "Cabang REJECTED menuju CLOSED berfungsi",
+            "passed": true
+        },
+        {
+            "name": "Klaim tidak mengubah status\/posisi\/versi\/riwayat DN",
+            "passed": true
+        },
+        {
+            "name": "Klaim tidak membuat tabel\/transaksi Finance",
+            "passed": true
+        },
+        {
+            "name": "Unggah bukti HTTP ke storage privat berhasil",
+            "passed": true
+        },
+        {
+            "name": "Replay unggah HTTP idempoten",
+            "passed": true
+        },
+        {
+            "name": "Replay bukti tidak menggandakan file\/metadata",
+            "passed": true
+        },
+        {
+            "name": "Unduhan bukti berizin sesuai hash asli",
+            "passed": true
+        },
+        {
+            "name": "Bukti dilayani sebagai attachment",
+            "passed": true
+        },
+        {
+            "name": "Ekstensi bukti berbahaya ditolak",
+            "passed": true
+        },
+        {
+            "name": "MIME unggahan diperiksa dari isi, bukan header klien",
+            "passed": true
+        },
+        {
+            "name": "Login petugas cabang tak terkait untuk uji kebocoran",
+            "passed": true
+        },
+        {
+            "name": "ID bukti tidak bocor lintas cabang",
+            "passed": true
+        },
+        {
+            "name": "Detail klaim ditolak lintas cabang",
+            "passed": true
+        },
+        {
+            "name": "CSRF klaim wajib",
+            "passed": true
+        },
+        {
+            "name": "Audit gagal membatalkan record klaim\/histori",
+            "passed": true
+        },
+        {
+            "name": "Audit rollback tidak mengonsumsi token idempotensi",
+            "passed": true
+        },
+        {
+            "name": "Kegagalan audit upload dilaporkan tanpa data parsial",
+            "passed": true
+        },
+        {
+            "name": "Audit gagal membatalkan konfirmasi\/penomoran",
+            "passed": true
+        },
+        {
+            "name": "Rollback bukti membersihkan file privat dan metadata",
+            "passed": true
+        },
+        {
+            "name": "Rollback konfirmasi tidak mempublikasikan atau mengonsumsi nomor",
+            "passed": true
+        },
+        {
+            "name": "Halaman operasional nyata \/trucking\/transit",
+            "passed": true
+        },
+        {
+            "name": "Halaman operasional nyata \/trucking\/receipts",
+            "passed": true
+        },
+        {
+            "name": "Halaman operasional nyata \/trucking\/claims",
+            "passed": true
+        },
+        {
+            "name": "Upgrade 003 berisi DN\/Manifest\/histori ke 004 berhasil",
+            "passed": true
+        },
+        {
+            "name": "Upgrade mempertahankan seluruh kolom\/ID\/identifier DN lama",
+            "passed": true
+        },
+        {
+            "name": "Upgrade mempertahankan seluruh kolom\/ID\/identifier Manifest lama",
+            "passed": true
+        },
+        {
+            "name": "Keanggotaan dan histori lama tidak dihapus",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak membuat\/mengubah event atau audit operasional rekaan",
+            "passed": true
+        },
+        {
+            "name": "Backfill leg memakai snapshot historis, bukan nama master yang telah berubah",
+            "passed": true
+        },
+        {
+            "name": "Posisi awal dibackfill tanpa kedatangan rekaan",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak otomatis menerbitkan nomor resmi",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak mengisi transaksi\/nomor dummy exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak mengisi transaksi\/nomor dummy exp_claims",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak mengisi transaksi\/nomor dummy exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak mengisi transaksi\/nomor dummy exp_requests",
+            "passed": true
+        },
+        {
+            "name": "Upgrade 004 ulang no-op pada dokumen legacy",
+            "passed": true
+        }
+    ],
+    "passed": 634,
+    "failure": null,
+    "temporary_database_removed": true
+}

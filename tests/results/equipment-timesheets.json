@@ -1,0 +1,295 @@
+{
+    "date": "2026-10-24T18:55:50+08:00",
+    "passed": 72,
+    "failed": 0,
+    "checks": [
+        {
+            "name": "M5 multi-interval lintas tengah malam dikurangi istirahat menghasilkan 5 jam",
+            "passed": true
+        },
+        {
+            "name": "M5 HM terpisah dari jam kerja, presisi tiga desimal",
+            "passed": true
+        },
+        {
+            "name": "M5 replay save satu root\/revisi",
+            "passed": true
+        },
+        {
+            "name": "M5 duplicate root unit\/penugasan\/tanggal ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 optimistic root version stale ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 optimistic revision version stale ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #0",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #1",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #2",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #3",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #4",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #5",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #6",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #7",
+            "passed": true
+        },
+        {
+            "name": "M5 input negatif interval\/HM\/tanggal\/jadwal #8",
+            "passed": true
+        },
+        {
+            "name": "M5 batas setengah terbuka berdampingan sah dan HM kosong",
+            "passed": true
+        },
+        {
+            "name": "M5 durasi detik disimpan tanpa pembulatan jam\/biaya",
+            "passed": true
+        },
+        {
+            "name": "M5 Admin Sewa mencatat operator tanpa akun, CONFIRMED tetap tanpa lifecycle palsu\/akun dummy",
+            "passed": true
+        },
+        {
+            "name": "M5 own tidak dapat melihat penugasan operator lain",
+            "passed": true
+        },
+        {
+            "name": "M5 WITHOUT tidak membuat penugasan operator fiktif",
+            "passed": true
+        },
+        {
+            "name": "M5 own tidak dapat mencatat WITHOUT",
+            "passed": true
+        },
+        {
+            "name": "M5 manipulasi ID penugasan ditolak backend",
+            "passed": true
+        },
+        {
+            "name": "M5 submit membekukan konten\/hash",
+            "passed": true
+        },
+        {
+            "name": "M5 SUBMITTED tidak dapat diedit",
+            "passed": true
+        },
+        {
+            "name": "M5 approve mengubah pointer efektif atomik",
+            "passed": true
+        },
+        {
+            "name": "M5 Administrator pembuat root tidak boleh self-approval",
+            "passed": true
+        },
+        {
+            "name": "M5 RETURNED wajib alasan",
+            "passed": true
+        },
+        {
+            "name": "M5 REJECTED wajib alasan",
+            "passed": true
+        },
+        {
+            "name": "M5 RETURNED berhistori tanpa approved rekaan",
+            "passed": true
+        },
+        {
+            "name": "M5 revisi baru oleh aktor berbeda; replay tidak menggandakan",
+            "passed": true
+        },
+        {
+            "name": "M5 maksimal satu pending root",
+            "passed": true
+        },
+        {
+            "name": "M5 pembuat revisi berbeda dari pembuat root tetap tidak boleh approve revisi sendiri",
+            "passed": true
+        },
+        {
+            "name": "M5 REJECTED tersimpan dengan keputusan\/aktor\/alasan",
+            "passed": true
+        },
+        {
+            "name": "M5 approved lama efektif selama revisi pending",
+            "passed": true
+        },
+        {
+            "name": "M5 hash pemeriksaan stale ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 versi revisi pemeriksaan stale ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 integritas hash menangkap perubahan konten submission di database",
+            "passed": true
+        },
+        {
+            "name": "M5 audit gagal membatalkan approve dan pointer",
+            "passed": true
+        },
+        {
+            "name": "M5 rollback menjaga approved efektif lama dan pending submission",
+            "passed": true
+        },
+        {
+            "name": "M5 approved baru efektif; approved lama\/interval immutable",
+            "passed": true
+        },
+        {
+            "name": "M5 keputusan ulang token sama satu verifikasi",
+            "passed": true
+        },
+        {
+            "name": "M5 revisi returned tidak menghilangkan approved efektif",
+            "passed": true
+        },
+        {
+            "name": "M5 submission sah sebelum RETURN tetap dapat diverifikasi dari snapshot penugasan kini CANCELLED",
+            "passed": true
+        },
+        {
+            "name": "M5 draft sah sebelum RETURN dapat disubmit tanpa mengedit fakta sesudah terminal",
+            "passed": true
+        },
+        {
+            "name": "M5 revisi terminal tanpa permission khusus ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 root pertama setelah terminal tanpa grant khusus ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 root pertama terminal sah dengan grant\/reason khusus",
+            "passed": true
+        },
+        {
+            "name": "M5 root pertama untuk penugasan CANCELLED tetap ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 revisi terminal tidak mengaktifkan unit\/operator\/kontrak atau menulis ulang M4",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M5 dua reviewer berbeda bersamaan tepat satu keputusan commit",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M5 keputusan bersamaan token sama replay satu record",
+            "passed": true
+        },
+        {
+            "name": "M5 cross-root lintas tengah malam tidak menggandakan pekerjaan submitted",
+            "passed": true
+        },
+        {
+            "name": "M5 membership operator dicabut menutup own history",
+            "passed": true
+        },
+        {
+            "name": "M5 relink akun tidak memberikan histori lewat nama\/ID lama",
+            "passed": true
+        },
+        {
+            "name": "M5 akun baru tidak memperoleh own permission\/history otomatis",
+            "passed": true
+        },
+        {
+            "name": "M5 HTTP Operator hanya route own",
+            "passed": true
+        },
+        {
+            "name": "M5 HTTP own IDOR root orang lain ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 HTTP daftar dan antrean nyata",
+            "passed": true
+        },
+        {
+            "name": "M5 CSRF wajib pada mutasi",
+            "passed": true
+        },
+        {
+            "name": "M5 router lokal benar-benar menyajikan script interval sebagai JavaScript",
+            "passed": true
+        },
+        {
+            "name": "M5 catatan pekerjaan di-escape pada HTML",
+            "passed": true
+        },
+        {
+            "name": "M5 Admin Sewa tidak mendapat grant C verifikasi otomatis",
+            "passed": true
+        },
+        {
+            "name": "M5 Owner baca saja dan POST dengan CSRF sah tetap ditolak",
+            "passed": true
+        },
+        {
+            "name": "M5 HTTP scope cabang menutup data private melalui manipulasi ID",
+            "passed": true
+        },
+        {
+            "name": "M5 own lintas cabang melalui penugasan sah memakai scope sumber tanpa membuka seluruh cabang kontrak",
+            "passed": true
+        },
+        {
+            "name": "M5 proyeksi own lintas cabang tidak membocorkan customer\/sibling\/full route",
+            "passed": true
+        },
+        {
+            "name": "M5 seluruh C tetap tanpa grant default sesudah fixture dibersihkan",
+            "passed": true
+        },
+        {
+            "name": "M5 tidak membuat bypass reset\/penggantian HM",
+            "passed": true
+        }
+    ]
+}

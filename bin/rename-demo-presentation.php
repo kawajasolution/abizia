@@ -1,0 +1,8 @@
+<?php
+declare(strict_types=1);
+require dirname(__DIR__).'/app/bootstrap.php';
+if(PHP_SAPI!=='cli')exit(1);
+$c=require dirname(__DIR__).'/config/demo.php';if(($c['database']??'')!=='hls_v2_demo')throw new RuntimeException('Target bukan demo.');$db=Hls\Database::connect($c);$db->beginTransaction();
+$db->exec("UPDATE branches SET name='Kantor Pusat', address='Alamat kantor pusat' WHERE code='DMO'");
+$roles=$db->query('SELECT id,name FROM roles')->fetchAll(PDO::FETCH_KEY_PAIR);foreach($roles as $id=>$role){$name=$role==='Administrator'?'Administrator':$role;$s=$db->prepare('UPDATE users SET name=? WHERE role_id=? AND email LIKE \'demo_%@demo.invalid\'');$s->execute([$name,$id]);}
+$replacements=[['md_customers','name','DEMO Customer Nusantara','Pelanggan Nusantara'],['md_parties','name','DEMO Pengirim','Pengirim Nusantara'],['md_parties','name','DEMO Penerima','Penerima Proyek'],['md_locations','name','DEMO Gudang A','Gudang Utama'],['md_locations','name','DEMO Proyek B','Lokasi Proyek'],['md_routes','name','DEMO Gudang A - Proyek B','Rute Gudang - Proyek'],['md_assets','name','DEMO Truck 01','Truk Operasional 01'],['md_assets','name','DEMO Excavator 01','Excavator Operasional 01'],['md_personnel','name','DEMO Driver','Sopir Operasional'],['md_personnel','name','DEMO Operator','Operator Alat Berat'],['md_categories','name','DEMO Category','Kategori Umum'],['md_units','name','DEMO Unit','Unit'],['md_items','name','DEMO Item','Material Operasional']];foreach($replacements as [$t,$col,$from,$to]){$s=$db->prepare("UPDATE `$t` SET `$col`=? WHERE `$col`=?");$s->execute([$to,$from]);}$db->commit();echo "Presentation labels updated. Technical codes/database unchanged.\n";

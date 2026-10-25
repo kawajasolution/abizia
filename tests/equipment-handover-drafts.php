@@ -1,0 +1,43 @@
+<?php
+declare(strict_types=1);
+// Included only by the isolated integration runner, after the M3 fixtures.
+$baStart=count($checks);
+$baMake=fn(int $actor)=>new Hls\Services\EquipmentHandovers(new Hls\Repositories\EquipmentHandoverRepository($eqMake($actor)->data),$audit);
+$ba=$baMake($adminId);
+$baContract=$eqNew($eqAssets[7],'2030-01-01','2030-01-10');
+$eq->saveUnit($baContract,$eqVersion($baContract),$eqKey(),['asset_id'=>(string)$eqAssets[6],'operator_mode'=>'WITHOUT','starts_on'=>'2030-01-01','ends_on'=>'2030-01-10']);
+$eq->confirm($baContract,$eqVersion($baContract),$eqKey());
+$baUnits=$eq->data->units($baContract);$baValues=[];
+foreach($baUnits as $u)$baValues[$u['id']]=['selected'=>'1','condition_note'=>'Kondisi diperiksa','hm_reading'=>'100.125'];
+$baPayload=['contract_id'=>(string)$baContract,'document_type'=>'HANDOVER','scope_mode'=>'ALL','occurrence_at'=>'2030-01-01T08:00','units'=>$baValues,'request_key'=>$eqKey()];
+$baId=$ba->save($baPayload)['id'];$baRow=$ba->records->detail($baId);
+check($baRow['status']==='DRAFT'&&$baRow['official_number']===null&&count($baRow['units'])===2,'M4 draft ALL membekukan dua ID unit tanpa nomor');
+check($eqUnit($baContract)['status']==='CONFIRMED'&&$eq->data->header($baContract)['status']==='CONFIRMED','M4 draft tidak mempunyai efek lifecycle');
+check($ba->save($baPayload)['id']===$baId&&count($ba->records->detail($baId)['events'])===1,'M4 replay draft satu dokumen/event');
+rejects(fn()=>$baMake($scopedId)->save($baPayload),'M4 idempotency key terikat aktor',409);
+$changed=$baPayload;$changed['occurrence_at']='2030-01-01T09:00';rejects(fn()=>$ba->save($changed),'M4 token sama payload berbeda ditolak',409);
+$edit=$baPayload;$edit['id']=(string)$baId;$edit['version']='1';$edit['request_key']=$eqKey();$edit['units'][$baUnits[0]['id']]['condition_note']='Catatan revisi draft';$edit['units'][$baUnits[0]['id']]['hm_reading']='101.5';
+$ba->save($edit);$baEdited=$ba->records->detail($baId);
+check($baEdited['version']===2&&$baEdited['units'][0]['condition_note']==='Catatan revisi draft'&&$baEdited['units'][0]['hm_reading']==='101.500','M4 edit draft kondisi/HM disimpan');
+$oldEvent=json_decode($baEdited['events'][1]['detail'],true);
+check($oldEvent['before_units'][0]['condition_note']==='Kondisi diperiksa'&&$oldEvent['before_units'][0]['hm_reading']==='100.125','M4 histori draft sebelum perubahan tetap tersedia');
+$edit['request_key']=$eqKey();rejects(fn()=>$ba->save($edit),'M4 versi draft stale ditolak',409);
+$bad=$baPayload;$bad['request_key']=$eqKey();$bad['units']=[(string)$eqUnit($one)['id']=>['selected'=>'1','condition_note'=>'Bukan kontrak','hm_reading'=>'']];rejects(fn()=>$ba->save($bad),'M4 unit kontrak lain ditolak',409);
+$bad=$baPayload;$bad['request_key']=$eqKey();$bad['units']=array_slice($baValues,0,1,true);rejects(fn()=>$ba->save($bad),'M4 ALL tidak menerima subset diam-diam',422);
+$bad=$baPayload;$bad['request_key']=$eqKey();$bad['units'][$baUnits[0]['id']]['hm_reading']='-1';rejects(fn()=>$ba->save($bad),'M4 HM negatif ditolak',422);
+$bad=$baPayload;$bad['request_key']=$eqKey();$bad['units'][$baUnits[0]['id']]['condition_note']=' ';rejects(fn()=>$ba->save($bad),'M4 kondisi kosong ditolak',422);
+$bad=$baPayload;$bad['request_key']=$eqKey();$bad['document_type']='RETURN';rejects(fn()=>$ba->save($bad),'M4 RETURN tidak dapat memakai unit belum ACTIVE',409);
+rejects(fn()=>$baMake($ownerId)->save(array_replace($baPayload,['request_key'=>$eqKey()])),'M4 Owner tidak dapat membuat BA',403);
+$foreignDraft=$baPayload;$foreignDraft['contract_id']=(string)$numberOnly;$foreignDraft['units']=[(string)$eqUnit($numberOnly)['id']=>['selected'=>'1','condition_note'=>'Uji scope','hm_reading'=>'']];$foreignDraft['request_key']=$eqKey();$foreignBa=$ba->save($foreignDraft)['id'];
+rejects(fn()=>$baMake($ownerId)->records->detail($foreignBa),'M4 IDOR lintas cabang ditutup',404);
+$cancelKey=$eqKey();$ba->cancel($baId,2,$cancelKey,'Draft pengujian dibatalkan');$ba->cancel($baId,2,$cancelKey,'Draft pengujian dibatalkan');
+check($ba->records->find($baId)['status']==='CANCELLED'&&count($ba->records->units($baId))===2&&count($ba->records->detail($baId)['events'])===3,'M4 cancel draft replay mempertahankan detail/histori tanpa event ganda');
+$edit['version']='3';$edit['request_key']=$eqKey();rejects(fn()=>$ba->save($edit),'M4 cancelled draft tidak dapat diedit',409);
+check(!$repo->one("SELECT * FROM eq_document_sequences WHERE document_type='BA'"),'M4 draft/cancel tidak menerbitkan nomor BA');
+$baCounts=[];foreach(['eq_handover_documents','eq_handover_units','eq_events','eq_requests'] as $table)$baCounts[$table]=(int)$repo->one('SELECT COUNT(*) n FROM '.$table)['n'];
+$repo->run("CREATE TRIGGER eq_ba_audit_fail BEFORE INSERT ON audit_logs FOR EACH ROW SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT='BA audit failure'");
+try{rejects(fn()=>$ba->save(array_replace($baPayload,['request_key'=>$eqKey()])),'M4 kegagalan audit menolak seluruh penyimpanan');}finally{$repo->run('DROP TRIGGER eq_ba_audit_fail');}
+$baUnchanged=true;foreach($baCounts as $table=>$count)$baUnchanged=$baUnchanged&&$count===(int)$repo->one('SELECT COUNT(*) n FROM '.$table)['n'];
+check($baUnchanged,'M4 rollback audit tidak meninggalkan header/detail/event/token parsial');
+$baChecks=array_slice($checks,$baStart);
+file_put_contents(__DIR__.'/results/equipment-handover-drafts.json',json_encode(['date'=>date(DATE_ATOM),'passed'=>count(array_filter($baChecks,fn($c)=>$c['passed'])),'failed'=>count(array_filter($baChecks,fn($c)=>!$c['passed'])),'checks'=>$baChecks],JSON_PRETTY_PRINT|JSON_UNESCAPED_UNICODE));

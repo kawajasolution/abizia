@@ -1,0 +1,46 @@
+{
+    "date": "2026-10-24T15:28:59+08:00",
+    "passed": 10,
+    "checks": [
+        {
+            "name": "Operasional: akun\/cabang\/penetapan aktif diterima",
+            "passed": true
+        },
+        {
+            "name": "Operasional: cabang di luar penetapan ditolak",
+            "passed": true
+        },
+        {
+            "name": "Operasional: izin backend tetap wajib",
+            "passed": true
+        },
+        {
+            "name": "Operasional: current locking read akun\/cabang\/penetapan berhasil",
+            "passed": true
+        },
+        {
+            "name": "Operasional: penetapan dicabut menolak principal lama",
+            "passed": true
+        },
+        {
+            "name": "Operasional: cabang nonaktif ditolak",
+            "passed": true
+        },
+        {
+            "name": "Operasional: cakupan global tidak melewati cabang nonaktif",
+            "passed": true
+        },
+        {
+            "name": "Operasional: akun nonaktif ditolak meski principal lama aktif",
+            "passed": true
+        },
+        {
+            "name": "Operasional: versi otorisasi lama ditolak",
+            "passed": true
+        },
+        {
+            "name": "Operasional: grant dicabut ditolak pada current read",
+            "passed": true
+        }
+    ]
+}

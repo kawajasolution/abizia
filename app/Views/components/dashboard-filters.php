@@ -1,0 +1,7 @@
+<?php use Hls\Http\View as V; ?>
+<form class="panel dashboard-filters" method="get" action="<?= V::escape($this->url('/')) ?>" aria-label="Filter dashboard">
+<div class="dashboard-filter-fields"><div class="form-field"><label for="dashboard-branch">Cabang</label><select name="branch" id="dashboard-branch"><option value=""><?= $access->user['all_branches'] ? 'Seluruh cabang' : 'Semua cabang dalam akses saya' ?></option><?php foreach ($dashboard['options'] as $branch): ?><option value="<?= (int)$branch['id'] ?>" <?= $dashboard['branchId']===(int)$branch['id'] ? 'selected' : '' ?>><?= V::escape($branch['code'].' — '.$branch['name']) ?></option><?php endforeach ?></select></div>
+<?php if ($dashboard['canAudit'] || $dashboard['owner']): ?><div class="form-field"><label for="audit-start">Periode mulai</label><input id="audit-start" name="start" type="date" required value="<?= V::escape($dashboard['start']) ?>"></div><div class="form-field"><label for="audit-end">Periode sampai</label><input id="audit-end" name="end" type="date" required value="<?= V::escape($dashboard['end']) ?>"></div><?php endif ?>
+<button class="primary" type="submit">Terapkan</button><a href="<?= V::escape($this->url('/')) ?>">Reset</a></div>
+<p class="field-hint">Filter cabang berlaku pada ringkasan sesuai cakupan.<?php if ($dashboard['owner']): ?> Periode operasional menggunakan tanggal dokumen dan waktu pencatatan yang tersedia.<?php elseif ($dashboard['canAudit']): ?> Periode audit berlaku pada rentang WITA.<?php endif ?></p>
+</form>

@@ -1,0 +1,7 @@
+<?php use Hls\Http\View as V; ?>
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title><?= V::escape($title) ?> · HLS Transport V2</title><link rel="stylesheet" href="<?= V::escape($this->url('/assets/foundation.css')) ?>"><script src="<?= V::escape($this->url('/assets/interface.js')) ?>" defer></script></head>
+<body class="<?= $access ? 'app-layout' : 'guest-layout' ?>"><a class="skip-link" href="#main-content">Lewati navigasi</a>
+<?php if ($access): ?><?= $this->component('sidebar', compact('groups')) ?><button class="drawer-overlay" type="button" data-drawer-close aria-label="Tutup navigasi dari overlay" tabindex="-1" hidden></button><?php endif ?>
+<div class="workspace" id="workspace"><?= $this->component('header', compact('title')) ?><main id="main-content" class="content" tabindex="-1"><?= $this->component('breadcrumb', compact('title')) ?>
+<?php if (isset($_SESSION['flash'])): ?><?= $this->component('alert', ['kind' => 'success', 'message' => $_SESSION['flash']]) ?><?php unset($_SESSION['flash']); endif ?><?= $content ?></main><footer class="app-footer">PT Hanqia Lintas Sarana <span>WITA · HLS Transport V2</span></footer></div>
+<?php if ($access): ?><?= $this->component('bottom-navigation', compact('shortcuts')) ?><?php endif ?><?= $this->component('confirmation') ?><?= $this->component('loading') ?></body></html>

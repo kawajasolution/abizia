@@ -1,0 +1,212 @@
+{
+  "routes": [
+    "/",
+    "/trucking/dns",
+    "/trucking/manifests",
+    "/trucking/transit",
+    "/trucking/receipts",
+    "/trucking/claims",
+    "/trucking/tracking",
+    "/equipment/contracts",
+    "/equipment/handovers",
+    "/equipment/timesheets",
+    "/equipment/verification",
+    "/master/customers",
+    "/master/parties",
+    "/master/routes",
+    "/master/trucking-tariffs",
+    "/master/equipment-tariffs",
+    "/master/assets",
+    "/master/personnel",
+    "/master/items",
+    "/master/suppliers",
+    "/branches"
+  ],
+  "dashboard": {
+    "ownerKpis": 11,
+    "shortcuts": 0,
+    "periodFilter": 2,
+    "drilldowns": 10,
+    "branchFilter": 1
+  },
+  "responsive": {
+    "overflow": true,
+    "hamburger": true,
+    "bottomNav": true,
+    "errors": []
+  },
+  "checks": [
+    {
+      "route": "/",
+      "status": 200,
+      "heading": "Executive Dashboard",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/trucking/dns",
+      "status": 200,
+      "heading": "Delivery Note (DN)",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/trucking/manifests",
+      "status": 200,
+      "heading": "Manifest",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/trucking/transit",
+      "status": 403,
+      "heading": "Permintaan tidak dapat diproses",
+      "menuActive": 0,
+      "overflow": true,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 403 (Forbidden)"
+      ]
+    },
+    {
+      "route": "/trucking/receipts",
+      "status": 403,
+      "heading": "Permintaan tidak dapat diproses",
+      "menuActive": 0,
+      "overflow": true,
+      "errors": [
+        "Failed to load resource: the server responded with a status of 403 (Forbidden)"
+      ]
+    },
+    {
+      "route": "/trucking/claims",
+      "status": 200,
+      "heading": "Klaim",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/trucking/tracking",
+      "status": 200,
+      "heading": "Tracking",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/equipment/contracts",
+      "status": 200,
+      "heading": "Kontrak Sewa",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/equipment/handovers",
+      "status": 200,
+      "heading": "Berita Acara Equipment",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/equipment/timesheets",
+      "status": 200,
+      "heading": "Timesheet Equipment",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/equipment/verification",
+      "status": 200,
+      "heading": "Verifikasi Timesheet",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/customers",
+      "status": 200,
+      "heading": "Customer",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/parties",
+      "status": 200,
+      "heading": "Pengirim & Penerima",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/routes",
+      "status": 200,
+      "heading": "Lokasi & Rute",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/trucking-tariffs",
+      "status": 200,
+      "heading": "Tarif Trucking",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/equipment-tariffs",
+      "status": 200,
+      "heading": "Tarif Equipment",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/assets",
+      "status": 200,
+      "heading": "Kendaraan & Unit",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/personnel",
+      "status": 200,
+      "heading": "Driver & Operator",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/items",
+      "status": 200,
+      "heading": "Barang & Kategori",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/master/suppliers",
+      "status": 200,
+      "heading": "Supplier",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    },
+    {
+      "route": "/branches",
+      "status": 200,
+      "heading": "Cabang",
+      "menuActive": 1,
+      "overflow": true,
+      "errors": []
+    }
+  ]
+}

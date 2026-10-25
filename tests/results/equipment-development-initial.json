@@ -1,0 +1,386 @@
+{
+    "date": "2026-10-24T15:45:11+08:00",
+    "read_only": true,
+    "passed": 81,
+    "failed": 1,
+    "counts": {
+        "audit_logs": 0,
+        "branches": 0,
+        "eq_branch_authorizations": 0,
+        "eq_contract_units": 0,
+        "eq_contracts": 0,
+        "eq_document_sequences": 0,
+        "eq_events": 0,
+        "eq_evidence": 0,
+        "eq_handover_documents": 0,
+        "eq_handover_units": 0,
+        "eq_meter_corrections": 0,
+        "eq_operator_assignments": 0,
+        "eq_requests": 0,
+        "eq_timesheet_revisions": 0,
+        "eq_timesheet_verifications": 0,
+        "eq_timesheet_work_entries": 0,
+        "eq_timesheets": 0,
+        "eq_unit_periods": 0,
+        "exp_claim_events": 0,
+        "exp_claims": 0,
+        "exp_dns": 0,
+        "exp_events": 0,
+        "exp_evidence": 0,
+        "exp_manifest_items": 0,
+        "exp_manifests": 0,
+        "exp_receipts": 0,
+        "exp_requests": 0,
+        "exp_sequences": 0,
+        "exp_trip_legs": 0,
+        "login_attempts": 0,
+        "md_assets": 0,
+        "md_categories": 0,
+        "md_customers": 0,
+        "md_equipment_tariffs": 0,
+        "md_items": 0,
+        "md_locations": 0,
+        "md_parties": 0,
+        "md_personnel": 0,
+        "md_routes": 0,
+        "md_suppliers": 0,
+        "md_trucking_tariffs": 0,
+        "md_units": 0,
+        "permissions": 106,
+        "role_permissions": 215,
+        "roles": 10,
+        "schema_migrations": 43,
+        "user_branches": 0,
+        "users": 0
+    },
+    "checks": [
+        {
+            "name": "Existing rows identik: audit_logs",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: audit_logs",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: branches",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: branches",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_claim_events",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_claim_events",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_claims",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_claims",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_dns",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_dns",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_events",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_events",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_evidence",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_evidence",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_manifest_items",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_manifest_items",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_manifests",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_manifests",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_requests",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_requests",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: exp_trip_legs",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: exp_trip_legs",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: login_attempts",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: login_attempts",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_assets",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_assets",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_categories",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_categories",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_customers",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_customers",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_equipment_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_equipment_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_items",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_items",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_locations",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_locations",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_parties",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_parties",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_personnel",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_personnel",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_routes",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_routes",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_suppliers",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_suppliers",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_trucking_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_trucking_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: md_units",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: md_units",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: permissions",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: permissions",
+            "passed": false
+        },
+        {
+            "name": "Existing rows identik: role_permissions",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: role_permissions",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: roles",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: roles",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: schema_migrations",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: schema_migrations",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: user_branches",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: user_branches",
+            "passed": true
+        },
+        {
+            "name": "Existing rows identik: users",
+            "passed": true
+        },
+        {
+            "name": "Existing DDL tidak berubah: users",
+            "passed": true
+        },
+        {
+            "name": "48 tabel aktual",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_branch_authorizations",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_contract_units",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_contracts",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_document_sequences",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_events",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_evidence",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_handover_documents",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_handover_units",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_meter_corrections",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_operator_assignments",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_requests",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_timesheet_revisions",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_timesheet_verifications",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_timesheet_work_entries",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_timesheets",
+            "passed": true
+        },
+        {
+            "name": "Equipment tanpa data palsu: eq_unit_periods",
+            "passed": true
+        },
+        {
+            "name": "Tanpa akun\/cabang development palsu",
+            "passed": true
+        }
+    ]
+}

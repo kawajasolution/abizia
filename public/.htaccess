@@ -1,0 +1,9 @@
+Require all granted
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+<FilesMatch "^(?!index\.php$).*\.(php|sql|log|json)$">
+Require all denied
+</FilesMatch>

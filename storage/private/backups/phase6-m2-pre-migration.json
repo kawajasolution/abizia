@@ -1,0 +1,1113 @@
+{
+    "date": "2026-10-24T15:42:14+08:00",
+    "database": "hls_v2_dev",
+    "tables": {
+        "audit_logs": {
+            "ddl": "CREATE TABLE `audit_logs` (\n  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n  `actor_id` int(10) unsigned DEFAULT NULL,\n  `action` varchar(80) NOT NULL,\n  `entity` varchar(80) NOT NULL,\n  `entity_id` int(10) unsigned DEFAULT NULL,\n  `detail` longtext NOT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`id`),\n  KEY `ix_audit_time` (`created_at`,`id`),\n  KEY `fk_audit_actor` (`actor_id`),\n  CONSTRAINT `fk_audit_actor` FOREIGN KEY (`actor_id`) REFERENCES `users` (`id`),\n  CONSTRAINT `ck_audit_json` CHECK (json_valid(`detail`))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "branches": {
+            "ddl": "CREATE TABLE `branches` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(12) NOT NULL,\n  `name` varchar(100) NOT NULL,\n  `address` varchar(500) NOT NULL DEFAULT '',\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `city` varchar(100) NOT NULL DEFAULT '',\n  `province` varchar(100) NOT NULL DEFAULT '',\n  `phone` varchar(30) NOT NULL DEFAULT '',\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NULL DEFAULT NULL,\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  CONSTRAINT `ck_branch_active` CHECK (`active` in (0,1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_claim_events": {
+            "ddl": "CREATE TABLE `exp_claim_events` (\n  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n  `claim_id` int(10) unsigned NOT NULL,\n  `actor_id` int(10) unsigned NOT NULL,\n  `previous_status` varchar(20) DEFAULT NULL,\n  `next_status` varchar(20) NOT NULL,\n  `note` varchar(2000) NOT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`id`),\n  KEY `ix_exp_claim_history` (`claim_id`,`id`),\n  KEY `fk_exp_claim_event_actor` (`actor_id`),\n  CONSTRAINT `fk_exp_claim_event_actor` FOREIGN KEY (`actor_id`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_claim_event_claim` FOREIGN KEY (`claim_id`) REFERENCES `exp_claims` (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_claims": {
+            "ddl": "CREATE TABLE `exp_claims` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `dn_id` int(10) unsigned NOT NULL,\n  `branch_id` int(10) unsigned NOT NULL,\n  `problem_type` varchar(60) NOT NULL,\n  `description` varchar(2000) NOT NULL,\n  `reporter_name` varchar(150) NOT NULL,\n  `status` varchar(20) NOT NULL DEFAULT 'REPORTED',\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_by` int(10) unsigned NOT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`id`),\n  KEY `ix_exp_claim_branch` (`branch_id`,`status`,`created_at`,`id`),\n  KEY `ix_exp_claim_dn` (`dn_id`,`id`),\n  KEY `fk_exp_claim_actor` (`created_by`),\n  CONSTRAINT `fk_exp_claim_actor` FOREIGN KEY (`created_by`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_claim_branch` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_exp_claim_dn` FOREIGN KEY (`dn_id`) REFERENCES `exp_dns` (`id`),\n  CONSTRAINT `ck_exp_claim_status` CHECK (`status` in ('REPORTED','REVIEWING','APPROVED','REJECTED','CLOSED'))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_dns": {
+            "ddl": "CREATE TABLE `exp_dns` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `number` varchar(40) NOT NULL,\n  `document_date` date NOT NULL,\n  `route_id` int(10) unsigned NOT NULL,\n  `origin_branch_id` int(10) unsigned NOT NULL,\n  `destination_branch_id` int(10) unsigned NOT NULL,\n  `customer_id` int(10) unsigned NOT NULL,\n  `sender_id` int(10) unsigned NOT NULL,\n  `receiver_id` int(10) unsigned NOT NULL,\n  `description` varchar(1000) NOT NULL,\n  `quantity` decimal(12,3) NOT NULL,\n  `unit` varchar(60) NOT NULL,\n  `weight` decimal(12,3) DEFAULT NULL,\n  `volume` decimal(12,3) DEFAULT NULL,\n  `note` varchar(1000) NOT NULL DEFAULT '',\n  `status` varchar(20) NOT NULL DEFAULT 'created',\n  `snapshot` longtext NOT NULL,\n  `created_by` int(10) unsigned NOT NULL,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `request_key` char(64) NOT NULL,\n  `request_hash` char(64) NOT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `official_number` varchar(80) DEFAULT NULL,\n  `confirmed_at` timestamp NULL DEFAULT NULL,\n  `current_branch_id` int(10) unsigned DEFAULT NULL,\n  `current_location_id` int(10) unsigned DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `number` (`number`),\n  UNIQUE KEY `request_key` (`request_key`),\n  UNIQUE KEY `official_number` (`official_number`),\n  KEY `ix_exp_dn_origin` (`origin_branch_id`,`status`,`document_date`,`id`),\n  KEY `ix_exp_dn_destination` (`destination_branch_id`,`status`,`document_date`,`id`),\n  KEY `fk_exp_dn_route` (`route_id`,`origin_branch_id`),\n  KEY `fk_exp_dn_customer` (`customer_id`,`origin_branch_id`),\n  KEY `fk_exp_dn_sender` (`sender_id`,`origin_branch_id`),\n  KEY `fk_exp_dn_receiver` (`receiver_id`,`destination_branch_id`),\n  KEY `fk_exp_dn_actor` (`created_by`),\n  KEY `fk_exp_dn_current_branch` (`current_branch_id`),\n  KEY `fk_exp_dn_current_location` (`current_location_id`),\n  CONSTRAINT `fk_exp_dn_actor` FOREIGN KEY (`created_by`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_dn_current_branch` FOREIGN KEY (`current_branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_exp_dn_current_location` FOREIGN KEY (`current_location_id`) REFERENCES `md_locations` (`id`),\n  CONSTRAINT `fk_exp_dn_customer` FOREIGN KEY (`customer_id`, `origin_branch_id`) REFERENCES `md_customers` (`id`, `branch_id`),\n  CONSTRAINT `fk_exp_dn_destination` FOREIGN KEY (`destination_branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_exp_dn_origin` FOREIGN KEY (`origin_branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_exp_dn_receiver` FOREIGN KEY (`receiver_id`, `destination_branch_id`) REFERENCES `md_parties` (`id`, `branch_id`),\n  CONSTRAINT `fk_exp_dn_route` FOREIGN KEY (`route_id`, `origin_branch_id`) REFERENCES `md_routes` (`id`, `branch_id`),\n  CONSTRAINT `fk_exp_dn_sender` FOREIGN KEY (`sender_id`, `origin_branch_id`) REFERENCES `md_parties` (`id`, `branch_id`),\n  CONSTRAINT `ck_exp_dn_quantity` CHECK (`quantity` > 0),\n  CONSTRAINT `ck_exp_dn_weight` CHECK (`weight` is null or `weight` >= 0),\n  CONSTRAINT `ck_exp_dn_volume` CHECK (`volume` is null or `volume` >= 0),\n  CONSTRAINT `ck_exp_dn_snapshot` CHECK (json_valid(`snapshot`)),\n  CONSTRAINT `ck_exp_dn_status` CHECK (`status` in ('created','confirmed','departed','transit','arrived','received','completed'))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_events": {
+            "ddl": "CREATE TABLE `exp_events` (\n  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n  `dn_id` int(10) unsigned DEFAULT NULL,\n  `manifest_id` int(10) unsigned DEFAULT NULL,\n  `actor_id` int(10) unsigned NOT NULL,\n  `branch_id` int(10) unsigned NOT NULL,\n  `event_type` varchar(40) NOT NULL,\n  `detail` longtext NOT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`id`),\n  KEY `ix_exp_events_dn` (`dn_id`,`id`),\n  KEY `ix_exp_events_manifest` (`manifest_id`,`id`),\n  KEY `fk_exp_event_actor` (`actor_id`),\n  KEY `fk_exp_event_branch` (`branch_id`),\n  CONSTRAINT `fk_exp_event_actor` FOREIGN KEY (`actor_id`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_event_branch` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_exp_event_dn` FOREIGN KEY (`dn_id`) REFERENCES `exp_dns` (`id`),\n  CONSTRAINT `fk_exp_event_manifest` FOREIGN KEY (`manifest_id`) REFERENCES `exp_manifests` (`id`),\n  CONSTRAINT `ck_exp_event_source` CHECK (`dn_id` is not null or `manifest_id` is not null),\n  CONSTRAINT `ck_exp_event_json` CHECK (json_valid(`detail`))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_evidence": {
+            "ddl": "CREATE TABLE `exp_evidence` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `claim_id` int(10) unsigned NOT NULL,\n  `actor_id` int(10) unsigned NOT NULL,\n  `storage_key` char(64) NOT NULL,\n  `file_name` varchar(190) NOT NULL,\n  `mime_type` varchar(60) NOT NULL,\n  `file_size` int(10) unsigned NOT NULL,\n  `sha256` char(64) NOT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `storage_key` (`storage_key`),\n  UNIQUE KEY `uq_exp_evidence_content` (`claim_id`,`sha256`),\n  KEY `ix_exp_evidence_claim` (`claim_id`,`id`),\n  KEY `fk_exp_evidence_actor` (`actor_id`),\n  CONSTRAINT `fk_exp_evidence_actor` FOREIGN KEY (`actor_id`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_evidence_claim` FOREIGN KEY (`claim_id`) REFERENCES `exp_claims` (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_manifest_items": {
+            "ddl": "CREATE TABLE `exp_manifest_items` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `manifest_id` int(10) unsigned NOT NULL,\n  `dn_id` int(10) unsigned NOT NULL,\n  `attached_by` int(10) unsigned NOT NULL,\n  `attached_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `removed_at` timestamp NULL DEFAULT NULL,\n  `active_dn_id` int(10) unsigned GENERATED ALWAYS AS (case when `removed_at` is null then `dn_id` else NULL end) STORED,\n  `removed_by` int(10) unsigned DEFAULT NULL,\n  `removal_reason` varchar(1000) DEFAULT NULL,\n  `moved_to_manifest_id` int(10) unsigned DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `uq_exp_active_dn` (`active_dn_id`),\n  KEY `ix_exp_membership` (`manifest_id`,`removed_at`,`dn_id`),\n  KEY `fk_exp_item_dn` (`dn_id`),\n  KEY `fk_exp_item_actor` (`attached_by`),\n  KEY `fk_exp_item_removed_actor` (`removed_by`),\n  KEY `fk_exp_item_move_target` (`moved_to_manifest_id`),\n  CONSTRAINT `fk_exp_item_actor` FOREIGN KEY (`attached_by`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_item_dn` FOREIGN KEY (`dn_id`) REFERENCES `exp_dns` (`id`),\n  CONSTRAINT `fk_exp_item_manifest` FOREIGN KEY (`manifest_id`) REFERENCES `exp_manifests` (`id`),\n  CONSTRAINT `fk_exp_item_move_target` FOREIGN KEY (`moved_to_manifest_id`) REFERENCES `exp_manifests` (`id`),\n  CONSTRAINT `fk_exp_item_removed_actor` FOREIGN KEY (`removed_by`) REFERENCES `users` (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_manifests": {
+            "ddl": "CREATE TABLE `exp_manifests` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `number` varchar(40) NOT NULL,\n  `document_date` date NOT NULL,\n  `route_id` int(10) unsigned NOT NULL,\n  `origin_branch_id` int(10) unsigned NOT NULL,\n  `destination_branch_id` int(10) unsigned NOT NULL,\n  `vehicle_id` int(10) unsigned DEFAULT NULL,\n  `driver_id` int(10) unsigned DEFAULT NULL,\n  `note` varchar(1000) NOT NULL DEFAULT '',\n  `status` varchar(20) NOT NULL DEFAULT 'draft',\n  `snapshot` longtext NOT NULL,\n  `created_by` int(10) unsigned NOT NULL,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `request_key` char(64) NOT NULL,\n  `request_hash` char(64) NOT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `official_number` varchar(80) DEFAULT NULL,\n  `confirmed_at` timestamp NULL DEFAULT NULL,\n  `current_stop` int(10) unsigned NOT NULL DEFAULT 0,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `number` (`number`),\n  UNIQUE KEY `request_key` (`request_key`),\n  UNIQUE KEY `official_number` (`official_number`),\n  KEY `ix_exp_manifest_origin` (`origin_branch_id`,`status`,`document_date`,`id`),\n  KEY `fk_exp_manifest_route` (`route_id`,`origin_branch_id`),\n  KEY `fk_exp_manifest_destination` (`destination_branch_id`),\n  KEY `fk_exp_manifest_vehicle` (`vehicle_id`,`origin_branch_id`),\n  KEY `fk_exp_manifest_driver` (`driver_id`,`origin_branch_id`),\n  KEY `fk_exp_manifest_actor` (`created_by`),\n  CONSTRAINT `fk_exp_manifest_actor` FOREIGN KEY (`created_by`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_manifest_destination` FOREIGN KEY (`destination_branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_exp_manifest_driver` FOREIGN KEY (`driver_id`, `origin_branch_id`) REFERENCES `md_personnel` (`id`, `branch_id`),\n  CONSTRAINT `fk_exp_manifest_origin` FOREIGN KEY (`origin_branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_exp_manifest_route` FOREIGN KEY (`route_id`, `origin_branch_id`) REFERENCES `md_routes` (`id`, `branch_id`),\n  CONSTRAINT `fk_exp_manifest_vehicle` FOREIGN KEY (`vehicle_id`, `origin_branch_id`) REFERENCES `md_assets` (`id`, `branch_id`),\n  CONSTRAINT `ck_exp_manifest_snapshot` CHECK (json_valid(`snapshot`)),\n  CONSTRAINT `ck_exp_manifest_status` CHECK (`status` in ('draft','confirmed','departed','transit','completed','cancelled'))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_receipts": {
+            "ddl": "CREATE TABLE `exp_receipts` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `dn_id` int(10) unsigned NOT NULL,\n  `branch_id` int(10) unsigned NOT NULL,\n  `actor_id` int(10) unsigned NOT NULL,\n  `recipient_name` varchar(150) NOT NULL,\n  `quantity` decimal(12,3) NOT NULL,\n  `condition_note` varchar(1000) NOT NULL,\n  `received_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `dn_id` (`dn_id`),\n  KEY `fk_exp_receipt_branch` (`branch_id`),\n  KEY `fk_exp_receipt_actor` (`actor_id`),\n  CONSTRAINT `fk_exp_receipt_actor` FOREIGN KEY (`actor_id`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_receipt_branch` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_exp_receipt_dn` FOREIGN KEY (`dn_id`) REFERENCES `exp_dns` (`id`),\n  CONSTRAINT `ck_exp_receipt_quantity` CHECK (`quantity` > 0)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_requests": {
+            "ddl": "CREATE TABLE `exp_requests` (\n  `request_key` char(64) NOT NULL,\n  `actor_id` int(10) unsigned NOT NULL,\n  `branch_id` int(10) unsigned NOT NULL,\n  `action` varchar(80) NOT NULL,\n  `payload_hash` char(64) NOT NULL,\n  `result` longtext NOT NULL,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`request_key`),\n  KEY `fk_exp_request_actor` (`actor_id`),\n  KEY `fk_exp_request_branch` (`branch_id`),\n  CONSTRAINT `fk_exp_request_actor` FOREIGN KEY (`actor_id`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_exp_request_branch` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `ck_exp_request_result` CHECK (json_valid(`result`))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_sequences": {
+            "ddl": "CREATE TABLE `exp_sequences` (\n  `document_type` varchar(2) NOT NULL,\n  `branch_id` int(10) unsigned NOT NULL,\n  `document_year` smallint(5) unsigned NOT NULL,\n  `last_value` int(10) unsigned NOT NULL DEFAULT 0,\n  PRIMARY KEY (`document_type`,`branch_id`,`document_year`),\n  KEY `fk_exp_sequence_branch` (`branch_id`),\n  CONSTRAINT `fk_exp_sequence_branch` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `ck_exp_sequence_type` CHECK (`document_type` in ('DN','MF')),\n  CONSTRAINT `ck_exp_sequence_value` CHECK (`last_value` <= 999999)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "exp_trip_legs": {
+            "ddl": "CREATE TABLE `exp_trip_legs` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `manifest_id` int(10) unsigned NOT NULL,\n  `position` int(10) unsigned NOT NULL,\n  `route_id` int(10) unsigned NOT NULL,\n  `origin_branch_id` int(10) unsigned NOT NULL,\n  `destination_branch_id` int(10) unsigned NOT NULL,\n  `origin_location_id` int(10) unsigned NOT NULL,\n  `destination_location_id` int(10) unsigned NOT NULL,\n  `snapshot` longtext NOT NULL,\n  `arrived_at` timestamp NULL DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `uq_exp_leg_position` (`manifest_id`,`position`),\n  KEY `ix_exp_leg_origin` (`origin_branch_id`,`manifest_id`),\n  KEY `ix_exp_leg_destination` (`destination_branch_id`,`manifest_id`),\n  KEY `fk_exp_leg_route` (`route_id`,`origin_branch_id`),\n  KEY `fk_exp_leg_origin` (`origin_location_id`,`origin_branch_id`),\n  KEY `fk_exp_leg_destination` (`destination_location_id`,`destination_branch_id`),\n  CONSTRAINT `fk_exp_leg_destination` FOREIGN KEY (`destination_location_id`, `destination_branch_id`) REFERENCES `md_locations` (`id`, `branch_id`),\n  CONSTRAINT `fk_exp_leg_manifest` FOREIGN KEY (`manifest_id`) REFERENCES `exp_manifests` (`id`),\n  CONSTRAINT `fk_exp_leg_origin` FOREIGN KEY (`origin_location_id`, `origin_branch_id`) REFERENCES `md_locations` (`id`, `branch_id`),\n  CONSTRAINT `fk_exp_leg_route` FOREIGN KEY (`route_id`, `origin_branch_id`) REFERENCES `md_routes` (`id`, `branch_id`),\n  CONSTRAINT `ck_exp_leg_snapshot` CHECK (json_valid(`snapshot`))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "login_attempts": {
+            "ddl": "CREATE TABLE `login_attempts` (\n  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,\n  `email_key` char(64) NOT NULL,\n  `ip_key` char(64) NOT NULL,\n  `attempted_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`id`),\n  KEY `ix_attempt_email` (`email_key`,`attempted_at`),\n  KEY `ix_attempt_ip` (`ip_key`,`attempted_at`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_assets": {
+            "ddl": "CREATE TABLE `md_assets` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `branch_id` int(10) unsigned NOT NULL,\n  `kind` varchar(12) NOT NULL,\n  `identity` varchar(100) NOT NULL,\n  `category` varchar(100) NOT NULL DEFAULT '',\n  `brand` varchar(100) NOT NULL DEFAULT '',\n  `model` varchar(100) NOT NULL DEFAULT '',\n  `capacity` varchar(100) NOT NULL DEFAULT '',\n  `condition_code` varchar(20) DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  UNIQUE KEY `kind` (`kind`,`identity`),\n  KEY `branch_id` (`branch_id`,`active`,`name`),\n  CONSTRAINT `fk_md_assets_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1)),\n  CONSTRAINT `CONSTRAINT_2` CHECK (`kind` in ('truck','equipment')),\n  CONSTRAINT `CONSTRAINT_3` CHECK (`condition_code` is null or `condition_code` in ('ready','maintenance'))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_categories": {
+            "ddl": "CREATE TABLE `md_categories` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `name` (`name`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_customers": {
+            "ddl": "CREATE TABLE `md_customers` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `branch_id` int(10) unsigned NOT NULL,\n  `customer_type` varchar(20) NOT NULL,\n  `address` varchar(500) NOT NULL DEFAULT '',\n  `phone` varchar(30) NOT NULL DEFAULT '',\n  `email` varchar(190) NOT NULL DEFAULT '',\n  `contact_name` varchar(150) NOT NULL DEFAULT '',\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  KEY `branch_id` (`branch_id`,`active`,`name`),\n  CONSTRAINT `fk_md_customers_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1)),\n  CONSTRAINT `CONSTRAINT_2` CHECK (`customer_type` in ('individual','company'))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_equipment_tariffs": {
+            "ddl": "CREATE TABLE `md_equipment_tariffs` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `branch_id` int(10) unsigned NOT NULL,\n  `asset_id` int(10) unsigned NOT NULL,\n  `period` varchar(12) NOT NULL,\n  `amount` decimal(12,2) DEFAULT NULL,\n  `valid_from` date DEFAULT NULL,\n  `valid_until` date DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  KEY `branch_id` (`branch_id`,`active`,`name`),\n  KEY `fk_md_equipment_tariff_asset` (`asset_id`,`branch_id`),\n  CONSTRAINT `fk_md_equipment_tariff_asset` FOREIGN KEY (`asset_id`, `branch_id`) REFERENCES `md_assets` (`id`, `branch_id`),\n  CONSTRAINT `fk_md_equipment_tariffs_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1)),\n  CONSTRAINT `CONSTRAINT_2` CHECK (`period` in ('hour','shift','month')),\n  CONSTRAINT `CONSTRAINT_3` CHECK (`amount` is null or `amount` >= 0),\n  CONSTRAINT `CONSTRAINT_4` CHECK (`valid_from` is null or `valid_until` is null or `valid_from` <= `valid_until`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_items": {
+            "ddl": "CREATE TABLE `md_items` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `category_id` int(10) unsigned NOT NULL,\n  `unit_id` int(10) unsigned NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  KEY `fk_md_items_unit_id` (`unit_id`),\n  KEY `category_id` (`category_id`,`unit_id`,`active`,`name`),\n  CONSTRAINT `fk_md_items_category_id` FOREIGN KEY (`category_id`) REFERENCES `md_categories` (`id`),\n  CONSTRAINT `fk_md_items_unit_id` FOREIGN KEY (`unit_id`) REFERENCES `md_units` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_locations": {
+            "ddl": "CREATE TABLE `md_locations` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `branch_id` int(10) unsigned NOT NULL,\n  `city` varchar(100) NOT NULL DEFAULT '',\n  `province` varchar(100) NOT NULL DEFAULT '',\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  KEY `branch_id` (`branch_id`,`active`,`name`),\n  CONSTRAINT `fk_md_locations_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_parties": {
+            "ddl": "CREATE TABLE `md_parties` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `branch_id` int(10) unsigned NOT NULL,\n  `company` varchar(150) NOT NULL DEFAULT '',\n  `address` varchar(500) NOT NULL DEFAULT '',\n  `phone` varchar(30) NOT NULL DEFAULT '',\n  `party_role` varchar(12) NOT NULL,\n  `identity_hash` char(64) NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  UNIQUE KEY `branch_id_2` (`branch_id`,`identity_hash`),\n  KEY `branch_id` (`branch_id`,`active`,`name`),\n  CONSTRAINT `fk_md_parties_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1)),\n  CONSTRAINT `CONSTRAINT_2` CHECK (`party_role` in ('sender','receiver','both'))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_personnel": {
+            "ddl": "CREATE TABLE `md_personnel` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) DEFAULT NULL,\n  `branch_id` int(10) unsigned NOT NULL,\n  `kind` varchar(12) NOT NULL,\n  `phone` varchar(30) NOT NULL DEFAULT '',\n  `account_id` int(10) unsigned DEFAULT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  UNIQUE KEY `account_id` (`account_id`),\n  KEY `branch_id` (`branch_id`,`kind`,`active`),\n  CONSTRAINT `fk_md_personnel_account_id` FOREIGN KEY (`account_id`) REFERENCES `users` (`id`),\n  CONSTRAINT `fk_md_personnel_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1)),\n  CONSTRAINT `CONSTRAINT_2` CHECK (`kind` in ('driver','operator')),\n  CONSTRAINT `CONSTRAINT_3` CHECK (`account_id` is null and `name` is not null or `account_id` is not null and `name` is null)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_routes": {
+            "ddl": "CREATE TABLE `md_routes` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `branch_id` int(10) unsigned NOT NULL,\n  `destination_branch_id` int(10) unsigned NOT NULL,\n  `origin_location_id` int(10) unsigned NOT NULL,\n  `destination_location_id` int(10) unsigned NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  UNIQUE KEY `branch_id_2` (`branch_id`,`destination_branch_id`,`origin_location_id`,`destination_location_id`),\n  KEY `branch_id` (`branch_id`,`active`,`name`),\n  KEY `fk_md_route_destination_branch` (`destination_branch_id`),\n  KEY `fk_md_route_origin_location` (`origin_location_id`,`branch_id`),\n  KEY `fk_md_route_destination_location` (`destination_location_id`,`destination_branch_id`),\n  CONSTRAINT `fk_md_route_destination_branch` FOREIGN KEY (`destination_branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_md_route_destination_location` FOREIGN KEY (`destination_location_id`, `destination_branch_id`) REFERENCES `md_locations` (`id`, `branch_id`),\n  CONSTRAINT `fk_md_route_origin_location` FOREIGN KEY (`origin_location_id`, `branch_id`) REFERENCES `md_locations` (`id`, `branch_id`),\n  CONSTRAINT `fk_md_routes_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_suppliers": {
+            "ddl": "CREATE TABLE `md_suppliers` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `branch_id` int(10) unsigned NOT NULL,\n  `address` varchar(500) NOT NULL DEFAULT '',\n  `phone` varchar(30) NOT NULL DEFAULT '',\n  `email` varchar(190) NOT NULL DEFAULT '',\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  KEY `branch_id` (`branch_id`,`active`,`name`),\n  CONSTRAINT `fk_md_suppliers_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_trucking_tariffs": {
+            "ddl": "CREATE TABLE `md_trucking_tariffs` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  `branch_id` int(10) unsigned NOT NULL,\n  `service` varchar(12) NOT NULL,\n  `route_id` int(10) unsigned DEFAULT NULL,\n  `basis` varchar(150) NOT NULL,\n  `amount` decimal(12,2) DEFAULT NULL,\n  `valid_from` date DEFAULT NULL,\n  `valid_until` date DEFAULT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `id` (`id`,`branch_id`),\n  KEY `branch_id` (`branch_id`,`active`,`name`),\n  KEY `fk_md_truck_tariff_route` (`route_id`,`branch_id`),\n  CONSTRAINT `fk_md_truck_tariff_route` FOREIGN KEY (`route_id`, `branch_id`) REFERENCES `md_routes` (`id`, `branch_id`),\n  CONSTRAINT `fk_md_trucking_tariffs_branch_id` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1)),\n  CONSTRAINT `CONSTRAINT_2` CHECK (`service` in ('regular','charter','pickup')),\n  CONSTRAINT `CONSTRAINT_3` CHECK (`amount` is null or `amount` >= 0),\n  CONSTRAINT `CONSTRAINT_4` CHECK (`service` = 'pickup' and `route_id` is null or `service` in ('regular','charter') and `route_id` is not null),\n  CONSTRAINT `CONSTRAINT_5` CHECK (`valid_from` is null or `valid_until` is null or `valid_from` <= `valid_until`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "md_units": {
+            "ddl": "CREATE TABLE `md_units` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(40) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  `updated_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`),\n  UNIQUE KEY `name` (`name`),\n  CONSTRAINT `CONSTRAINT_1` CHECK (`active` in (0,1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "permissions": {
+            "ddl": "CREATE TABLE `permissions` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `code` varchar(100) NOT NULL,\n  `name` varchar(150) NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `code` (`code`)\n) ENGINE=InnoDB AUTO_INCREMENT=146 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": [
+                {
+                    "id": 1,
+                    "code": "foundation.view",
+                    "name": "Lihat akses fondasi sendiri"
+                },
+                {
+                    "id": 2,
+                    "code": "users.view",
+                    "name": "Lihat pengguna"
+                },
+                {
+                    "id": 3,
+                    "code": "users.manage",
+                    "name": "Kelola pengguna"
+                },
+                {
+                    "id": 4,
+                    "code": "branches.view",
+                    "name": "Lihat cabang sesuai cakupan"
+                },
+                {
+                    "id": 5,
+                    "code": "branches.manage",
+                    "name": "Kelola cabang sesuai cakupan"
+                },
+                {
+                    "id": 6,
+                    "code": "roles.view",
+                    "name": "Lihat matriks role"
+                },
+                {
+                    "id": 7,
+                    "code": "audit.view",
+                    "name": "Lihat audit fondasi"
+                },
+                {
+                    "id": 9,
+                    "code": "master.customer.view",
+                    "name": "Lihat master Customer"
+                },
+                {
+                    "id": 10,
+                    "code": "master.customer.create",
+                    "name": "Tambah master Customer"
+                },
+                {
+                    "id": 11,
+                    "code": "master.customer.update",
+                    "name": "Ubah master Customer"
+                },
+                {
+                    "id": 17,
+                    "code": "master.party.view",
+                    "name": "Lihat master Pengirim & Penerima"
+                },
+                {
+                    "id": 18,
+                    "code": "master.party.create",
+                    "name": "Tambah master Pengirim & Penerima"
+                },
+                {
+                    "id": 19,
+                    "code": "master.party.update",
+                    "name": "Ubah master Pengirim & Penerima"
+                },
+                {
+                    "id": 24,
+                    "code": "master.location.view",
+                    "name": "Lihat master Lokasi"
+                },
+                {
+                    "id": 25,
+                    "code": "master.location.create",
+                    "name": "Tambah master Lokasi"
+                },
+                {
+                    "id": 26,
+                    "code": "master.location.update",
+                    "name": "Ubah master Lokasi"
+                },
+                {
+                    "id": 31,
+                    "code": "master.route.view",
+                    "name": "Lihat master Rute"
+                },
+                {
+                    "id": 32,
+                    "code": "master.route.create",
+                    "name": "Tambah master Rute"
+                },
+                {
+                    "id": 33,
+                    "code": "master.route.update",
+                    "name": "Ubah master Rute"
+                },
+                {
+                    "id": 38,
+                    "code": "master.trucking_tariff.view",
+                    "name": "Lihat master Tarif Trucking"
+                },
+                {
+                    "id": 39,
+                    "code": "master.trucking_tariff.create",
+                    "name": "Tambah master Tarif Trucking"
+                },
+                {
+                    "id": 40,
+                    "code": "master.trucking_tariff.update",
+                    "name": "Ubah master Tarif Trucking"
+                },
+                {
+                    "id": 43,
+                    "code": "master.equipment_tariff.view",
+                    "name": "Lihat master Tarif Equipment"
+                },
+                {
+                    "id": 44,
+                    "code": "master.equipment_tariff.create",
+                    "name": "Tambah master Tarif Equipment"
+                },
+                {
+                    "id": 45,
+                    "code": "master.equipment_tariff.update",
+                    "name": "Ubah master Tarif Equipment"
+                },
+                {
+                    "id": 48,
+                    "code": "master.vehicle.view",
+                    "name": "Lihat master Kendaraan Trucking"
+                },
+                {
+                    "id": 49,
+                    "code": "master.vehicle.create",
+                    "name": "Tambah master Kendaraan Trucking"
+                },
+                {
+                    "id": 50,
+                    "code": "master.vehicle.update",
+                    "name": "Ubah master Kendaraan Trucking"
+                },
+                {
+                    "id": 54,
+                    "code": "master.unit.view",
+                    "name": "Lihat master Unit Equipment"
+                },
+                {
+                    "id": 55,
+                    "code": "master.unit.create",
+                    "name": "Tambah master Unit Equipment"
+                },
+                {
+                    "id": 56,
+                    "code": "master.unit.update",
+                    "name": "Ubah master Unit Equipment"
+                },
+                {
+                    "id": 61,
+                    "code": "master.driver.view",
+                    "name": "Lihat master Driver"
+                },
+                {
+                    "id": 62,
+                    "code": "master.driver.create",
+                    "name": "Tambah master Driver"
+                },
+                {
+                    "id": 63,
+                    "code": "master.driver.update",
+                    "name": "Ubah master Driver"
+                },
+                {
+                    "id": 67,
+                    "code": "master.operator.view",
+                    "name": "Lihat master Operator"
+                },
+                {
+                    "id": 68,
+                    "code": "master.operator.create",
+                    "name": "Tambah master Operator"
+                },
+                {
+                    "id": 69,
+                    "code": "master.operator.update",
+                    "name": "Ubah master Operator"
+                },
+                {
+                    "id": 72,
+                    "code": "master.item.view",
+                    "name": "Lihat master Barang"
+                },
+                {
+                    "id": 73,
+                    "code": "master.item.create",
+                    "name": "Tambah master Barang"
+                },
+                {
+                    "id": 74,
+                    "code": "master.item.update",
+                    "name": "Ubah master Barang"
+                },
+                {
+                    "id": 77,
+                    "code": "master.category.view",
+                    "name": "Lihat master Kategori Barang"
+                },
+                {
+                    "id": 78,
+                    "code": "master.category.create",
+                    "name": "Tambah master Kategori Barang"
+                },
+                {
+                    "id": 79,
+                    "code": "master.category.update",
+                    "name": "Ubah master Kategori Barang"
+                },
+                {
+                    "id": 82,
+                    "code": "master.uom.view",
+                    "name": "Lihat master Satuan"
+                },
+                {
+                    "id": 83,
+                    "code": "master.uom.create",
+                    "name": "Tambah master Satuan"
+                },
+                {
+                    "id": 84,
+                    "code": "master.uom.update",
+                    "name": "Ubah master Satuan"
+                },
+                {
+                    "id": 87,
+                    "code": "master.supplier.view",
+                    "name": "Lihat master Supplier"
+                },
+                {
+                    "id": 88,
+                    "code": "master.supplier.create",
+                    "name": "Tambah master Supplier"
+                },
+                {
+                    "id": 89,
+                    "code": "master.supplier.update",
+                    "name": "Ubah master Supplier"
+                },
+                {
+                    "id": 106,
+                    "code": "master.routes.view",
+                    "name": "Lihat Lokasi & Rute"
+                },
+                {
+                    "id": 117,
+                    "code": "master.assets.view",
+                    "name": "Lihat Kendaraan & Unit"
+                },
+                {
+                    "id": 124,
+                    "code": "master.personnel.view",
+                    "name": "Lihat Driver & Operator"
+                },
+                {
+                    "id": 129,
+                    "code": "master.catalog.view",
+                    "name": "Lihat Barang & Kategori"
+                },
+                {
+                    "id": 136,
+                    "code": "expedition.view",
+                    "name": "Lihat DN dan tracking internal"
+                },
+                {
+                    "id": 137,
+                    "code": "expedition.ship",
+                    "name": "Buat\/ubah DN awal"
+                },
+                {
+                    "id": 138,
+                    "code": "expedition.manifest.view",
+                    "name": "Lihat manifest"
+                },
+                {
+                    "id": 139,
+                    "code": "expedition.manifest",
+                    "name": "Buat manifest draf dan susun DN"
+                },
+                {
+                    "id": 140,
+                    "code": "expedition.confirm",
+                    "name": "Konfirmasi DN dan nomor resmi"
+                },
+                {
+                    "id": 141,
+                    "code": "expedition.transit",
+                    "name": "Catat perjalanan dan posisi aktual"
+                },
+                {
+                    "id": 142,
+                    "code": "expedition.receive",
+                    "name": "Penerimaan utuh aktual"
+                },
+                {
+                    "id": 143,
+                    "code": "expedition.claim.view",
+                    "name": "Lihat klaim operasional"
+                },
+                {
+                    "id": 144,
+                    "code": "expedition.claim.report",
+                    "name": "Laporkan klaim dan bukti"
+                },
+                {
+                    "id": 145,
+                    "code": "expedition.claim.review",
+                    "name": "Periksa\/putuskan\/tutup klaim operasional"
+                }
+            ]
+        },
+        "role_permissions": {
+            "ddl": "CREATE TABLE `role_permissions` (\n  `role_id` int(10) unsigned NOT NULL,\n  `permission_id` int(10) unsigned NOT NULL,\n  PRIMARY KEY (`role_id`,`permission_id`),\n  KEY `fk_rp_permission` (`permission_id`),\n  CONSTRAINT `fk_rp_permission` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`),\n  CONSTRAINT `fk_rp_role` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": [
+                {
+                    "role_id": 1,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 2
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 3
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 4
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 5
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 6
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 7
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 9
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 10
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 11
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 17
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 18
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 19
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 24
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 25
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 26
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 31
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 32
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 33
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 38
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 39
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 40
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 43
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 44
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 45
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 48
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 49
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 50
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 54
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 55
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 56
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 61
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 62
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 63
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 67
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 68
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 69
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 72
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 73
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 74
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 77
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 78
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 79
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 82
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 83
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 84
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 87
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 88
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 89
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 106
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 117
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 124
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 129
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 136
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 137
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 138
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 139
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 140
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 141
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 142
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 143
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 144
+                },
+                {
+                    "role_id": 1,
+                    "permission_id": 145
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 4
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 9
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 17
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 24
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 31
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 38
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 43
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 48
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 54
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 61
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 67
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 72
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 77
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 82
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 87
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 106
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 117
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 124
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 129
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 136
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 138
+                },
+                {
+                    "role_id": 2,
+                    "permission_id": 143
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 9
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 17
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 24
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 31
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 38
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 48
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 61
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 106
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 117
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 124
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 136
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 137
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 138
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 140
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 143
+                },
+                {
+                    "role_id": 3,
+                    "permission_id": 144
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 17
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 24
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 31
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 48
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 61
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 106
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 117
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 124
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 136
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 138
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 139
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 141
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 143
+                },
+                {
+                    "role_id": 4,
+                    "permission_id": 144
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 9
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 17
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 24
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 31
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 106
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 136
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 138
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 142
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 143
+                },
+                {
+                    "role_id": 5,
+                    "permission_id": 144
+                },
+                {
+                    "role_id": 6,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 6,
+                    "permission_id": 9
+                },
+                {
+                    "role_id": 6,
+                    "permission_id": 43
+                },
+                {
+                    "role_id": 6,
+                    "permission_id": 54
+                },
+                {
+                    "role_id": 6,
+                    "permission_id": 67
+                },
+                {
+                    "role_id": 6,
+                    "permission_id": 117
+                },
+                {
+                    "role_id": 6,
+                    "permission_id": 124
+                },
+                {
+                    "role_id": 7,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 7,
+                    "permission_id": 54
+                },
+                {
+                    "role_id": 7,
+                    "permission_id": 117
+                },
+                {
+                    "role_id": 8,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 8,
+                    "permission_id": 9
+                },
+                {
+                    "role_id": 8,
+                    "permission_id": 87
+                },
+                {
+                    "role_id": 9,
+                    "permission_id": 1
+                },
+                {
+                    "role_id": 9,
+                    "permission_id": 54
+                },
+                {
+                    "role_id": 9,
+                    "permission_id": 72
+                },
+                {
+                    "role_id": 9,
+                    "permission_id": 77
+                },
+                {
+                    "role_id": 9,
+                    "permission_id": 82
+                },
+                {
+                    "role_id": 9,
+                    "permission_id": 87
+                },
+                {
+                    "role_id": 9,
+                    "permission_id": 117
+                },
+                {
+                    "role_id": 9,
+                    "permission_id": 129
+                },
+                {
+                    "role_id": 10,
+                    "permission_id": 1
+                }
+            ]
+        },
+        "roles": {
+            "ddl": "CREATE TABLE `roles` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `name` varchar(100) NOT NULL,\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `name` (`name`)\n) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": [
+                {
+                    "id": 5,
+                    "name": "Admin Penerima"
+                },
+                {
+                    "id": 3,
+                    "name": "Admin Pengirim"
+                },
+                {
+                    "id": 6,
+                    "name": "Admin Sewa"
+                },
+                {
+                    "id": 4,
+                    "name": "Admin Transit"
+                },
+                {
+                    "id": 1,
+                    "name": "Administrator"
+                },
+                {
+                    "id": 10,
+                    "name": "Customer"
+                },
+                {
+                    "id": 8,
+                    "name": "Finance"
+                },
+                {
+                    "id": 9,
+                    "name": "Gudang"
+                },
+                {
+                    "id": 7,
+                    "name": "Operator Alat Berat"
+                },
+                {
+                    "id": 2,
+                    "name": "Owner"
+                }
+            ]
+        },
+        "schema_migrations": {
+            "ddl": "CREATE TABLE `schema_migrations` (\n  `version` varchar(80) NOT NULL,\n  `applied_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`version`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": [
+                {
+                    "version": "001_foundation",
+                    "applied_at": "2026-10-23 18:57:41"
+                },
+                {
+                    "version": "002_master_data",
+                    "applied_at": "2026-10-24 05:44:16"
+                },
+                {
+                    "version": "003_trucking",
+                    "applied_at": "2026-10-24 06:47:29"
+                },
+                {
+                    "version": "004_trucking_operations",
+                    "applied_at": "2026-10-24 08:27:55"
+                }
+            ]
+        },
+        "user_branches": {
+            "ddl": "CREATE TABLE `user_branches` (\n  `user_id` int(10) unsigned NOT NULL,\n  `branch_id` int(10) unsigned NOT NULL,\n  PRIMARY KEY (`user_id`,`branch_id`),\n  KEY `fk_ub_branch` (`branch_id`),\n  CONSTRAINT `fk_ub_branch` FOREIGN KEY (`branch_id`) REFERENCES `branches` (`id`),\n  CONSTRAINT `fk_ub_user` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        },
+        "users": {
+            "ddl": "CREATE TABLE `users` (\n  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,\n  `name` varchar(100) NOT NULL,\n  `email` varchar(190) NOT NULL,\n  `password_hash` varchar(255) NOT NULL,\n  `role_id` int(10) unsigned NOT NULL,\n  `active` tinyint(3) unsigned NOT NULL DEFAULT 1,\n  `all_branches` tinyint(3) unsigned NOT NULL DEFAULT 0,\n  `auth_version` int(10) unsigned NOT NULL DEFAULT 1,\n  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),\n  PRIMARY KEY (`id`),\n  UNIQUE KEY `email` (`email`),\n  KEY `fk_users_role` (`role_id`),\n  CONSTRAINT `fk_users_role` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`),\n  CONSTRAINT `ck_user_active` CHECK (`active` in (0,1)),\n  CONSTRAINT `ck_user_global` CHECK (`all_branches` in (0,1))\n) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci",
+            "rows": []
+        }
+    }
+}

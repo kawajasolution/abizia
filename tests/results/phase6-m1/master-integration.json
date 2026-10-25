@@ -1,0 +1,1150 @@
+{
+    "date": "2026-10-24T15:28:59+08:00",
+    "passed": 286,
+    "checks": [
+        {
+            "name": "Migration upgrade dari fondasi lama berhasil",
+            "passed": true
+        },
+        {
+            "name": "Upgrade mempertahankan ID\/nilai cabang lama",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak menghapus\/mengubah audit lama",
+            "passed": true
+        },
+        {
+            "name": "Cabang lama tidak diberi tanggal penciptaan rekaan",
+            "passed": true
+        },
+        {
+            "name": "Upgrade ulang idempoten",
+            "passed": true
+        },
+        {
+            "name": "Migration tidak mengisi master\/customer dummy",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata branches",
+            "passed": true
+        },
+        {
+            "name": "Edit master branches",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak branches",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus branches",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali branches",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak branches",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created branches",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated branches",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated branches",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated branches",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat branches",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif branches",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata categories",
+            "passed": true
+        },
+        {
+            "name": "Edit master categories",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak categories",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus categories",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali categories",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak categories",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created categories",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated categories",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated categories",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated categories",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat categories",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif categories",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata uoms",
+            "passed": true
+        },
+        {
+            "name": "Edit master uoms",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak uoms",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus uoms",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali uoms",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak uoms",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created uoms",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated uoms",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated uoms",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated uoms",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat uoms",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif uoms",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata items",
+            "passed": true
+        },
+        {
+            "name": "Edit master items",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak items",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus items",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali items",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak items",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created items",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated items",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated items",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated items",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat items",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif items",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata customers",
+            "passed": true
+        },
+        {
+            "name": "Edit master customers",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak customers",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus customers",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali customers",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak customers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created customers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated customers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated customers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated customers",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat customers",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif customers",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata parties",
+            "passed": true
+        },
+        {
+            "name": "Edit master parties",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak parties",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus parties",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali parties",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak parties",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created parties",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated parties",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated parties",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated parties",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat parties",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif parties",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata locations",
+            "passed": true
+        },
+        {
+            "name": "Edit master locations",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak locations",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus locations",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali locations",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak locations",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created locations",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated locations",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated locations",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated locations",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat locations",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif locations",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata routes",
+            "passed": true
+        },
+        {
+            "name": "Edit master routes",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak routes",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus routes",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali routes",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak routes",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created routes",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated routes",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated routes",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated routes",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat routes",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif routes",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata vehicles",
+            "passed": true
+        },
+        {
+            "name": "Edit master vehicles",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak vehicles",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus vehicles",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali vehicles",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak vehicles",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created vehicles",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated vehicles",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated vehicles",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated vehicles",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat vehicles",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif vehicles",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata units",
+            "passed": true
+        },
+        {
+            "name": "Edit master units",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak units",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus units",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali units",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak units",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created units",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated units",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated units",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated units",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat units",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif units",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata drivers",
+            "passed": true
+        },
+        {
+            "name": "Edit master drivers",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak drivers",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus drivers",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali drivers",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak drivers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created drivers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated drivers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated drivers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated drivers",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat drivers",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif drivers",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata operators",
+            "passed": true
+        },
+        {
+            "name": "Edit master operators",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak operators",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus operators",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali operators",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak operators",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created operators",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated operators",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated operators",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated operators",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat operators",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif operators",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Edit master trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Edit master equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Tambah\/detail nyata suppliers",
+            "passed": true
+        },
+        {
+            "name": "Edit master suppliers",
+            "passed": true
+        },
+        {
+            "name": "Versi formulir usang ditolak suppliers",
+            "passed": true
+        },
+        {
+            "name": "Nonaktif tanpa hapus suppliers",
+            "passed": true
+        },
+        {
+            "name": "Aktif kembali suppliers",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi kode ditolak suppliers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_created suppliers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_updated suppliers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_deactivated suppliers",
+            "passed": true
+        },
+        {
+            "name": "Audit master_reactivated suppliers",
+            "passed": true
+        },
+        {
+            "name": "Pencarian tepat suppliers",
+            "passed": true
+        },
+        {
+            "name": "Filter status aktif suppliers",
+            "passed": true
+        },
+        {
+            "name": "Field wajib kosong ditolak",
+            "passed": true
+        },
+        {
+            "name": "Format email ditolak",
+            "passed": true
+        },
+        {
+            "name": "Referensi tidak ditemukan ditolak",
+            "passed": true
+        },
+        {
+            "name": "Foreign key DB menolak data yatim",
+            "passed": true
+        },
+        {
+            "name": "Detail cabang lain ditolak",
+            "passed": true
+        },
+        {
+            "name": "Rute lintas cabang tidak bocor jika hanya satu endpoint diizinkan",
+            "passed": true
+        },
+        {
+            "name": "Owner baca tidak mendapat hak tulis",
+            "passed": true
+        },
+        {
+            "name": "Katalog global tidak dapat diubah admin scoped",
+            "passed": true
+        },
+        {
+            "name": "Edit tidak dapat memindahkan pemilik cabang",
+            "passed": true
+        },
+        {
+            "name": "Lokasi rute harus sesuai cabang",
+            "passed": true
+        },
+        {
+            "name": "Identitas unit tertaut tarif tidak berubah diam-diam",
+            "passed": true
+        },
+        {
+            "name": "Identitas pihak sama tidak diduplikasi per peran",
+            "passed": true
+        },
+        {
+            "name": "Tarif kosong tetap NULL",
+            "passed": true
+        },
+        {
+            "name": "Tarif nol manual berbeda dari NULL",
+            "passed": true
+        },
+        {
+            "name": "Tarif harian yang belum disetujui tidak diaktifkan",
+            "passed": true
+        },
+        {
+            "name": "Presisi uang lebih dari dua desimal ditolak",
+            "passed": true
+        },
+        {
+            "name": "Personel tertaut memakai nama akun tanpa duplikasi identitas",
+            "passed": true
+        },
+        {
+            "name": "Satu akun tidak diduplikasi di personel",
+            "passed": true
+        },
+        {
+            "name": "Kegagalan audit menggagalkan master",
+            "passed": true
+        },
+        {
+            "name": "Rollback master saat audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Pagination database 10\/2 tanpa hilang\/duplikasi",
+            "passed": true
+        },
+        {
+            "name": "Wildcard pencarian literal tidak membuka seluruh data",
+            "passed": true
+        },
+        {
+            "name": "FK mencegah penghapusan master yang sudah direferensikan",
+            "passed": true
+        },
+        {
+            "name": "Referensi nonaktif ditolak untuk data baru",
+            "passed": true
+        },
+        {
+            "name": "Relasi nonaktif historis tidak dihapus atau diganti",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/branches",
+            "passed": true
+        },
+        {
+            "name": "Route detail branches",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah branches",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah branches",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master branches",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/customers",
+            "passed": true
+        },
+        {
+            "name": "Route detail customers",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah customers",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah customers",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master customers",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/parties",
+            "passed": true
+        },
+        {
+            "name": "Route detail parties",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah parties",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah parties",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master parties",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/routes",
+            "passed": true
+        },
+        {
+            "name": "Route detail locations",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah locations",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah locations",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master locations",
+            "passed": true
+        },
+        {
+            "name": "Route detail routes",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah routes",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah routes",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master routes",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route detail trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master trucking-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route detail equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master equipment-tariffs",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/assets",
+            "passed": true
+        },
+        {
+            "name": "Route detail vehicles",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah vehicles",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah vehicles",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master vehicles",
+            "passed": true
+        },
+        {
+            "name": "Route detail units",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah units",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah units",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master units",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/personnel",
+            "passed": true
+        },
+        {
+            "name": "Route detail drivers",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah drivers",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah drivers",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master drivers",
+            "passed": true
+        },
+        {
+            "name": "Route detail operators",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah operators",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah operators",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master operators",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/items",
+            "passed": true
+        },
+        {
+            "name": "Route detail items",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah items",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah items",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master items",
+            "passed": true
+        },
+        {
+            "name": "Route detail categories",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah categories",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah categories",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master categories",
+            "passed": true
+        },
+        {
+            "name": "Route detail uoms",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah uoms",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah uoms",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master uoms",
+            "passed": true
+        },
+        {
+            "name": "Route daftar admin nyata \/master\/suppliers",
+            "passed": true
+        },
+        {
+            "name": "Route detail suppliers",
+            "passed": true
+        },
+        {
+            "name": "Route tambah terpisah suppliers",
+            "passed": true
+        },
+        {
+            "name": "Route edit terpisah suppliers",
+            "passed": true
+        },
+        {
+            "name": "CSRF mutasi master suppliers",
+            "passed": true
+        },
+        {
+            "name": "Owner tidak melihat form tambah melalui URL",
+            "passed": true
+        },
+        {
+            "name": "Owner baca tab kendaraan dalam cakupan",
+            "passed": true
+        },
+        {
+            "name": "HTTP rute lintas endpoint dicegah",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada endpoint hard delete master",
+            "passed": true
+        },
+        {
+            "name": "Permintaan hapus tidak menghilangkan data",
+            "passed": true
+        }
+    ]
+}

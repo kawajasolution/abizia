@@ -1,0 +1,84 @@
+{
+  "checks": [
+    {
+      "role": "Owner",
+      "viewport": 320,
+      "status": 200,
+      "css": {
+        "display": "block",
+        "css": true,
+        "overflow": true,
+        "sidebar": true,
+        "icon": true
+      },
+      "failed": []
+    },
+    {
+      "role": "Administrator",
+      "viewport": 320,
+      "status": 200,
+      "css": {
+        "display": "block",
+        "css": true,
+        "overflow": true,
+        "sidebar": true,
+        "icon": true
+      },
+      "failed": []
+    },
+    {
+      "role": "Owner",
+      "viewport": 768,
+      "status": 200,
+      "css": {
+        "display": "block",
+        "css": true,
+        "overflow": true,
+        "sidebar": true,
+        "icon": true
+      },
+      "failed": []
+    },
+    {
+      "role": "Administrator",
+      "viewport": 768,
+      "status": 200,
+      "css": {
+        "display": "block",
+        "css": true,
+        "overflow": true,
+        "sidebar": true,
+        "icon": true
+      },
+      "failed": []
+    },
+    {
+      "role": "Owner",
+      "viewport": 1366,
+      "status": 200,
+      "css": {
+        "display": "block",
+        "css": true,
+        "overflow": true,
+        "sidebar": true,
+        "icon": true
+      },
+      "failed": []
+    },
+    {
+      "role": "Administrator",
+      "viewport": 1366,
+      "status": 200,
+      "css": {
+        "display": "block",
+        "css": true,
+        "overflow": true,
+        "sidebar": true,
+        "icon": true
+      },
+      "failed": []
+    }
+  ],
+  "passed": 6,
+  "total": 6
+}

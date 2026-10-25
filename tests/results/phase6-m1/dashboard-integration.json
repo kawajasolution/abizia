@@ -1,0 +1,354 @@
+{
+    "date": "2026-10-24T15:28:45+08:00",
+    "passed": 87,
+    "checks": [
+        {
+            "name": "Ketersediaan sumber diperiksa dari database v2 aktual",
+            "passed": true
+        },
+        {
+            "name": "Dashboard pengguna aktif sesuai query sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard cabang sesuai query sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard matriks role\/permission nyata",
+            "passed": true
+        },
+        {
+            "name": "Administrator tidak mendapat widget finansial tanpa sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard hanya delapan audit terbaru",
+            "passed": true
+        },
+        {
+            "name": "Distribusi role merekonsiliasi pengguna aktif",
+            "passed": true
+        },
+        {
+            "name": "Dashboard scoped hanya memuat cabang sendiri",
+            "passed": true
+        },
+        {
+            "name": "Dashboard admin scoped tanpa jumlah pengguna\/role global",
+            "passed": true
+        },
+        {
+            "name": "Dashboard admin scoped tanpa audit dan distribusi akun",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak filter cabang lain",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak periode audit tanpa cakupan global",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak cabang tidak tersedia",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak filter array",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak tanggal tidak nyata",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak rentang terbalik",
+            "passed": true
+        },
+        {
+            "name": "Filter cabang mengubah KPI akun\/cabang sesuai definisi",
+            "passed": true
+        },
+        {
+            "name": "Filter cabang tidak menampilkan audit global yang tak dapat diatribusikan",
+            "passed": true
+        },
+        {
+            "name": "Cabang nonaktif nyata muncul sebagai tindak lanjut",
+            "passed": true
+        },
+        {
+            "name": "Tindak lanjut cabang lain tidak bocor ke admin scoped",
+            "passed": true
+        },
+        {
+            "name": "KPI bereaksi pada perubahan status akun nyata",
+            "passed": true
+        },
+        {
+            "name": "Pengguna nonaktif nyata muncul sebagai tindak lanjut",
+            "passed": true
+        },
+        {
+            "name": "Penetapan cabang kosong terdeteksi tanpa mengarang aturan",
+            "passed": true
+        },
+        {
+            "name": "Periode audit inklusif dua batas hari WITA",
+            "passed": true
+        },
+        {
+            "name": "Periode audit tidak mengubah KPI keadaan saat ini",
+            "passed": true
+        },
+        {
+            "name": "Periode audit tanpa data benar-benar kosong",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Penerima\/receipts",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Penerima\/claims",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Pengirim\/dispatch",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Pengirim\/drafts",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Sewa\/contracts",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Sewa\/timesheets",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Transit\/manifests",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Transit\/transit",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Administrator",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Customer",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Customer",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Customer",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Customer\/customer-tracking",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Finance",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Finance",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Finance",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/invoices",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/payments",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/pettycash",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Gudang",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Gudang",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Gudang",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Gudang\/inventory",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Gudang\/transfers",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Operator Alat Berat\/assignments",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Operator Alat Berat\/my-timesheets",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Owner",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Owner",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Owner",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/operations",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/finance",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/monitoring",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/attention",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Owner\/trends",
+            "passed": true
+        },
+        {
+            "name": "Repository KPI pengguna memeriksa izin",
+            "passed": true
+        },
+        {
+            "name": "Repository role memeriksa global scope",
+            "passed": true
+        },
+        {
+            "name": "Repository audit memeriksa izin",
+            "passed": true
+        },
+        {
+            "name": "Owner global tidak mendapat grant dari nama\/cakupan",
+            "passed": true
+        },
+        {
+            "name": "Akun tanpa penetapan cabang tidak membaca semua cabang",
+            "passed": true
+        },
+        {
+            "name": "Dashboard service memeriksa foundation.view",
+            "passed": true
+        },
+        {
+            "name": "HTTP dashboard memeriksa foundation.view sebelum widget",
+            "passed": true
+        },
+        {
+            "name": "HTTP dashboard menolak filter cabang lintas akses",
+            "passed": true
+        },
+        {
+            "name": "HTTP dashboard menolak tanggal tidak sah",
+            "passed": true
+        },
+        {
+            "name": "HTTP Owner langsung ke dashboard sendiri",
+            "passed": true
+        },
+        {
+            "name": "HTTP Owner tanpa KPI terlarang\/cabang lain",
+            "passed": true
+        },
+        {
+            "name": "HTTP Owner menandai sumber data belum tersedia",
+            "passed": true
+        }
+    ]
+}

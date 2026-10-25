@@ -1,0 +1,323 @@
+{
+    "date": "2026-10-24T18:55:45+08:00",
+    "passed": 79,
+    "failed": 0,
+    "checks": [
+        {
+            "name": "M4 master nonaktif setelah draft menolak HANDOVER",
+            "passed": true
+        },
+        {
+            "name": "M4 customer nonaktif setelah draft menolak HANDOVER",
+            "passed": true
+        },
+        {
+            "name": "M4 HANDOVER sebagian hanya mengaktifkan unit terpilih",
+            "passed": true
+        },
+        {
+            "name": "M4 HANDOVER pertama mengaktifkan header",
+            "passed": true
+        },
+        {
+            "name": "M4 replay confirm tidak menerbitkan nomor\/status\/event ulang",
+            "passed": true
+        },
+        {
+            "name": "M4 BA memakai tahun konfirmasi WITA dan cabang kontrak, bukan tahun kejadian",
+            "passed": true
+        },
+        {
+            "name": "M4 HANDOVER confirmed ganda ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 confirmed tidak dapat dibatalkan",
+            "passed": true
+        },
+        {
+            "name": "M4 koreksi khusus default deny termasuk Administrator",
+            "passed": true
+        },
+        {
+            "name": "M4 RETURN sebagian mempertahankan unit lain dan header ACTIVE",
+            "passed": true
+        },
+        {
+            "name": "M4 RETURN ganda ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 seluruh unit kembali menutup kontrak normal",
+            "passed": true
+        },
+        {
+            "name": "M4 replay koreksi tidak menggandakan BA",
+            "passed": true
+        },
+        {
+            "name": "M4 BA koreksi tidak menulis ulang fakta\/status\/histori sumber",
+            "passed": true
+        },
+        {
+            "name": "M4 BA koreksi confirmed terhubung dengan lifecycle_effect NULL",
+            "passed": true
+        },
+        {
+            "name": "M4 satu sumber invalid menolak seluruh batch HANDOVER",
+            "passed": true
+        },
+        {
+            "name": "M4 batch gagal tidak meninggalkan status\/sequence parsial",
+            "passed": true
+        },
+        {
+            "name": "M4 kegagalan audit membatalkan konfirmasi multi-unit",
+            "passed": true
+        },
+        {
+            "name": "M4 rollback konfirmasi mencakup nomor, BA, operator dan unit",
+            "passed": true
+        },
+        {
+            "name": "M4 HANDOVER ALL atomik; hanya operator interval aktual diaktifkan",
+            "passed": true
+        },
+        {
+            "name": "M4 HM menurun menolak RETURN tanpa mengarang reset",
+            "passed": true
+        },
+        {
+            "name": "M4 RETURN invalid tidak melepas penggunaan",
+            "passed": true
+        },
+        {
+            "name": "M4 RETURN sebelum HANDOVER ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 EARLY wajib alasan",
+            "passed": true
+        },
+        {
+            "name": "M4 EARLY ditolak tanpa permission terminate",
+            "passed": true
+        },
+        {
+            "name": "M4 RETURN master nonaktif memerlukan recovery khusus",
+            "passed": true
+        },
+        {
+            "name": "M4 RETURN ALL EARLY menyelesaikan unit\/operator aktual; jadwal belum mulai dibatalkan berhistori",
+            "passed": true
+        },
+        {
+            "name": "M4 recovery mempertahankan audit pengecualian tanpa aktivasi master",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M4 dua proses dua BA satu unit tepat satu commit",
+            "passed": true
+        },
+        {
+            "name": "M4 race mempertahankan satu sumber efek lifecycle",
+            "passed": true
+        },
+        {
+            "name": "M4 audit BA normal tidak mewarisi konteks recovery transaksi sebelumnya",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M4 dua proses token sama replay satu nomor\/event",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M4 BA sah bersamaan mendapat nomor berbeda",
+            "passed": true
+        },
+        {
+            "name": "M4 HTTP detail BA berfungsi",
+            "passed": true
+        },
+        {
+            "name": "M4 CSRF wajib pada konfirmasi",
+            "passed": true
+        },
+        {
+            "name": "M4 bukti PNG nyata diunggah privat",
+            "passed": true
+        },
+        {
+            "name": "M4 replay upload tidak menggandakan file\/metadata",
+            "passed": true
+        },
+        {
+            "name": "M4 file privat acak dan tepat satu metadata bukti",
+            "passed": true
+        },
+        {
+            "name": "M4 unduh bukti sah melewati autentikasi\/scope\/hash",
+            "passed": true
+        },
+        {
+            "name": "M4 ekstensi berbahaya ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 MIME dari isi file bukan header klien",
+            "passed": true
+        },
+        {
+            "name": "M4 batas 5 MB ditegakkan backend",
+            "passed": true
+        },
+        {
+            "name": "M4 audit upload gagal menolak penyimpanan",
+            "passed": true
+        },
+        {
+            "name": "M4 rollback upload membersihkan file baru\/metadata",
+            "passed": true
+        },
+        {
+            "name": "M4 bukti dengan hash berubah ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 membership dicabut menutup akses BA",
+            "passed": true
+        },
+        {
+            "name": "M4 HTTP Owner tidak dapat konfirmasi dengan token CSRF sah",
+            "passed": true
+        },
+        {
+            "name": "M4 HTTP detail cabang lain tidak bocor",
+            "passed": true
+        },
+        {
+            "name": "M4 tidak menyediakan prosedur koreksi fakta asumtif",
+            "passed": true
+        },
+        {
+            "name": "M4 bukti confirmed immutable",
+            "passed": true
+        },
+        {
+            "name": "M4 tampilan cetak authenticated tersedia",
+            "passed": true
+        },
+        {
+            "name": "M4 tidak membangun Timesheet, verifikasi atau koreksi meter",
+            "passed": true
+        },
+        {
+            "name": "M4 seluruh grant C uji dicabut kembali; tidak seed grant sensitif",
+            "passed": true
+        },
+        {
+            "name": "M4 HANDOVER memeriksa ulang approval lintas cabang yang dicabut",
+            "passed": true
+        },
+        {
+            "name": "M4 BA unit pinjaman menggunakan cabang kontrak tanpa memindahkan kepemilikan",
+            "passed": true
+        },
+        {
+            "name": "M4 pengembalian aktual tidak membutuhkan grant approval baru untuk melepas unit pinjaman",
+            "passed": true
+        },
+        {
+            "name": "M4 snapshot BA confirmed tidak berubah ketika nama master berubah",
+            "passed": true
+        },
+        {
+            "name": "M4 bukti cabang privat fixture diunggah sah",
+            "passed": true
+        },
+        {
+            "name": "M4 IDOR bukti cabang lain ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 Owner dapat membaca bukti dalam scope",
+            "passed": true
+        },
+        {
+            "name": "M4 bukti tanpa autentikasi dialihkan ke login",
+            "passed": true
+        },
+        {
+            "name": "M4 own grant Operator tidak membuka dokumen multi-unit\/bukti penuh",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M4 dua RETURN berbeda bersamaan tepat satu berhasil",
+            "passed": true
+        },
+        {
+            "name": "M4 detail CONFIRMED belum diselesaikan mencegah header terminal walau tidak ada unit ACTIVE",
+            "passed": true
+        },
+        {
+            "name": "M4 agregasi selesai setelah return sah dan pembatalan detail terakhir yang belum mulai",
+            "passed": true
+        },
+        {
+            "name": "M4 tidak mengubah data Tahap 5: exp_dns",
+            "passed": true
+        },
+        {
+            "name": "M4 tidak mengubah data Tahap 5: exp_manifests",
+            "passed": true
+        },
+        {
+            "name": "M4 tidak mengubah data Tahap 5: exp_events",
+            "passed": true
+        },
+        {
+            "name": "M4 tidak mengubah data Tahap 5: exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "M4 tidak mengubah data Tahap 5: exp_claims",
+            "passed": true
+        },
+        {
+            "name": "M4 tidak mengubah data Tahap 5: exp_sequences",
+            "passed": true
+        }
+    ]
+}

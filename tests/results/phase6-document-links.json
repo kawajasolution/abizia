@@ -1,0 +1,147 @@
+﻿[
+    {
+        "doc":  "EQUIPMENT_DESIGN.md",
+        "target":  "EQUIPMENT_STATE_MACHINE.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_DESIGN.md",
+        "target":  "EQUIPMENT_PERMISSION_MATRIX.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_DESIGN.md",
+        "target":  "PHASE6_IMPLEMENTATION_PLAN.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_PERMISSION_MATRIX.md",
+        "target":  "EQUIPMENT_DESIGN.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_PERMISSION_MATRIX.md",
+        "target":  "EQUIPMENT_STATE_MACHINE.md",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/phase6-m1/",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/phase6-m1/foundation.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/phase6-m1/audit-repairs.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/phase6-m1/database-integrity.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/phase6-m1/deployment.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/phase6-m1/lint.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/equipment-migrations.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "database/migrations/005_equipment_operations.sql",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/equipment-migrations.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/foundation.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/audit-repairs.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/navigation.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/dashboard-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/master-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/expedition-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/trucking-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/equipment-development.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/database-integrity.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/deployment.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/lint.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/javascript-lint.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/equipment-migrations-initial.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M1_M2_REPORT.md",
+        "target":  "tests/results/equipment-development-initial.json",
+        "passed":  true
+    }
+]

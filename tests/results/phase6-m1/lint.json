@@ -1,0 +1,447 @@
+﻿[
+    {
+        "file":  "public\\router.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in public\\router.php"
+    },
+    {
+        "file":  "bin\\setup-dev.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in bin\\setup-dev.php"
+    },
+    {
+        "file":  "public\\index.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in public\\index.php"
+    },
+    {
+        "file":  "bin\\migrate.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in bin\\migrate.php"
+    },
+    {
+        "file":  "bin\\bootstrap-admin.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in bin\\bootstrap-admin.php"
+    },
+    {
+        "file":  "tests\\trucking-upgrade.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\trucking-upgrade.php"
+    },
+    {
+        "file":  "tests\\trucking-operations.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\trucking-operations.php"
+    },
+    {
+        "file":  "app\\Views\\users.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\users.php"
+    },
+    {
+        "file":  "app\\Views\\roles.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\roles.php"
+    },
+    {
+        "file":  "app\\Views\\master-data.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\master-data.php"
+    },
+    {
+        "file":  "app\\Views\\login.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\login.php"
+    },
+    {
+        "file":  "app\\Views\\layout.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\layout.php"
+    },
+    {
+        "file":  "app\\Views\\expedition.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\expedition.php"
+    },
+    {
+        "file":  "app\\Views\\error.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\error.php"
+    },
+    {
+        "file":  "app\\Views\\dashboard.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\dashboard.php"
+    },
+    {
+        "file":  "tests\\run.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\run.php"
+    },
+    {
+        "file":  "app\\Views\\components\\trucking-actions.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\trucking-actions.php"
+    },
+    {
+        "file":  "app\\Views\\components\\table.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\table.php"
+    },
+    {
+        "file":  "app\\Views\\components\\sidebar.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\sidebar.php"
+    },
+    {
+        "file":  "app\\Views\\components\\pagination.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\pagination.php"
+    },
+    {
+        "file":  "app\\Views\\components\\page-heading.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\page-heading.php"
+    },
+    {
+        "file":  "app\\Views\\components\\loading.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\loading.php"
+    },
+    {
+        "file":  "app\\Views\\components\\header.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\header.php"
+    },
+    {
+        "file":  "app\\Views\\components\\field.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\field.php"
+    },
+    {
+        "file":  "app\\Views\\components\\empty-state.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\empty-state.php"
+    },
+    {
+        "file":  "app\\Views\\components\\dashboard-pending.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\dashboard-pending.php"
+    },
+    {
+        "file":  "app\\Views\\components\\dashboard-kpi.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\dashboard-kpi.php"
+    },
+    {
+        "file":  "app\\Views\\components\\dashboard-filters.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\dashboard-filters.php"
+    },
+    {
+        "file":  "app\\Views\\components\\confirmation.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\confirmation.php"
+    },
+    {
+        "file":  "app\\Views\\components\\card.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\card.php"
+    },
+    {
+        "file":  "app\\Views\\components\\breadcrumb.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\breadcrumb.php"
+    },
+    {
+        "file":  "app\\Views\\components\\bottom-navigation.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\bottom-navigation.php"
+    },
+    {
+        "file":  "app\\Views\\components\\alert.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\components\\alert.php"
+    },
+    {
+        "file":  "app\\Views\\claims.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\claims.php"
+    },
+    {
+        "file":  "app\\Views\\audit.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Views\\audit.php"
+    },
+    {
+        "file":  "app\\Services\\TruckingOperations.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\TruckingOperations.php"
+    },
+    {
+        "file":  "app\\Services\\Session.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Session.php"
+    },
+    {
+        "file":  "app\\Services\\OperationalWrite.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\OperationalWrite.php"
+    },
+    {
+        "file":  "app\\Services\\Navigation.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Navigation.php"
+    },
+    {
+        "file":  "app\\Services\\Migrator.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Migrator.php"
+    },
+    {
+        "file":  "app\\Services\\MasterService.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\MasterService.php"
+    },
+    {
+        "file":  "app\\Services\\MasterPermissions.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\MasterPermissions.php"
+    },
+    {
+        "file":  "app\\Services\\MasterData.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\MasterData.php"
+    },
+    {
+        "file":  "app\\Services\\ExpeditionPermissions.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\ExpeditionPermissions.php"
+    },
+    {
+        "file":  "app\\Services\\ExpeditionAccess.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\ExpeditionAccess.php"
+    },
+    {
+        "file":  "app\\Services\\Expedition.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Expedition.php"
+    },
+    {
+        "file":  "app\\Services\\DocumentNumbers.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\DocumentNumbers.php"
+    },
+    {
+        "file":  "app\\Services\\Dashboard.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Dashboard.php"
+    },
+    {
+        "file":  "app\\Services\\Csrf.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Csrf.php"
+    },
+    {
+        "file":  "app\\Services\\Claims.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Claims.php"
+    },
+    {
+        "file":  "app\\Services\\BootstrapAdmin.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\BootstrapAdmin.php"
+    },
+    {
+        "file":  "app\\Services\\Auth.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Auth.php"
+    },
+    {
+        "file":  "app\\Services\\Audit.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Services\\Audit.php"
+    },
+    {
+        "file":  "app\\routes.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\routes.php"
+    },
+    {
+        "file":  "tests\\expedition-access.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\expedition-access.php"
+    },
+    {
+        "file":  "app\\Database.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Database.php"
+    },
+    {
+        "file":  "tests\\deployment.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\deployment.php"
+    },
+    {
+        "file":  "app\\dashboard.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\dashboard.php"
+    },
+    {
+        "file":  "tests\\database-integrity.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\database-integrity.php"
+    },
+    {
+        "file":  "tests\\dashboard.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\dashboard.php"
+    },
+    {
+        "file":  "tests\\concurrency.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\concurrency.php"
+    },
+    {
+        "file":  "app\\bootstrap.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\bootstrap.php"
+    },
+    {
+        "file":  "app\\Config.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Config.php"
+    },
+    {
+        "file":  "tests\\expedition.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\expedition.php"
+    },
+    {
+        "file":  "tests\\expedition-worker.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\expedition-worker.php"
+    },
+    {
+        "file":  "tests\\master-data.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\master-data.php"
+    },
+    {
+        "file":  "tests\\phase5-audit-repairs.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in tests\\phase5-audit-repairs.php"
+    },
+    {
+        "file":  "app\\master-data.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\master-data.php"
+    },
+    {
+        "file":  "app\\Controllers\\OperationsController.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Controllers\\OperationsController.php"
+    },
+    {
+        "file":  "app\\Controllers\\MasterDataController.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Controllers\\MasterDataController.php"
+    },
+    {
+        "file":  "app\\Controllers\\FoundationController.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Controllers\\FoundationController.php"
+    },
+    {
+        "file":  "app\\Controllers\\ExpeditionController.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Controllers\\ExpeditionController.php"
+    },
+    {
+        "file":  "app\\Controllers\\DashboardController.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Controllers\\DashboardController.php"
+    },
+    {
+        "file":  "app\\Controllers\\AuthController.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Controllers\\AuthController.php"
+    },
+    {
+        "file":  "app\\Http\\View.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Http\\View.php"
+    },
+    {
+        "file":  "app\\Http\\Router.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Http\\Router.php"
+    },
+    {
+        "file":  "app\\Http\\Pagination.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Http\\Pagination.php"
+    },
+    {
+        "file":  "app\\Http\\Input.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Http\\Input.php"
+    },
+    {
+        "file":  "app\\Http\\Icons.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Http\\Icons.php"
+    },
+    {
+        "file":  "app\\Http\\HttpError.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Http\\HttpError.php"
+    },
+    {
+        "file":  "app\\navigation.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\navigation.php"
+    },
+    {
+        "file":  "app\\Repositories\\UserRepository.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Repositories\\UserRepository.php"
+    },
+    {
+        "file":  "app\\Repositories\\TruckingRepository.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Repositories\\TruckingRepository.php"
+    },
+    {
+        "file":  "app\\Middleware\\Access.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Middleware\\Access.php"
+    },
+    {
+        "file":  "app\\Repositories\\Repository.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Repositories\\Repository.php"
+    },
+    {
+        "file":  "app\\Repositories\\ExpeditionRepository.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Repositories\\ExpeditionRepository.php"
+    },
+    {
+        "file":  "app\\Repositories\\DashboardRepository.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Repositories\\DashboardRepository.php"
+    },
+    {
+        "file":  "app\\Repositories\\MasterDataRepository.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in app\\Repositories\\MasterDataRepository.php"
+    },
+    {
+        "file":  "config/example.php",
+        "passed":  true,
+        "message":  "No syntax errors detected in config/example.php"
+    }
+]

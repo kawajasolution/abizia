@@ -1,0 +1,1 @@
+<?php /* Page heading is the sole page title; breadcrumb omitted when it adds no context. */ ?>

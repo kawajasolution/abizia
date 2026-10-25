@@ -1,0 +1,2 @@
+<?php
+$c=require 'config/main.php';$p=new PDO('mysql:host=127.0.0.1;dbname=hls_v2',$c['username'],$c['password']);$ts=['fin_accounts','fin_expense_categories','fin_invoices','fin_invoice_lines','fin_payments','fin_payment_allocations','fin_supplier_bills','fin_supplier_bill_lines','fin_cash_ledger','fin_expenses','fin_events'];foreach($ts as $t)echo $t.' '.($p->query("SELECT COUNT(*) FROM $t")->fetchColumn())."\n";echo 'migration='.$p->query("SELECT version FROM schema_migrations WHERE version='006_finance_foundation'")->fetchColumn()."\n";

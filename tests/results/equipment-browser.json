@@ -1,0 +1,255 @@
+{
+  "date": "2026-10-24T11:00:20.060Z",
+  "passed": 62,
+  "failed": 0,
+  "checks": [
+    {
+      "label": "M3 daftar HTTP 320",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar tidak overflow 320",
+      "passed": true
+    },
+    {
+      "label": "M3 draft nyata dibuat 320",
+      "passed": true
+    },
+    {
+      "label": "M3 unit nyata tersimpan 320",
+      "passed": true
+    },
+    {
+      "label": "M3 nomor resmi KS 320",
+      "passed": true
+    },
+    {
+      "label": "M3 confirmed tidak ACTIVE 320",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi aktif ditampilkan 320",
+      "passed": true
+    },
+    {
+      "label": "M3 histori nyata 320",
+      "passed": true
+    },
+    {
+      "label": "M3 detail tidak overflow 320",
+      "passed": true
+    },
+    {
+      "label": "M3 cancel nyata 320",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi dilepas 320",
+      "passed": true
+    },
+    {
+      "label": "M3 tanpa error JS 320",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar HTTP 375",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar tidak overflow 375",
+      "passed": true
+    },
+    {
+      "label": "M3 draft nyata dibuat 375",
+      "passed": true
+    },
+    {
+      "label": "M3 unit nyata tersimpan 375",
+      "passed": true
+    },
+    {
+      "label": "M3 nomor resmi KS 375",
+      "passed": true
+    },
+    {
+      "label": "M3 confirmed tidak ACTIVE 375",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi aktif ditampilkan 375",
+      "passed": true
+    },
+    {
+      "label": "M3 histori nyata 375",
+      "passed": true
+    },
+    {
+      "label": "M3 detail tidak overflow 375",
+      "passed": true
+    },
+    {
+      "label": "M3 cancel nyata 375",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi dilepas 375",
+      "passed": true
+    },
+    {
+      "label": "M3 tanpa error JS 375",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar HTTP 402",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar tidak overflow 402",
+      "passed": true
+    },
+    {
+      "label": "M3 draft nyata dibuat 402",
+      "passed": true
+    },
+    {
+      "label": "M3 unit nyata tersimpan 402",
+      "passed": true
+    },
+    {
+      "label": "M3 nomor resmi KS 402",
+      "passed": true
+    },
+    {
+      "label": "M3 confirmed tidak ACTIVE 402",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi aktif ditampilkan 402",
+      "passed": true
+    },
+    {
+      "label": "M3 histori nyata 402",
+      "passed": true
+    },
+    {
+      "label": "M3 detail tidak overflow 402",
+      "passed": true
+    },
+    {
+      "label": "M3 cancel nyata 402",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi dilepas 402",
+      "passed": true
+    },
+    {
+      "label": "M3 tanpa error JS 402",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar HTTP 768",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar tidak overflow 768",
+      "passed": true
+    },
+    {
+      "label": "M3 draft nyata dibuat 768",
+      "passed": true
+    },
+    {
+      "label": "M3 unit nyata tersimpan 768",
+      "passed": true
+    },
+    {
+      "label": "M3 nomor resmi KS 768",
+      "passed": true
+    },
+    {
+      "label": "M3 confirmed tidak ACTIVE 768",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi aktif ditampilkan 768",
+      "passed": true
+    },
+    {
+      "label": "M3 histori nyata 768",
+      "passed": true
+    },
+    {
+      "label": "M3 detail tidak overflow 768",
+      "passed": true
+    },
+    {
+      "label": "M3 cancel nyata 768",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi dilepas 768",
+      "passed": true
+    },
+    {
+      "label": "M3 tanpa error JS 768",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar HTTP 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 daftar tidak overflow 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 draft nyata dibuat 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 unit nyata tersimpan 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 nomor resmi KS 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 confirmed tidak ACTIVE 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi aktif ditampilkan 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 histori nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 detail tidak overflow 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 cancel nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 reservasi dilepas 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 tanpa error JS 1366",
+      "passed": true
+    },
+    {
+      "label": "M3 Owner tidak mendapat tombol write",
+      "passed": true
+    },
+    {
+      "label": "M3 Owner tidak mempunyai grant approval",
+      "passed": true
+    }
+  ]
+}

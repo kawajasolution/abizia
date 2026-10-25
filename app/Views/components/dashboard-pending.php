@@ -1,0 +1,2 @@
+<?php use Hls\Http\View as V; ?>
+<section class="panel dashboard-pending" data-pending="<?= V::escape($section['id']) ?>"><div class="pending-heading"><h2><?= V::escape($section['title']) ?></h2><span class="availability-label">Belum tersedia</span></div><ul><?php foreach ($section['items'] as $label): ?><li><?= V::escape($label) ?></li><?php endforeach ?></ul><p class="field-hint">Ringkasan ini akan tersedia setelah sumber data dan hak aksesnya siap.</p></section>

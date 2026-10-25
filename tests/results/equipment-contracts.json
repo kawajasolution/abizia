@@ -1,0 +1,303 @@
+{
+    "date": "2026-10-24T18:55:36+08:00",
+    "passed": 74,
+    "failed": 0,
+    "checks": [
+        {
+            "name": "M3 replay create tidak membuat kontrak\/histori ganda",
+            "passed": true
+        },
+        {
+            "name": "M3 token create tidak dapat dipakai aktor lain",
+            "passed": true
+        },
+        {
+            "name": "M3 edit detail draft mempertahankan versi periode sebelumnya",
+            "passed": true
+        },
+        {
+            "name": "M3 optimistic version menolak form stale",
+            "passed": true
+        },
+        {
+            "name": "M3 edit header draft benar-benar berfungsi",
+            "passed": true
+        },
+        {
+            "name": "M3 draft tanpa nomor atau reservasi",
+            "passed": true
+        },
+        {
+            "name": "M3 konfirmasi mengikat unit tanpa ACTIVE",
+            "passed": true
+        },
+        {
+            "name": "M3 dua draft boleh sama; confirm kedua bentrok",
+            "passed": true
+        },
+        {
+            "name": "M3 KS menggunakan cabang dan tahun konfirmasi WITA",
+            "passed": true
+        },
+        {
+            "name": "M3 header confirmed immutable terhadap edit draft",
+            "passed": true
+        },
+        {
+            "name": "M3 batas akhir sewa inklusif konflik pada hari sama",
+            "passed": true
+        },
+        {
+            "name": "M3 periode mulai hari berikutnya sah",
+            "passed": true
+        },
+        {
+            "name": "M3 penggantian operator saat DRAFT dapat dikonfirmasi dengan histori tetap",
+            "passed": true
+        },
+        {
+            "name": "M3 WITH memerlukan operator dan batch rollback",
+            "passed": true
+        },
+        {
+            "name": "M3 kegagalan satu detail tidak meninggalkan status parsial",
+            "passed": true
+        },
+        {
+            "name": "M3 multi-unit WITH\/WITHOUT dan shift bersebelahan lintas tengah malam",
+            "passed": true
+        },
+        {
+            "name": "M3 operator tidak overlap pada unit berbeda",
+            "passed": true
+        },
+        {
+            "name": "M3 WITHOUT tidak membuat penugasan operator",
+            "passed": true
+        },
+        {
+            "name": "M3 perubahan jadwal mengganti record dan menyimpan histori lama",
+            "passed": true
+        },
+        {
+            "name": "M3 tambahan setelah confirm belum mengikat sebelum konfirmasi detail",
+            "passed": true
+        },
+        {
+            "name": "M3 detail tambahan confirmed tanpa nomor KS baru",
+            "passed": true
+        },
+        {
+            "name": "M3 usulan extension belum mengubah reservasi efektif",
+            "passed": true
+        },
+        {
+            "name": "M3 extension append periode tanpa menimpa histori",
+            "passed": true
+        },
+        {
+            "name": "M3 perpanjangan memeriksa konflik ulang",
+            "passed": true
+        },
+        {
+            "name": "M3 cancel replay tidak menggandakan histori dan nomor tidak hilang",
+            "passed": true
+        },
+        {
+            "name": "M3 token sama payload berbeda ditolak",
+            "passed": true
+        },
+        {
+            "name": "M3 master dinonaktifkan setelah draft ditolak saat confirm",
+            "passed": true
+        },
+        {
+            "name": "M3 audit gagal membatalkan seluruh konfirmasi",
+            "passed": true
+        },
+        {
+            "name": "M3 rollback audit juga mengembalikan sequence dan status",
+            "passed": true
+        },
+        {
+            "name": "M3 role read-only ditolak create backend",
+            "passed": true
+        },
+        {
+            "name": "M3 Admin Sewa dapat membuat kontrak sesuai grant Y",
+            "passed": true
+        },
+        {
+            "name": "M3 Admin Sewa grant C extension ditolak backend",
+            "passed": true
+        },
+        {
+            "name": "M3 membership dicabut menutup detail backend",
+            "passed": true
+        },
+        {
+            "name": "M3 unit belum dikembalikan tidak tersedia walau tanggal rencana berbeda",
+            "passed": true
+        },
+        {
+            "name": "M3 global Administrator tidak bypass dua persetujuan lintas cabang",
+            "passed": true
+        },
+        {
+            "name": "M3 default tanpa permission approval tetap deny",
+            "passed": true
+        },
+        {
+            "name": "M3 requester tidak boleh self-approve walaupun Administrator",
+            "passed": true
+        },
+        {
+            "name": "M3 pihak approver harus mempunyai scope cabang sumber",
+            "passed": true
+        },
+        {
+            "name": "M3 HTTP approver pemilik melihat proyeksi request tanpa customer kontrak",
+            "passed": true
+        },
+        {
+            "name": "M3 HTTP approval dengan permission tetap memerlukan CSRF",
+            "passed": true
+        },
+        {
+            "name": "M3 HTTP approval pemilik sah",
+            "passed": true
+        },
+        {
+            "name": "M3 satu approval belum cukup",
+            "passed": true
+        },
+        {
+            "name": "M3 akun global tidak boleh menyetujui kedua pihak",
+            "passed": true
+        },
+        {
+            "name": "M3 dua akun berizin\/cabang berbeda memungkinkan konfirmasi",
+            "passed": true
+        },
+        {
+            "name": "M3 extension lintas cabang tidak memakai approval periode lama",
+            "passed": true
+        },
+        {
+            "name": "M3 pencabutan mempertahankan histori dan tidak otomatis membatalkan kontrak",
+            "passed": true
+        },
+        {
+            "name": "M3 grant approval fixture dibersihkan; tidak menjadi default",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M3 dua proses confirm unit sama tepat satu berhasil",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M3 concurrent replay satu nomor\/event\/commit",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "M3 dua konfirmasi sah bersamaan mendapat nomor KS berbeda",
+            "passed": true
+        },
+        {
+            "name": "M3 kode cabang terkunci oleh KS pertama tanpa DN\/MF",
+            "passed": true
+        },
+        {
+            "name": "M3 HTTP daftar kontrak berfungsi",
+            "passed": true
+        },
+        {
+            "name": "M3 CSRF POST langsung ditolak",
+            "passed": true
+        },
+        {
+            "name": "M3 HTTP detail histori\/unit\/operator",
+            "passed": true
+        },
+        {
+            "name": "M3 endpoint approval default deny",
+            "passed": true
+        },
+        {
+            "name": "M3 HTTP create draft dengan CSRF sah",
+            "passed": true
+        },
+        {
+            "name": "M3 output proyek ter-escape",
+            "passed": true
+        },
+        {
+            "name": "M3 tidak menyediakan aksi ACTIVE\/BA",
+            "passed": true
+        },
+        {
+            "name": "M3 HTTP IDOR tidak membocorkan kontrak cabang lain",
+            "passed": true
+        },
+        {
+            "name": "M3 HTTP Owner tidak bisa write walau CSRF sah",
+            "passed": true
+        },
+        {
+            "name": "M3 ledger mencatat transisi status eksplisit",
+            "passed": true
+        },
+        {
+            "name": "M3 tidak mengubah data T5: exp_dns",
+            "passed": true
+        },
+        {
+            "name": "M3 tidak mengubah data T5: exp_manifests",
+            "passed": true
+        },
+        {
+            "name": "M3 tidak mengubah data T5: exp_events",
+            "passed": true
+        },
+        {
+            "name": "M3 tidak mengubah data T5: exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "M3 tidak mengubah data T5: exp_claims",
+            "passed": true
+        },
+        {
+            "name": "M3 tidak mengubah data T5: exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "M3 tidak membuat BA\/timesheet\/keuangan",
+            "passed": true
+        }
+    ]
+}

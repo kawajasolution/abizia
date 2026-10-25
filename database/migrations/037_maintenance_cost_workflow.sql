@@ -1,0 +1,1 @@
+ALTER TABLE maintenance_external_services MODIFY status ENUM('DRAFT','SUBMITTED','APPROVED','RETURNED','PAID') NOT NULL DEFAULT 'DRAFT', ADD COLUMN provider_name VARCHAR(180) NULL AFTER vendor_id, ADD COLUMN document_ref VARCHAR(100) NULL AFTER service_ref, ADD COLUMN note VARCHAR(255) NULL AFTER amount;

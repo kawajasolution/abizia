@@ -1,0 +1,2116 @@
+{
+  "passed": 521,
+  "viewports": [
+    {
+      "width": 320,
+      "height": 640,
+      "passed": 99
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "passed": 99
+    },
+    {
+      "width": 402,
+      "height": 874,
+      "passed": 99
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "passed": 99
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "passed": 85
+    }
+  ],
+  "checks": [
+    {
+      "label": "Dashboard langsung 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard bukan accordion 320",
+      "passed": true
+    },
+    {
+      "label": "Dua puluh empat route nyata admin 320",
+      "passed": true
+    },
+    {
+      "label": "Empat shortcut admin 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu/profil/notifikasi palsu 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger sesuai viewport 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav sesuai viewport 320",
+      "passed": true
+    },
+    {
+      "label": "Satu hamburger 320",
+      "passed": true
+    },
+    {
+      "label": "Urutan header kiri ke kanan 320",
+      "passed": true
+    },
+    {
+      "label": "Drawer tertutup inert 320",
+      "passed": true
+    },
+    {
+      "label": "Ukuran bottom nav 320",
+      "passed": true
+    },
+    {
+      "label": "Drawer buka 320",
+      "passed": true
+    },
+    {
+      "label": "Logo drawer tidak terpotong 320",
+      "passed": true
+    },
+    {
+      "label": "Kunci scroll dan fokus latar 320",
+      "passed": true
+    },
+    {
+      "label": "Fokus awal X 320",
+      "passed": true
+    },
+    {
+      "label": "Focus trap mundur 320",
+      "passed": true
+    },
+    {
+      "label": "Focus trap maju 320",
+      "passed": true
+    },
+    {
+      "label": "Escape dan restore fokus 320",
+      "passed": true
+    },
+    {
+      "label": "Overlay menutup 320",
+      "passed": true
+    },
+    {
+      "label": "X menutup 320",
+      "passed": true
+    },
+    {
+      "label": "Pilih submenu menutup drawer 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat setelah navigasi 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata / 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow / 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif / 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/contracts 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/contracts 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/contracts 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/handovers 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/handovers 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/handovers 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/timesheets 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/timesheets 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/timesheets 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/verification 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/verification 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/verification 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/customers 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/parties 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/routes 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/trucking-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/equipment-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/assets 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/personnel 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/items 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/suppliers 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /users 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /users 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /users 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /roles 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /roles 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /roles 320",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /audit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /audit 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /audit 320",
+      "passed": true
+    },
+    {
+      "label": "Logo utuh dan proporsional 320",
+      "passed": true
+    },
+    {
+      "label": "Konten terakhir bebas bottom nav 320",
+      "passed": true
+    },
+    {
+      "label": "Tombol simpan tidak tertutup 320",
+      "passed": true
+    },
+    {
+      "label": "Header tetap di atas saat scroll 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard langsung 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard bukan accordion 375",
+      "passed": true
+    },
+    {
+      "label": "Dua puluh empat route nyata admin 375",
+      "passed": true
+    },
+    {
+      "label": "Empat shortcut admin 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu/profil/notifikasi palsu 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger sesuai viewport 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav sesuai viewport 375",
+      "passed": true
+    },
+    {
+      "label": "Satu hamburger 375",
+      "passed": true
+    },
+    {
+      "label": "Urutan header kiri ke kanan 375",
+      "passed": true
+    },
+    {
+      "label": "Drawer tertutup inert 375",
+      "passed": true
+    },
+    {
+      "label": "Ukuran bottom nav 375",
+      "passed": true
+    },
+    {
+      "label": "Drawer buka 375",
+      "passed": true
+    },
+    {
+      "label": "Logo drawer tidak terpotong 375",
+      "passed": true
+    },
+    {
+      "label": "Kunci scroll dan fokus latar 375",
+      "passed": true
+    },
+    {
+      "label": "Fokus awal X 375",
+      "passed": true
+    },
+    {
+      "label": "Focus trap mundur 375",
+      "passed": true
+    },
+    {
+      "label": "Focus trap maju 375",
+      "passed": true
+    },
+    {
+      "label": "Escape dan restore fokus 375",
+      "passed": true
+    },
+    {
+      "label": "Overlay menutup 375",
+      "passed": true
+    },
+    {
+      "label": "X menutup 375",
+      "passed": true
+    },
+    {
+      "label": "Pilih submenu menutup drawer 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat setelah navigasi 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata / 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow / 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif / 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/transit 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/receipts 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/receipts 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/claims 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/claims 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/contracts 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/contracts 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/contracts 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/handovers 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/handovers 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/handovers 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/timesheets 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/timesheets 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/timesheets 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/verification 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/verification 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/verification 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/customers 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/parties 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/routes 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/trucking-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/equipment-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/assets 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/personnel 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/items 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/suppliers 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /users 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /users 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /users 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /roles 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /roles 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /roles 375",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /audit 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /audit 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /audit 375",
+      "passed": true
+    },
+    {
+      "label": "Logo utuh dan proporsional 375",
+      "passed": true
+    },
+    {
+      "label": "Konten terakhir bebas bottom nav 375",
+      "passed": true
+    },
+    {
+      "label": "Tombol simpan tidak tertutup 375",
+      "passed": true
+    },
+    {
+      "label": "Header tetap di atas saat scroll 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard langsung 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard bukan accordion 402",
+      "passed": true
+    },
+    {
+      "label": "Dua puluh empat route nyata admin 402",
+      "passed": true
+    },
+    {
+      "label": "Empat shortcut admin 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu/profil/notifikasi palsu 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger sesuai viewport 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav sesuai viewport 402",
+      "passed": true
+    },
+    {
+      "label": "Satu hamburger 402",
+      "passed": true
+    },
+    {
+      "label": "Urutan header kiri ke kanan 402",
+      "passed": true
+    },
+    {
+      "label": "Drawer tertutup inert 402",
+      "passed": true
+    },
+    {
+      "label": "Ukuran bottom nav 402",
+      "passed": true
+    },
+    {
+      "label": "Drawer buka 402",
+      "passed": true
+    },
+    {
+      "label": "Logo drawer tidak terpotong 402",
+      "passed": true
+    },
+    {
+      "label": "Kunci scroll dan fokus latar 402",
+      "passed": true
+    },
+    {
+      "label": "Fokus awal X 402",
+      "passed": true
+    },
+    {
+      "label": "Focus trap mundur 402",
+      "passed": true
+    },
+    {
+      "label": "Focus trap maju 402",
+      "passed": true
+    },
+    {
+      "label": "Escape dan restore fokus 402",
+      "passed": true
+    },
+    {
+      "label": "Overlay menutup 402",
+      "passed": true
+    },
+    {
+      "label": "X menutup 402",
+      "passed": true
+    },
+    {
+      "label": "Pilih submenu menutup drawer 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat setelah navigasi 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata / 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow / 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif / 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/transit 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/receipts 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/receipts 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/claims 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/claims 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/contracts 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/contracts 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/contracts 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/handovers 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/handovers 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/handovers 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/timesheets 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/timesheets 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/timesheets 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/verification 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/verification 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/verification 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/customers 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/parties 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/routes 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/trucking-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/equipment-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/assets 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/personnel 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/items 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/suppliers 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /users 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /users 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /users 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /roles 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /roles 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /roles 402",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /audit 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /audit 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /audit 402",
+      "passed": true
+    },
+    {
+      "label": "Logo utuh dan proporsional 402",
+      "passed": true
+    },
+    {
+      "label": "Konten terakhir bebas bottom nav 402",
+      "passed": true
+    },
+    {
+      "label": "Tombol simpan tidak tertutup 402",
+      "passed": true
+    },
+    {
+      "label": "Header tetap di atas saat scroll 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard langsung 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard bukan accordion 768",
+      "passed": true
+    },
+    {
+      "label": "Dua puluh empat route nyata admin 768",
+      "passed": true
+    },
+    {
+      "label": "Empat shortcut admin 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu/profil/notifikasi palsu 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger sesuai viewport 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav sesuai viewport 768",
+      "passed": true
+    },
+    {
+      "label": "Satu hamburger 768",
+      "passed": true
+    },
+    {
+      "label": "Urutan header kiri ke kanan 768",
+      "passed": true
+    },
+    {
+      "label": "Drawer tertutup inert 768",
+      "passed": true
+    },
+    {
+      "label": "Ukuran bottom nav 768",
+      "passed": true
+    },
+    {
+      "label": "Drawer buka 768",
+      "passed": true
+    },
+    {
+      "label": "Logo drawer tidak terpotong 768",
+      "passed": true
+    },
+    {
+      "label": "Kunci scroll dan fokus latar 768",
+      "passed": true
+    },
+    {
+      "label": "Fokus awal X 768",
+      "passed": true
+    },
+    {
+      "label": "Focus trap mundur 768",
+      "passed": true
+    },
+    {
+      "label": "Focus trap maju 768",
+      "passed": true
+    },
+    {
+      "label": "Escape dan restore fokus 768",
+      "passed": true
+    },
+    {
+      "label": "Overlay menutup 768",
+      "passed": true
+    },
+    {
+      "label": "X menutup 768",
+      "passed": true
+    },
+    {
+      "label": "Pilih submenu menutup drawer 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat setelah navigasi 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata / 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow / 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif / 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/transit 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/receipts 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/receipts 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/claims 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/claims 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/contracts 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/contracts 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/contracts 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/handovers 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/handovers 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/handovers 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/timesheets 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/timesheets 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/timesheets 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/verification 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/verification 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/verification 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/customers 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/parties 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/routes 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/trucking-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/equipment-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/assets 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/personnel 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/items 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/suppliers 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /users 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /users 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /users 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /roles 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /roles 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /roles 768",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /audit 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /audit 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /audit 768",
+      "passed": true
+    },
+    {
+      "label": "Logo utuh dan proporsional 768",
+      "passed": true
+    },
+    {
+      "label": "Konten terakhir bebas bottom nav 768",
+      "passed": true
+    },
+    {
+      "label": "Tombol simpan tidak tertutup 768",
+      "passed": true
+    },
+    {
+      "label": "Header tetap di atas saat scroll 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard langsung 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard bukan accordion 1366",
+      "passed": true
+    },
+    {
+      "label": "Dua puluh empat route nyata admin 1366",
+      "passed": true
+    },
+    {
+      "label": "Empat shortcut admin 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu/profil/notifikasi palsu 1366",
+      "passed": true
+    },
+    {
+      "label": "Hamburger sesuai viewport 1366",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav sesuai viewport 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop terlihat dan aktif 1366",
+      "passed": true
+    },
+    {
+      "label": "Accordion tutup 1366",
+      "passed": true
+    },
+    {
+      "label": "Accordion buka 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata / 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow / 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif / 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/receipts 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/receipts 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/claims 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/claims 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/contracts 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/contracts 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/contracts 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/handovers 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/handovers 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/handovers 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/timesheets 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/timesheets 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/timesheets 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /equipment/verification 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /equipment/verification 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /equipment/verification 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/customers 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/customers 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/customers 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/parties 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/parties 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/parties 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/routes 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/routes 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/routes 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/trucking-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/trucking-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/trucking-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/equipment-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/equipment-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/equipment-tariffs 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/assets 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/assets 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/assets 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/personnel 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/personnel 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/personnel 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/items 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/items 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/items 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /master/suppliers 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /master/suppliers 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /master/suppliers 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /users 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /users 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /users 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /roles 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /roles 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /roles 1366",
+      "passed": true
+    },
+    {
+      "label": "Menu menuju route nyata /audit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /audit 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /audit 1366",
+      "passed": true
+    },
+    {
+      "label": "Logo utuh dan proporsional 1366",
+      "passed": true
+    },
+    {
+      "label": "Header tetap di atas saat scroll 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada error JS 1366",
+      "passed": true
+    },
+    {
+      "label": "Validasi field tanpa kehilangan halaman",
+      "passed": true
+    },
+    {
+      "label": "Modal konfirmasi tampil pada edit nyata",
+      "passed": true
+    },
+    {
+      "label": "Batal konfirmasi tidak submit",
+      "passed": true
+    },
+    {
+      "label": "Batal mempertahankan input",
+      "passed": true
+    },
+    {
+      "label": "Escape menutup modal konfirmasi",
+      "passed": true
+    },
+    {
+      "label": "Loading state terlihat sebelum navigasi submit nyata",
+      "passed": true
+    },
+    {
+      "label": "Alert sukses setelah simpan",
+      "passed": true
+    },
+    {
+      "label": "Pagination memuat catatan berbeda",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Admin Penerima",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Admin Penerima",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Admin Penerima",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Admin Pengirim",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Admin Pengirim",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Admin Pengirim",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Admin Sewa",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Admin Sewa",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Admin Sewa",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Admin Transit",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Admin Transit",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Admin Transit",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Administrator",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Administrator",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Administrator",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Customer",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Customer",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Customer",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Finance",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Finance",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Finance",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Gudang",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Gudang",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Gudang",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Operator Alat Berat",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Operator Alat Berat",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Operator Alat Berat",
+      "passed": true
+    },
+    {
+      "label": "Shortcut permission Owner",
+      "passed": true
+    },
+    {
+      "label": "Backend permission Owner",
+      "passed": true
+    },
+    {
+      "label": "Tanpa menu bisnis Owner",
+      "passed": true
+    },
+    {
+      "label": "Shortcut admin scoped mengikuti cakupan global",
+      "passed": true
+    },
+    {
+      "label": "Cabang tersembunyi setelah pergantian akun",
+      "passed": true
+    }
+  ]
+}

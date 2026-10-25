@@ -1,0 +1,43 @@
+﻿{
+    "date":  "2026-10-24T18:16:13.6044372+08:00",
+    "passed":  9,
+    "failed":  0,
+    "checks":  [
+                   {
+                       "file":  "public\\assets\\interface.js",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\trucking-operations.cjs",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-handovers.cjs",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\equipment-contracts.cjs",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\dashboard.cjs",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\browser.cjs",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\navigation.cjs",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\expedition.cjs",
+                       "passed":  true
+                   },
+                   {
+                       "file":  "tests\\master-data.cjs",
+                       "passed":  true
+                   }
+               ]
+}

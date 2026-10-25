@@ -1,0 +1,27 @@
+{
+    "date": "2026-10-24T13:04:47+08:00",
+    "passed": 0,
+    "failed": 4,
+    "checks": [
+        {
+            "name": "A01 Konfirmasi DN menolak lokasi asal nonaktif",
+            "passed": false,
+            "observed": "Konfirmasi berhasil, status=confirmed"
+        },
+        {
+            "name": "A02 Konfirmasi DN memvalidasi ulang peran pengirim",
+            "passed": false,
+            "observed": "Konfirmasi berhasil untuk sender dengan party_role=receiver"
+        },
+        {
+            "name": "A03 Keberangkatan menolak lokasi muat nonaktif",
+            "passed": false,
+            "observed": "Keberangkatan berhasil, status=departed"
+        },
+        {
+            "name": "A04 Detail Manifest menampilkan alasan pembatalan historis",
+            "passed": false,
+            "observed": "HTTP 200; alasan pembatalan terlihat=tidak"
+        }
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "date": "2026-10-24T19:00:33+08:00",
+    "database_version": "10.4.32-MariaDB",
+    "development": {
+        "tables": 48,
+        "users": 0,
+        "roles": 10,
+        "branches": 0,
+        "permissions": 106,
+        "master_rows": {
+            "md_customers": 0,
+            "md_parties": 0,
+            "md_locations": 0,
+            "md_routes": 0,
+            "md_assets": 0,
+            "md_personnel": 0,
+            "md_trucking_tariffs": 0,
+            "md_equipment_tariffs": 0,
+            "md_categories": 0,
+            "md_units": 0,
+            "md_items": 0,
+            "md_suppliers": 0
+        },
+        "trucking_rows": {
+            "exp_dns": 0,
+            "exp_manifests": 0,
+            "exp_manifest_items": 0,
+            "exp_events": 0,
+            "exp_trip_legs": 0,
+            "exp_sequences": 0,
+            "exp_requests": 0,
+            "exp_receipts": 0,
+            "exp_claims": 0,
+            "exp_claim_events": 0,
+            "exp_evidence": 0
+        }
+    },
+    "checks": [
+        {
+            "path": "\/hls-v2\/",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/public\/assets\/equipment-timesheets.js",
+            "status": 200,
+            "expected": 200,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/storage\/private\/claims\/example",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/public\/trucking\/evidence?id=1",
+            "status": 303,
+            "expected": 303,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/config\/local.php",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/app\/bootstrap.php",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/database\/migrations\/001_foundation.sql",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/storage\/error.log",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/tests\/run.php",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/bin\/bootstrap-admin.php",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/public\/router.php",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/public\/login",
+            "status": 200,
+            "expected": 200,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/public\/assets\/foundation.css",
+            "status": 200,
+            "expected": 200,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/public\/assets\/images\/logo.png",
+            "status": 200,
+            "expected": 200,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/public\/assets\/interface.js",
+            "status": 200,
+            "expected": 200,
+            "passed": true
+        },
+        {
+            "path": "\/hls-v2\/app\/navigation.php",
+            "status": 403,
+            "expected": 403,
+            "passed": true
+        },
+        {
+            "name": "Akun database hanya memiliki akses hls_v2_dev",
+            "passed": true
+        }
+    ],
+    "passed": true
+}

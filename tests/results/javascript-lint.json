@@ -1,0 +1,42 @@
+﻿[
+    {
+        "file":  "public/assets/interface.js",
+        "passed":  true,
+        "message":  ""
+    },
+    {
+        "file":  "D:\\xampp\\htdocs\\hls-v2\\tests\\browser.cjs",
+        "passed":  true,
+        "message":  ""
+    },
+    {
+        "file":  "D:\\xampp\\htdocs\\hls-v2\\tests\\dashboard.cjs",
+        "passed":  true,
+        "message":  ""
+    },
+    {
+        "file":  "D:\\xampp\\htdocs\\hls-v2\\tests\\equipment-contracts.cjs",
+        "passed":  true,
+        "message":  ""
+    },
+    {
+        "file":  "D:\\xampp\\htdocs\\hls-v2\\tests\\expedition.cjs",
+        "passed":  true,
+        "message":  ""
+    },
+    {
+        "file":  "D:\\xampp\\htdocs\\hls-v2\\tests\\master-data.cjs",
+        "passed":  true,
+        "message":  ""
+    },
+    {
+        "file":  "D:\\xampp\\htdocs\\hls-v2\\tests\\navigation.cjs",
+        "passed":  true,
+        "message":  ""
+    },
+    {
+        "file":  "D:\\xampp\\htdocs\\hls-v2\\tests\\trucking-operations.cjs",
+        "passed":  true,
+        "message":  ""
+    }
+]

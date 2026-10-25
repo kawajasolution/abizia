@@ -1,0 +1,2 @@
+<?php use Hls\Http\View as V; use Hls\Http\Icons; ?>
+<nav class="bottom-navigation" aria-label="Shortcut operasional" id="bottom-navigation"><?php foreach ($shortcuts as $item): ?><a class="<?= $this->path() === $item['route'] ? 'is-active' : '' ?>" data-nav-id="<?= V::escape($item['id']) ?>" href="<?= V::escape($this->url($item['route'])) ?>" <?= $this->path() === $item['route'] ? 'aria-current="page"' : '' ?>><?= Icons::svg($item['icon']) ?><span><?= V::escape($item['shortcut_label']) ?></span></a><?php endforeach ?></nav>

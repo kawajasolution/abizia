@@ -1,0 +1,319 @@
+{
+    "date": "2026-10-24T18:55:20+08:00",
+    "passed": 78,
+    "checks": [
+        {
+            "name": "Tujuan berbeda tidak otomatis dianggap berada pada lintasan",
+            "passed": true
+        },
+        {
+            "name": "Trip menolak leg yang tidak berkesinambungan",
+            "passed": true
+        },
+        {
+            "name": "Trip menyimpan dua leg eksplisit dari master",
+            "passed": true
+        },
+        {
+            "name": "Satu trip memuat DN dengan tujuan berbeda yang sah",
+            "passed": true
+        },
+        {
+            "name": "Nomor resmi DN diterbitkan terpisah dan identifier lama tetap",
+            "passed": true
+        },
+        {
+            "name": "Manifest menolak DN yang belum dikonfirmasi",
+            "passed": true
+        },
+        {
+            "name": "Konfirmasi gagal tidak menerbitkan nomor",
+            "passed": true
+        },
+        {
+            "name": "Manifest menerbitkan nomor resmi saat konfirmasi",
+            "passed": true
+        },
+        {
+            "name": "Lintasan dibekukan setelah konfirmasi",
+            "passed": true
+        },
+        {
+            "name": "DN terkonfirmasi tidak bisa diedit",
+            "passed": true
+        },
+        {
+            "name": "Replay keberangkatan tidak menggandakan event",
+            "passed": true
+        },
+        {
+            "name": "Keberangkatan ganda ditolak",
+            "passed": true
+        },
+        {
+            "name": "Manifest bergerak tidak boleh diselesaikan",
+            "passed": true
+        },
+        {
+            "name": "Kedatangan tidak dapat dicatat cabang asal tanpa akses B",
+            "passed": true
+        },
+        {
+            "name": "Kendaraan tiba tidak otomatis membuat DN tiba\/diterima",
+            "passed": true
+        },
+        {
+            "name": "Penerimaan sebelum kedatangan DN ditolak",
+            "passed": true
+        },
+        {
+            "name": "Leg berikutnya menunggu pencatatan DN aktual",
+            "passed": true
+        },
+        {
+            "name": "Hanya DN yang dipilih benar-benar dicatat tiba",
+            "passed": true
+        },
+        {
+            "name": "Pencatatan tiba DN ganda ditolak",
+            "passed": true
+        },
+        {
+            "name": "DN tujuan lanjutan berstatus transit pada stop perantara",
+            "passed": true
+        },
+        {
+            "name": "DN tujuan stop ini harus diturunkan sebelum melanjutkan",
+            "passed": true
+        },
+        {
+            "name": "Penerimaan tanpa konfirmasi utuh ditolak",
+            "passed": true
+        },
+        {
+            "name": "Replay penerimaan hanya menghasilkan satu record aktual",
+            "passed": true
+        },
+        {
+            "name": "Penerimaan ganda dengan token baru ditolak",
+            "passed": true
+        },
+        {
+            "name": "Penyelesaian DN memerlukan penerimaan aktual",
+            "passed": true
+        },
+        {
+            "name": "DN diterima tidak dapat dipindah ke manifest lain",
+            "passed": true
+        },
+        {
+            "name": "Pergantian kendaraan menggunakan manifest baru",
+            "passed": true
+        },
+        {
+            "name": "Histori asal\/tujuan\/alasan\/aktor\/waktu dipertahankan",
+            "passed": true
+        },
+        {
+            "name": "Manifest lama selesai tidak menghasilkan penerimaan DN yang dipindah",
+            "passed": true
+        },
+        {
+            "name": "Manifest selesai tidak membuat record penerimaan aktual",
+            "passed": true
+        },
+        {
+            "name": "Penerima B tidak dapat menerima DN tujuan C",
+            "passed": true
+        },
+        {
+            "name": "Tracking memakai event transit\/pindah\/penerimaan nyata",
+            "passed": true
+        },
+        {
+            "name": "Tracking cabang tidak terlibat tetap ditolak",
+            "passed": true
+        },
+        {
+            "name": "Tanggal mundur tidak mengubah tahun waktu penerbitan",
+            "passed": true
+        },
+        {
+            "name": "Manifest berisi DN tidak dibatalkan diam-diam",
+            "passed": true
+        },
+        {
+            "name": "CANCELLED menyimpan nomor resmi dan histori",
+            "passed": true
+        },
+        {
+            "name": "Nomor Manifest dibatalkan tidak dipakai ulang",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Dua konfirmasi terbit melalui proses\/aktor berbeda",
+            "passed": true
+        },
+        {
+            "name": "Sequence nomor unik pada konkurensi dua proses",
+            "passed": true
+        },
+        {
+            "name": "Kode cabang setelah nomor resmi pertama dikunci",
+            "passed": true
+        },
+        {
+            "name": "Nama cabang tetap dapat diedit setelah penomoran",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Dua petugas bersamaan menghasilkan tepat satu penerimaan",
+            "passed": true
+        },
+        {
+            "name": "Armada draf dapat ditetapkan tanpa mengganti lintasan\/histori",
+            "passed": true
+        },
+        {
+            "name": "Armada setelah konfirmasi tidak diedit di tempat",
+            "passed": true
+        },
+        {
+            "name": "Pelaporan klaim idempoten",
+            "passed": true
+        },
+        {
+            "name": "Klaim dapat dilaporkan dengan bukti menyusul",
+            "passed": true
+        },
+        {
+            "name": "Owner tidak boleh melapor klaim tanpa grant",
+            "passed": true
+        },
+        {
+            "name": "Klaim tidak boleh melompati state machine",
+            "passed": true
+        },
+        {
+            "name": "Replay status klaim tidak menggandakan histori",
+            "passed": true
+        },
+        {
+            "name": "Versi klaim lama ditolak",
+            "passed": true
+        },
+        {
+            "name": "Alur REPORTED REVIEWING APPROVED CLOSED lengkap",
+            "passed": true
+        },
+        {
+            "name": "Cabang REJECTED menuju CLOSED berfungsi",
+            "passed": true
+        },
+        {
+            "name": "Klaim tidak mengubah status\/posisi\/versi\/riwayat DN",
+            "passed": true
+        },
+        {
+            "name": "Klaim tidak membuat tabel\/transaksi Finance",
+            "passed": true
+        },
+        {
+            "name": "Unggah bukti HTTP ke storage privat berhasil",
+            "passed": true
+        },
+        {
+            "name": "Replay unggah HTTP idempoten",
+            "passed": true
+        },
+        {
+            "name": "Replay bukti tidak menggandakan file\/metadata",
+            "passed": true
+        },
+        {
+            "name": "Unduhan bukti berizin sesuai hash asli",
+            "passed": true
+        },
+        {
+            "name": "Bukti dilayani sebagai attachment",
+            "passed": true
+        },
+        {
+            "name": "Ekstensi bukti berbahaya ditolak",
+            "passed": true
+        },
+        {
+            "name": "MIME unggahan diperiksa dari isi, bukan header klien",
+            "passed": true
+        },
+        {
+            "name": "Login petugas cabang tak terkait untuk uji kebocoran",
+            "passed": true
+        },
+        {
+            "name": "ID bukti tidak bocor lintas cabang",
+            "passed": true
+        },
+        {
+            "name": "Detail klaim ditolak lintas cabang",
+            "passed": true
+        },
+        {
+            "name": "CSRF klaim wajib",
+            "passed": true
+        },
+        {
+            "name": "Audit gagal membatalkan record klaim\/histori",
+            "passed": true
+        },
+        {
+            "name": "Audit rollback tidak mengonsumsi token idempotensi",
+            "passed": true
+        },
+        {
+            "name": "Kegagalan audit upload dilaporkan tanpa data parsial",
+            "passed": true
+        },
+        {
+            "name": "Audit gagal membatalkan konfirmasi\/penomoran",
+            "passed": true
+        },
+        {
+            "name": "Rollback bukti membersihkan file privat dan metadata",
+            "passed": true
+        },
+        {
+            "name": "Rollback konfirmasi tidak mempublikasikan atau mengonsumsi nomor",
+            "passed": true
+        },
+        {
+            "name": "Halaman operasional nyata \/trucking\/transit",
+            "passed": true
+        },
+        {
+            "name": "Halaman operasional nyata \/trucking\/receipts",
+            "passed": true
+        },
+        {
+            "name": "Halaman operasional nyata \/trucking\/claims",
+            "passed": true
+        }
+    ],
+    "baseline": "Sementara disetujui pengguna; bukan SOP final"
+}

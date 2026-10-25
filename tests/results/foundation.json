@@ -1,0 +1,717 @@
+{
+    "date": "2026-10-24T22:16:59+08:00",
+    "database_engine": "MariaDB",
+    "checks": [
+        {
+            "name": "Fresh migration pada DB kosong",
+            "passed": true
+        },
+        {
+            "name": "Migration ulang idempoten",
+            "passed": true
+        },
+        {
+            "name": "32 tabel T1–5 dan 16 tabel Equipment tanpa transaksi bawaan",
+            "passed": true
+        },
+        {
+            "name": "Migration tanpa akun\/password bawaan",
+            "passed": true
+        },
+        {
+            "name": "Target database lama ditolak",
+            "passed": true
+        },
+        {
+            "name": "Target database sistem ditolak",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap menolak password lemah",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap administrator melalui CLI dan STDIN berhasil",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap CLI tidak membocorkan password",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap menyimpan hash password",
+            "passed": true
+        },
+        {
+            "name": "Bootstrap tidak mereset\/membuat admin kedua",
+            "passed": true
+        },
+        {
+            "name": "Sepuluh role fondasi tersedia",
+            "passed": true
+        },
+        {
+            "name": "Service menolak edit cabang lain",
+            "passed": true
+        },
+        {
+            "name": "Service menolak create cabang oleh admin scoped",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped boleh mengubah cabang sendiri",
+            "passed": true
+        },
+        {
+            "name": "Service menolak perubahan akun sendiri",
+            "passed": true
+        },
+        {
+            "name": "Role tanpa izin ditolak server-side",
+            "passed": true
+        },
+        {
+            "name": "User scoped wajib memiliki cabang",
+            "passed": true
+        },
+        {
+            "name": "ID registry navigasi unik",
+            "passed": true
+        },
+        {
+            "name": "Registry route nyata termasuk Timesheet dan Verifikasi M5",
+            "passed": true
+        },
+        {
+            "name": "Shortcut admin dari registry yang sama",
+            "passed": true
+        },
+        {
+            "name": "Registry memeriksa cakupan global",
+            "passed": true
+        },
+        {
+            "name": "Registry Owner mencakup Equipment baca berizin",
+            "passed": true
+        },
+        {
+            "name": "Cakupan global tidak memberikan permission menu",
+            "passed": true
+        },
+        {
+            "name": "Pagination mengiris data nyata dengan benar",
+            "passed": true
+        },
+        {
+            "name": "Pagination invalid ditolak",
+            "passed": true
+        },
+        {
+            "name": "Mutasi gagal ketika audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Rollback master saat audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Pembuatan pengguna gagal jika audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Rollback pengguna dan cabangnya saat audit gagal",
+            "passed": true
+        },
+        {
+            "name": "Session login valid",
+            "passed": true
+        },
+        {
+            "name": "Session idle timeout 30 menit",
+            "passed": true
+        },
+        {
+            "name": "Session user nonaktif dibatalkan",
+            "passed": true
+        },
+        {
+            "name": "Login user nonaktif ditolak",
+            "passed": true
+        },
+        {
+            "name": "Perubahan akses mengakhiri sesi lama",
+            "passed": true
+        },
+        {
+            "name": "Reset password melalui master membatalkan sesi",
+            "passed": true
+        },
+        {
+            "name": "Password lama ditolak setelah reset",
+            "passed": true
+        },
+        {
+            "name": "Password baru dapat login",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 1",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 2",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 3",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 4",
+            "passed": true
+        },
+        {
+            "name": "Login gagal dari IP berbeda 5",
+            "passed": true
+        },
+        {
+            "name": "Rate limit per email lintas IP",
+            "passed": true
+        },
+        {
+            "name": "Server HTTP uji tersedia",
+            "passed": true
+        },
+        {
+            "name": "Anonim dialihkan ke login",
+            "passed": true
+        },
+        {
+            "name": "Login tanpa CSRF ditolak",
+            "passed": true
+        },
+        {
+            "name": "Login CSRF salah ditolak",
+            "passed": true
+        },
+        {
+            "name": "Login password salah ditolak",
+            "passed": true
+        },
+        {
+            "name": "Login HTTP berhasil",
+            "passed": true
+        },
+        {
+            "name": "ID sesi diregenerasi saat login",
+            "passed": true
+        },
+        {
+            "name": "Cookie HttpOnly dan SameSite",
+            "passed": true
+        },
+        {
+            "name": "Halaman privat no-store",
+            "passed": true
+        },
+        {
+            "name": "Administrator login",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped login",
+            "passed": true
+        },
+        {
+            "name": "Owner login",
+            "passed": true
+        },
+        {
+            "name": "Route administrator \/users",
+            "passed": true
+        },
+        {
+            "name": "Route administrator \/branches",
+            "passed": true
+        },
+        {
+            "name": "Route administrator \/roles",
+            "passed": true
+        },
+        {
+            "name": "Route administrator \/audit",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped dilarang \/users",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped dilarang \/roles",
+            "passed": true
+        },
+        {
+            "name": "Admin scoped dilarang \/audit",
+            "passed": true
+        },
+        {
+            "name": "Owner tanpa permission dilarang \/users",
+            "passed": true
+        },
+        {
+            "name": "Owner tanpa permission dilarang \/roles",
+            "passed": true
+        },
+        {
+            "name": "Owner tanpa permission dilarang \/audit",
+            "passed": true
+        },
+        {
+            "name": "Daftar cabang tidak bocor lintas cakupan",
+            "passed": true
+        },
+        {
+            "name": "ID cabang lain ditolak melalui URL",
+            "passed": true
+        },
+        {
+            "name": "POST cabang lain ditolak",
+            "passed": true
+        },
+        {
+            "name": "POST pengguna oleh admin scoped ditolak",
+            "passed": true
+        },
+        {
+            "name": "POST pengguna oleh pembaca ditolak",
+            "passed": true
+        },
+        {
+            "name": "Mutasi master tanpa CSRF ditolak",
+            "passed": true
+        },
+        {
+            "name": "Create cabang HTTP berhasil",
+            "passed": true
+        },
+        {
+            "name": "Output disimpan di-escape",
+            "passed": true
+        },
+        {
+            "name": "Duplikasi cabang ditolak tanpa error SQL bocor",
+            "passed": true
+        },
+        {
+            "name": "Input array tidak valid ditolak",
+            "passed": true
+        },
+        {
+            "name": "Payload SQL tidak lolos validasi",
+            "passed": true
+        },
+        {
+            "name": "Logout GET ditolak",
+            "passed": true
+        },
+        {
+            "name": "Logout tanpa CSRF ditolak",
+            "passed": true
+        },
+        {
+            "name": "Logout POST berhasil",
+            "passed": true
+        },
+        {
+            "name": "Sesi logout tidak dapat mengakses halaman",
+            "passed": true
+        },
+        {
+            "name": "Cookie lama tidak menghidupkan sesi logout",
+            "passed": true
+        },
+        {
+            "name": "CSRF lama tidak dapat dipakai setelah logout",
+            "passed": true
+        },
+        {
+            "name": "Route tak dikenal 404",
+            "passed": true
+        },
+        {
+            "name": "Metode route tidak tersedia 405",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/config\/local.php",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/app\/bootstrap.php",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/database\/migrations\/001_foundation.sql",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/storage\/error.log",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/tests\/run.php",
+            "passed": true
+        },
+        {
+            "name": "Server public root menutup \/bin\/bootstrap-admin.php",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 1",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 2",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 3",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 4",
+            "passed": true
+        },
+        {
+            "name": "Percobaan gagal tercatat 5",
+            "passed": true
+        },
+        {
+            "name": "Rate limit IP melindungi akun lain",
+            "passed": true
+        },
+        {
+            "name": "Lima kegagalan tersimpan",
+            "passed": true
+        },
+        {
+            "name": "Audit event administrator_bootstrapped",
+            "passed": true
+        },
+        {
+            "name": "Audit event master_created",
+            "passed": true
+        },
+        {
+            "name": "Audit event user_created",
+            "passed": true
+        },
+        {
+            "name": "Audit event login_failed",
+            "passed": true
+        },
+        {
+            "name": "Audit event login_succeeded",
+            "passed": true
+        },
+        {
+            "name": "Audit event login_limited",
+            "passed": true
+        },
+        {
+            "name": "Audit event logout",
+            "passed": true
+        },
+        {
+            "name": "Audit event session_invalidated",
+            "passed": true
+        },
+        {
+            "name": "Audit tanpa password\/hash\/token",
+            "passed": true
+        },
+        {
+            "name": "Ketersediaan sumber diperiksa dari database v2 aktual",
+            "passed": true
+        },
+        {
+            "name": "Dashboard pengguna aktif sesuai query sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard cabang sesuai query sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard matriks role\/permission nyata termasuk katalog Equipment",
+            "passed": true
+        },
+        {
+            "name": "Administrator tidak mendapat widget finansial tanpa sumber",
+            "passed": true
+        },
+        {
+            "name": "Dashboard hanya delapan audit terbaru",
+            "passed": true
+        },
+        {
+            "name": "Distribusi role merekonsiliasi pengguna aktif",
+            "passed": true
+        },
+        {
+            "name": "Dashboard scoped hanya memuat cabang sendiri",
+            "passed": true
+        },
+        {
+            "name": "Dashboard admin scoped tanpa jumlah pengguna\/role global",
+            "passed": true
+        },
+        {
+            "name": "Dashboard admin scoped tanpa audit dan distribusi akun",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak filter cabang lain",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak periode audit tanpa cakupan global",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak cabang tidak tersedia",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak filter array",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak tanggal tidak nyata",
+            "passed": true
+        },
+        {
+            "name": "Dashboard menolak rentang terbalik",
+            "passed": true
+        },
+        {
+            "name": "Filter cabang mengubah KPI akun\/cabang sesuai definisi",
+            "passed": true
+        },
+        {
+            "name": "Filter cabang tidak menampilkan audit global yang tak dapat diatribusikan",
+            "passed": true
+        },
+        {
+            "name": "Cabang nonaktif nyata muncul sebagai tindak lanjut",
+            "passed": true
+        },
+        {
+            "name": "Tindak lanjut cabang lain tidak bocor ke admin scoped",
+            "passed": true
+        },
+        {
+            "name": "KPI bereaksi pada perubahan status akun nyata",
+            "passed": true
+        },
+        {
+            "name": "Pengguna nonaktif nyata muncul sebagai tindak lanjut",
+            "passed": true
+        },
+        {
+            "name": "Penetapan cabang kosong terdeteksi tanpa mengarang aturan",
+            "passed": true
+        },
+        {
+            "name": "Periode audit inklusif dua batas hari WITA",
+            "passed": true
+        },
+        {
+            "name": "Periode audit tidak mengubah KPI keadaan saat ini",
+            "passed": true
+        },
+        {
+            "name": "Periode audit tanpa data benar-benar kosong",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Penerima",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Penerima\/receipts",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Penerima\/claims",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Pengirim",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Pengirim\/dispatch",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Pengirim\/drafts",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Sewa",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Sewa\/contracts",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Sewa\/timesheets",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Admin Transit",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Transit\/manifests",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Admin Transit\/transit",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Administrator",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Customer",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Customer",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Customer",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Customer\/customer-tracking",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Finance",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Finance",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Finance",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/invoices",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/payments",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Finance\/pettycash",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Gudang",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Gudang",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Gudang",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Gudang\/inventory",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Gudang\/transfers",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Operator Alat Berat",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Operator Alat Berat\/assignments",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada angka nol pengganti sumber: Operator Alat Berat\/my-timesheets",
+            "passed": true
+        },
+        {
+            "name": "Dispatch role dari akun, bukan query: Owner",
+            "passed": true
+        },
+        {
+            "name": "Widget administrasi tidak bocor ke Owner",
+            "passed": true
+        },
+        {
+            "name": "Dashboard mencatat sumber bisnis belum tersedia: Owner",
+            "passed": false
+        }
+    ],
+    "passed": 176,
+    "failure": "FAIL: Dashboard mencatat sumber bisnis belum tersedia: Owner",
+    "temporary_database_removed": true
+}

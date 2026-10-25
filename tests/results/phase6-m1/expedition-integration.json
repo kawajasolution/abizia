@@ -1,0 +1,218 @@
+{
+    "date": "2026-10-24T15:29:01+08:00",
+    "passed": 53,
+    "checks": [
+        {
+            "name": "DN awal dibuat oleh cabang asal dengan pilihan tujuan terikat rute",
+            "passed": true
+        },
+        {
+            "name": "DN awal mempertahankan NULL versus nol tanpa status perjalanan",
+            "passed": true
+        },
+        {
+            "name": "DN memakai identifier internal Q04",
+            "passed": true
+        },
+        {
+            "name": "Replay create DN idempoten",
+            "passed": true
+        },
+        {
+            "name": "Token create tidak dipakai payload berbeda",
+            "passed": true
+        },
+        {
+            "name": "Replay tidak menggandakan event",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN quantity",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN weight",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN volume",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN document_date",
+            "passed": true
+        },
+        {
+            "name": "Validasi DN sender_id",
+            "passed": true
+        },
+        {
+            "name": "Owner tidak memiliki mutasi DN",
+            "passed": true
+        },
+        {
+            "name": "DN awal dapat diedit dengan version",
+            "passed": true
+        },
+        {
+            "name": "Edit stale ditolak",
+            "passed": true
+        },
+        {
+            "name": "Identifier DN tidak berubah setelah edit",
+            "passed": true
+        },
+        {
+            "name": "Manifest draf dan replay idempoten",
+            "passed": true
+        },
+        {
+            "name": "Batch dengan satu DN tidak tersedia ditolak atomik",
+            "passed": true
+        },
+        {
+            "name": "Batch gagal tidak meninggalkan anggota parsial",
+            "passed": true
+        },
+        {
+            "name": "Manifest menampung banyak DN sesuai rute persis",
+            "passed": true
+        },
+        {
+            "name": "Replay attach\/version usang ditolak",
+            "passed": true
+        },
+        {
+            "name": "DN dalam manifest tidak dapat diedit",
+            "passed": true
+        },
+        {
+            "name": "Keanggotaan tidak membuat status keberangkatan\/tiba\/diterima",
+            "passed": true
+        },
+        {
+            "name": "Satu DN tidak masuk dua manifest aktif",
+            "passed": true
+        },
+        {
+            "name": "Unique active DN melindungi di database",
+            "passed": true
+        },
+        {
+            "name": "FK mempertahankan DN dengan histori",
+            "passed": true
+        },
+        {
+            "name": "Composite FK menolak penerima dari cabang yang salah",
+            "passed": true
+        },
+        {
+            "name": "Kegagalan audit menolak pembuatan DN",
+            "passed": true
+        },
+        {
+            "name": "Rollback audit tidak meninggalkan dokumen\/event",
+            "passed": true
+        },
+        {
+            "name": "Pagination DN memakai query database",
+            "passed": true
+        },
+        {
+            "name": "Pencarian nomor DN",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada penerimaan fiktif",
+            "passed": true
+        },
+        {
+            "name": "Filter cabang terlarang ditolak",
+            "passed": true
+        },
+        {
+            "name": "Rentang tanggal terbalik ditolak",
+            "passed": true
+        },
+        {
+            "name": "ID DN cabang tidak terlibat ditolak",
+            "passed": true
+        },
+        {
+            "name": "Daftar DN cabang lain kosong",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Worker V2 melewati barrier dan selesai tanpa error",
+            "passed": true
+        },
+        {
+            "name": "Dua proses bersamaan hanya satu manifest aktif",
+            "passed": true
+        },
+        {
+            "name": "Hasil concurrency mempertahankan satu anggota aktif",
+            "passed": true
+        },
+        {
+            "name": "Route Trucking aktual \/trucking\/dns",
+            "passed": true
+        },
+        {
+            "name": "Owner baca sesuai scope \/trucking\/dns",
+            "passed": true
+        },
+        {
+            "name": "Route Trucking aktual \/trucking\/manifests",
+            "passed": true
+        },
+        {
+            "name": "Owner baca sesuai scope \/trucking\/manifests",
+            "passed": true
+        },
+        {
+            "name": "Route Trucking aktual \/trucking\/tracking",
+            "passed": true
+        },
+        {
+            "name": "Owner baca sesuai scope \/trucking\/tracking",
+            "passed": true
+        },
+        {
+            "name": "POST DN tanpa CSRF ditolak",
+            "passed": true
+        },
+        {
+            "name": "Manifest draf belum dikonfirmasi tidak dapat berangkat",
+            "passed": true
+        },
+        {
+            "name": "Owner POST ditolak backend",
+            "passed": true
+        },
+        {
+            "name": "Tracking internal menampilkan event aktual",
+            "passed": true
+        },
+        {
+            "name": "Tracking tidak menampilkan detail JSON event rahasia",
+            "passed": true
+        },
+        {
+            "name": "Route operasional nyata \/trucking\/transit",
+            "passed": true
+        },
+        {
+            "name": "Route operasional nyata \/trucking\/receipts",
+            "passed": true
+        },
+        {
+            "name": "Route operasional nyata \/trucking\/claims",
+            "passed": true
+        }
+    ]
+}

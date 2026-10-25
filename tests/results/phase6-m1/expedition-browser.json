@@ -1,0 +1,465 @@
+{
+  "date": "2026-10-24T07:32:25.387Z",
+  "passed": 108,
+  "viewports": [
+    {
+      "width": 320,
+      "height": 640,
+      "passed": 21
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "passed": 21
+    },
+    {
+      "width": 402,
+      "height": 874,
+      "passed": 21
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "passed": 21
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "passed": 21
+    }
+  ],
+  "checks": [
+    {
+      "label": "Route nyata /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Simpan bebas bottom nav 320",
+      "passed": true
+    },
+    {
+      "label": "DN browser tersimpan 320",
+      "passed": true
+    },
+    {
+      "label": "Detail DN 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow detail 320",
+      "passed": true
+    },
+    {
+      "label": "Edit DN nyata 320",
+      "passed": true
+    },
+    {
+      "label": "Keanggotaan DN nyata 320",
+      "passed": true
+    },
+    {
+      "label": "Tracking tiga event aktual 320",
+      "passed": true
+    },
+    {
+      "label": "Tracking internal hanya baca 320",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan tidak difiktifkan 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Pencarian empty aktual 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 320",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 375",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 375",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Simpan bebas bottom nav 375",
+      "passed": true
+    },
+    {
+      "label": "DN browser tersimpan 375",
+      "passed": true
+    },
+    {
+      "label": "Detail DN 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow detail 375",
+      "passed": true
+    },
+    {
+      "label": "Edit DN nyata 375",
+      "passed": true
+    },
+    {
+      "label": "Keanggotaan DN nyata 375",
+      "passed": true
+    },
+    {
+      "label": "Tracking tiga event aktual 375",
+      "passed": true
+    },
+    {
+      "label": "Tracking internal hanya baca 375",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan tidak difiktifkan 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow tracking 375",
+      "passed": true
+    },
+    {
+      "label": "Pencarian empty aktual 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 375",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 402",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 402",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Simpan bebas bottom nav 402",
+      "passed": true
+    },
+    {
+      "label": "DN browser tersimpan 402",
+      "passed": true
+    },
+    {
+      "label": "Detail DN 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow detail 402",
+      "passed": true
+    },
+    {
+      "label": "Edit DN nyata 402",
+      "passed": true
+    },
+    {
+      "label": "Keanggotaan DN nyata 402",
+      "passed": true
+    },
+    {
+      "label": "Tracking tiga event aktual 402",
+      "passed": true
+    },
+    {
+      "label": "Tracking internal hanya baca 402",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan tidak difiktifkan 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow tracking 402",
+      "passed": true
+    },
+    {
+      "label": "Pencarian empty aktual 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 402",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 768",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 768",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Simpan bebas bottom nav 768",
+      "passed": true
+    },
+    {
+      "label": "DN browser tersimpan 768",
+      "passed": true
+    },
+    {
+      "label": "Detail DN 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow detail 768",
+      "passed": true
+    },
+    {
+      "label": "Edit DN nyata 768",
+      "passed": true
+    },
+    {
+      "label": "Keanggotaan DN nyata 768",
+      "passed": true
+    },
+    {
+      "label": "Tracking tiga event aktual 768",
+      "passed": true
+    },
+    {
+      "label": "Tracking internal hanya baca 768",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan tidak difiktifkan 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow tracking 768",
+      "passed": true
+    },
+    {
+      "label": "Pencarian empty aktual 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 768",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/dns 1366",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/manifests 1366",
+      "passed": true
+    },
+    {
+      "label": "Route nyata /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow daftar /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Satu menu aktif /trucking/tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Simpan bebas bottom nav 1366",
+      "passed": true
+    },
+    {
+      "label": "DN browser tersimpan 1366",
+      "passed": true
+    },
+    {
+      "label": "Detail DN 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow detail 1366",
+      "passed": true
+    },
+    {
+      "label": "Edit DN nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "Keanggotaan DN nyata 1366",
+      "passed": true
+    },
+    {
+      "label": "Tracking tiga event aktual 1366",
+      "passed": true
+    },
+    {
+      "label": "Tracking internal hanya baca 1366",
+      "passed": true
+    },
+    {
+      "label": "Penerimaan tidak difiktifkan 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow tracking 1366",
+      "passed": true
+    },
+    {
+      "label": "Pencarian empty aktual 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JS 1366",
+      "passed": true
+    },
+    {
+      "label": "Owner tanpa aksi tambah",
+      "passed": true
+    },
+    {
+      "label": "Owner create URL ditolak",
+      "passed": true
+    },
+    {
+      "label": "Tracking tidak publik",
+      "passed": true
+    }
+  ]
+}

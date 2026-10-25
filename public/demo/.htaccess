@@ -1,0 +1,7 @@
+Require all granted
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+RewriteRule ^assets/(.*)$ ../assets/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]

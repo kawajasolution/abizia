@@ -1,0 +1,437 @@
+{
+  "failure": "A04 detail pembatalan tanpa overflow 320",
+  "checks": [
+    {
+      "label": "Logo resmi utuh dan proporsional 320",
+      "passed": true
+    },
+    {
+      "label": "Login tanpa overflow 320",
+      "passed": true
+    },
+    {
+      "label": "Login 320",
+      "passed": true
+    },
+    {
+      "label": "Route / 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman / 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis / 320",
+      "passed": true
+    },
+    {
+      "label": "Route /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /branches 320",
+      "passed": true
+    },
+    {
+      "label": "Route /users 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /users 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /users 320",
+      "passed": true
+    },
+    {
+      "label": "Route /roles 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /roles 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /roles 320",
+      "passed": true
+    },
+    {
+      "label": "Route /audit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /audit 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /audit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript 320",
+      "passed": true
+    },
+    {
+      "label": "Logout 320",
+      "passed": true
+    },
+    {
+      "label": "Logo resmi utuh dan proporsional 375",
+      "passed": true
+    },
+    {
+      "label": "Login tanpa overflow 375",
+      "passed": true
+    },
+    {
+      "label": "Login 375",
+      "passed": true
+    },
+    {
+      "label": "Route / 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman / 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis / 375",
+      "passed": true
+    },
+    {
+      "label": "Route /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /branches 375",
+      "passed": true
+    },
+    {
+      "label": "Route /users 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /users 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /users 375",
+      "passed": true
+    },
+    {
+      "label": "Route /roles 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /roles 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /roles 375",
+      "passed": true
+    },
+    {
+      "label": "Route /audit 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /audit 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /audit 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript 375",
+      "passed": true
+    },
+    {
+      "label": "Logout 375",
+      "passed": true
+    },
+    {
+      "label": "Logo resmi utuh dan proporsional 402",
+      "passed": true
+    },
+    {
+      "label": "Login tanpa overflow 402",
+      "passed": true
+    },
+    {
+      "label": "Login 402",
+      "passed": true
+    },
+    {
+      "label": "Route / 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman / 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis / 402",
+      "passed": true
+    },
+    {
+      "label": "Route /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /branches 402",
+      "passed": true
+    },
+    {
+      "label": "Route /users 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /users 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /users 402",
+      "passed": true
+    },
+    {
+      "label": "Route /roles 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /roles 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /roles 402",
+      "passed": true
+    },
+    {
+      "label": "Route /audit 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /audit 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /audit 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript 402",
+      "passed": true
+    },
+    {
+      "label": "Logout 402",
+      "passed": true
+    },
+    {
+      "label": "Logo resmi utuh dan proporsional 768",
+      "passed": true
+    },
+    {
+      "label": "Login tanpa overflow 768",
+      "passed": true
+    },
+    {
+      "label": "Login 768",
+      "passed": true
+    },
+    {
+      "label": "Route / 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman / 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis / 768",
+      "passed": true
+    },
+    {
+      "label": "Route /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /branches 768",
+      "passed": true
+    },
+    {
+      "label": "Route /users 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /users 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /users 768",
+      "passed": true
+    },
+    {
+      "label": "Route /roles 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /roles 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /roles 768",
+      "passed": true
+    },
+    {
+      "label": "Route /audit 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /audit 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /audit 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript 768",
+      "passed": true
+    },
+    {
+      "label": "Logout 768",
+      "passed": true
+    },
+    {
+      "label": "Logo resmi utuh dan proporsional 1366",
+      "passed": true
+    },
+    {
+      "label": "Login tanpa overflow 1366",
+      "passed": true
+    },
+    {
+      "label": "Login 1366",
+      "passed": true
+    },
+    {
+      "label": "Route / 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman / 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis / 1366",
+      "passed": true
+    },
+    {
+      "label": "Route /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /branches 1366",
+      "passed": true
+    },
+    {
+      "label": "Route /users 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /users 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /users 1366",
+      "passed": true
+    },
+    {
+      "label": "Route /roles 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /roles 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /roles 1366",
+      "passed": true
+    },
+    {
+      "label": "Route /audit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow halaman /audit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada menu bisnis /audit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript 1366",
+      "passed": true
+    },
+    {
+      "label": "Logout 1366",
+      "passed": true
+    },
+    {
+      "label": "Form create cabang mobile",
+      "passed": true
+    },
+    {
+      "label": "Form create pengguna mobile",
+      "passed": true
+    },
+    {
+      "label": "Navigasi pengguna disembunyikan scoped@example.test",
+      "passed": true
+    },
+    {
+      "label": "Akses cabang browser scoped@example.test",
+      "passed": true
+    },
+    {
+      "label": "Cabang lain tidak bocor pada browser",
+      "passed": true
+    },
+    {
+      "label": "Navigasi pengguna disembunyikan owner@example.test",
+      "passed": true
+    },
+    {
+      "label": "Akses cabang browser owner@example.test",
+      "passed": true
+    },
+    {
+      "label": "Cabang lain tidak bocor pada browser",
+      "passed": true
+    }
+  ]
+}

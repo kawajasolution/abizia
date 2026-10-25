@@ -1,0 +1,58 @@
+{
+    "date": "2026-10-24T18:55:30+08:00",
+    "passed": 13,
+    "checks": [
+        {
+            "name": "Upgrade 003 berisi DN\/Manifest\/histori ke 004 berhasil",
+            "passed": true
+        },
+        {
+            "name": "Upgrade mempertahankan seluruh kolom\/ID\/identifier DN lama",
+            "passed": true
+        },
+        {
+            "name": "Upgrade mempertahankan seluruh kolom\/ID\/identifier Manifest lama",
+            "passed": true
+        },
+        {
+            "name": "Keanggotaan dan histori lama tidak dihapus",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak membuat\/mengubah event atau audit operasional rekaan",
+            "passed": true
+        },
+        {
+            "name": "Backfill leg memakai snapshot historis, bukan nama master yang telah berubah",
+            "passed": true
+        },
+        {
+            "name": "Posisi awal dibackfill tanpa kedatangan rekaan",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak otomatis menerbitkan nomor resmi",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak mengisi transaksi\/nomor dummy exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak mengisi transaksi\/nomor dummy exp_claims",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak mengisi transaksi\/nomor dummy exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "Upgrade tidak mengisi transaksi\/nomor dummy exp_requests",
+            "passed": true
+        },
+        {
+            "name": "Upgrade 004 ulang no-op pada dokumen legacy",
+            "passed": true
+        }
+    ]
+}

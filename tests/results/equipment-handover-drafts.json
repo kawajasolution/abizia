@@ -1,0 +1,87 @@
+{
+    "date": "2026-10-24T18:55:36+08:00",
+    "passed": 20,
+    "failed": 0,
+    "checks": [
+        {
+            "name": "M4 draft ALL membekukan dua ID unit tanpa nomor",
+            "passed": true
+        },
+        {
+            "name": "M4 draft tidak mempunyai efek lifecycle",
+            "passed": true
+        },
+        {
+            "name": "M4 replay draft satu dokumen\/event",
+            "passed": true
+        },
+        {
+            "name": "M4 idempotency key terikat aktor",
+            "passed": true
+        },
+        {
+            "name": "M4 token sama payload berbeda ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 edit draft kondisi\/HM disimpan",
+            "passed": true
+        },
+        {
+            "name": "M4 histori draft sebelum perubahan tetap tersedia",
+            "passed": true
+        },
+        {
+            "name": "M4 versi draft stale ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 unit kontrak lain ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 ALL tidak menerima subset diam-diam",
+            "passed": true
+        },
+        {
+            "name": "M4 HM negatif ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 kondisi kosong ditolak",
+            "passed": true
+        },
+        {
+            "name": "M4 RETURN tidak dapat memakai unit belum ACTIVE",
+            "passed": true
+        },
+        {
+            "name": "M4 Owner tidak dapat membuat BA",
+            "passed": true
+        },
+        {
+            "name": "M4 IDOR lintas cabang ditutup",
+            "passed": true
+        },
+        {
+            "name": "M4 cancel draft replay mempertahankan detail\/histori tanpa event ganda",
+            "passed": true
+        },
+        {
+            "name": "M4 cancelled draft tidak dapat diedit",
+            "passed": true
+        },
+        {
+            "name": "M4 draft\/cancel tidak menerbitkan nomor BA",
+            "passed": true
+        },
+        {
+            "name": "M4 kegagalan audit menolak seluruh penyimpanan",
+            "passed": true
+        },
+        {
+            "name": "M4 rollback audit tidak meninggalkan header\/detail\/event\/token parsial",
+            "passed": true
+        }
+    ]
+}

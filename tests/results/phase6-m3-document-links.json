@@ -1,0 +1,227 @@
+﻿[
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/foundation.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/equipment-contracts.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/audit-repairs.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/equipment-migrations.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/navigation.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/dashboard-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/master-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/expedition-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/trucking-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/equipment-browser.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/equipment-development.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/database-integrity.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/deployment.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/lint.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/javascript-lint.json",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/phase6-contract-320.png",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/phase6-contract-375.png",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/phase6-contract-402.png",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/phase6-contract-768.png",
+        "passed":  true
+    },
+    {
+        "doc":  "PHASE6_M3_REPORT.md",
+        "target":  "tests/results/phase6-contract-1366.png",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "PHASE6_M3_REPORT.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "PROJECT_AUDIT.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "BUSINESS_RULES.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "DATABASE_DESIGN.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "UI_DESIGN_SYSTEM.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "IMPLEMENTATION_PLAN.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "DECISIONS.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "PROGRESS.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "CHANGELOG.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "PHASE2_REPORT.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "NAVIGATION_BACKLOG.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "PHASE4_REPORT.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "MASTER_DATA_DESIGN.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "PHASE3_REPORT.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "DASHBOARD_WIDGETS.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "PHASE1_REPORT.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "CPANEL_PREPARATION.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "PHASE5_REPORT.md",
+        "passed":  true
+    },
+    {
+        "doc":  "README.md",
+        "target":  "TRUCKING_DESIGN.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_DESIGN.md",
+        "target":  "EQUIPMENT_STATE_MACHINE.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_DESIGN.md",
+        "target":  "EQUIPMENT_PERMISSION_MATRIX.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_DESIGN.md",
+        "target":  "PHASE6_IMPLEMENTATION_PLAN.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_PERMISSION_MATRIX.md",
+        "target":  "EQUIPMENT_DESIGN.md",
+        "passed":  true
+    },
+    {
+        "doc":  "EQUIPMENT_PERMISSION_MATRIX.md",
+        "target":  "EQUIPMENT_STATE_MACHINE.md",
+        "passed":  true
+    }
+]

@@ -1,0 +1,27 @@
+{
+    "date": "2026-10-24T13:49:16+08:00",
+    "passed": 4,
+    "failed": 0,
+    "checks": [
+        {
+            "name": "A01 Konfirmasi DN menolak lokasi asal nonaktif",
+            "passed": true,
+            "observed": "Ditolak HTTP 422"
+        },
+        {
+            "name": "A02 Konfirmasi DN memvalidasi ulang peran pengirim",
+            "passed": true,
+            "observed": "Ditolak HTTP 422"
+        },
+        {
+            "name": "A03 Keberangkatan menolak lokasi muat nonaktif",
+            "passed": true,
+            "observed": "Ditolak HTTP 422"
+        },
+        {
+            "name": "A04 Detail Manifest menampilkan alasan pembatalan historis",
+            "passed": true,
+            "observed": "HTTP 200; alasan pembatalan terlihat=ya"
+        }
+    ]
+}

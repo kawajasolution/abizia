@@ -1,0 +1,2934 @@
+{
+  "date": "2026-10-24T07:31:15.131Z",
+  "passed": 724,
+  "viewports": [
+    {
+      "width": 320,
+      "height": 640,
+      "roles": 10,
+      "passed": 147
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "roles": 10,
+      "passed": 147
+    },
+    {
+      "width": 402,
+      "height": 874,
+      "roles": 10,
+      "passed": 147
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "roles": 10,
+      "passed": 147
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "roles": 10,
+      "passed": 127
+    }
+  ],
+  "checks": [
+    {
+      "label": "Dashboard sesuai role Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Penerima 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Pengirim 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Sewa 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Transit 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Empat KPI sumber nyata Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Administrator tanpa ringkasan finansial Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Administrator 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Customer 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Customer 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Finance 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Finance 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Gudang 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Operator Alat Berat 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Owner 320",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Owner 320",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Penerima 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Pengirim 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Sewa 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Transit 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Empat KPI sumber nyata Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Administrator tanpa ringkasan finansial Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Administrator 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Customer 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Customer 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Finance 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Finance 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Gudang 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Operator Alat Berat 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Owner 375",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Owner 375",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Penerima 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Pengirim 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Sewa 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Transit 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Empat KPI sumber nyata Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Administrator tanpa ringkasan finansial Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Administrator 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Customer 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Customer 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Finance 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Finance 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Gudang 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Operator Alat Berat 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Owner 402",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Owner 402",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Penerima 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Pengirim 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Sewa 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Transit 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Empat KPI sumber nyata Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Administrator tanpa ringkasan finansial Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Administrator 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Customer 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Customer 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Finance 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Finance 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Gudang 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Operator Alat Berat 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Owner 768",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Hamburger tetap terlihat Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Bottom nav tetap terlihat Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Shortcut Dashboard mempertahankan role Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Akhir konten tidak tertutup Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Owner 768",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Penerima 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Pengirim 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Sewa 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Admin Transit 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Empat KPI sumber nyata Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Administrator tanpa ringkasan finansial Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Administrator 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Customer 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Finance 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Gudang 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Operator Alat Berat 1366",
+      "passed": true
+    },
+    {
+      "label": "Dashboard sesuai role Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Judul Dashboard langsung Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada shortcut route bisnis kosong Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa halaman perantara/banner Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "KPI hanya sesuai permission/sumber Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Status sumber belum tersedia Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada angka pengganti sumber Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada kebocoran cabang Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Tidak ada filter audit tanpa izin Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar desktop Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Sidebar Dashboard mempertahankan role Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Tanpa error JavaScript Owner 1366",
+      "passed": true
+    },
+    {
+      "label": "Filter cabang UI menghasilkan satu cabang",
+      "passed": true
+    },
+    {
+      "label": "Filter cabang UI tidak menampilkan cabang lain",
+      "passed": true
+    },
+    {
+      "label": "Audit global tidak muncul sebagai audit cabang",
+      "passed": true
+    },
+    {
+      "label": "Filter akun cabang konsisten",
+      "passed": true
+    },
+    {
+      "label": "Filter periode UI menampilkan empty state nyata",
+      "passed": true
+    },
+    {
+      "label": "Periode audit tidak mengubah KPI saat ini",
+      "passed": true
+    },
+    {
+      "label": "Admin scoped hanya mendapat KPI cabang",
+      "passed": true
+    },
+    {
+      "label": "Admin scoped tanpa audit global",
+      "passed": true
+    },
+    {
+      "label": "Backend menolak cabang dashboard di luar scope",
+      "passed": true
+    }
+  ]
+}

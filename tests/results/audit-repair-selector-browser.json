@@ -1,0 +1,90 @@
+{
+  "failure": "locator.innerText: Error: strict mode violation: locator('.exp-reference') resolved to 2 elements:\n    1) <h2 class=\"exp-reference\">MF/TESTA/2026/000007</h2> aka getByRole('heading', { name: 'MF/TESTA/2026/' })\n    2) <ul class=\"exp-reference\">…</ul> aka locator('ul')\n\nCall log:\n\u001b[2m  - waiting for locator('.exp-reference')\u001b[22m\n",
+  "viewports": [],
+  "checks": [
+    {
+      "label": "Enam route operasional /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/dns 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/manifests 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/transit 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/receipts 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/claims 320",
+      "passed": true
+    },
+    {
+      "label": "Enam route operasional /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Tanpa overflow /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Menu aktif /trucking/tracking 320",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi DN",
+      "passed": true
+    },
+    {
+      "label": "Nomor resmi DN pada UI 320",
+      "passed": true
+    },
+    {
+      "label": "Tindakan tanpa error Konfirmasi Manifest",
+      "passed": true
+    }
+  ]
+}

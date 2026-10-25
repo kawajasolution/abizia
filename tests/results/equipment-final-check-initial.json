@@ -1,0 +1,26 @@
+{
+    "date": "2026-10-24T16:31:19+08:00",
+    "passed": 3,
+    "failed": 1,
+    "failure": "RuntimeException: Nama 16 tabel tepat sesuai desain final termasuk eq_meter_corrections",
+    "checks": [
+        {
+            "name": "Fresh install 001–005 berhasil",
+            "passed": true
+        },
+        {
+            "name": "Fresh migration replay no-op",
+            "passed": true
+        },
+        {
+            "name": "48 tabel: 32 existing + 16 Equipment",
+            "passed": true
+        },
+        {
+            "name": "Nama 16 tabel tepat sesuai desain final termasuk eq_meter_corrections",
+            "passed": false
+        }
+    ],
+    "inventory": [],
+    "temporary_databases_removed": 1
+}

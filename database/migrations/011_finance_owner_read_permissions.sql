@@ -1,0 +1,1 @@
+INSERT IGNORE INTO role_permissions(role_id,permission_id) SELECT r.id,p.id FROM roles r JOIN permissions p ON p.code IN ('finance.account.view','finance.category.view','finance.invoice.view','finance.receivable.view') WHERE r.name='Owner';

@@ -1,0 +1,929 @@
+{
+    "date": "2026-10-24T18:58:10+08:00",
+    "database": "hls_v2_dev",
+    "read_only": true,
+    "passed": 230,
+    "failed": 0,
+    "checks": [
+        {
+            "name": "Jumlah tabel T1–5 dan Equipment: 48",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: audit_logs",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: audit_logs",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: branches",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: branches",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_branch_authorizations",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_branch_authorizations",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_contract_units",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_contract_units",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_contracts",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_contracts",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_document_sequences",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_document_sequences",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_events",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_events",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_evidence",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_evidence",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_handover_documents",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_handover_documents",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_handover_units",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_handover_units",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_meter_corrections",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_meter_corrections",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_operator_assignments",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_operator_assignments",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_requests",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_requests",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_timesheet_revisions",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_timesheet_revisions",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_timesheet_verifications",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_timesheet_verifications",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_timesheet_work_entries",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_timesheet_work_entries",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_timesheets",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_timesheets",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: eq_unit_periods",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: eq_unit_periods",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_claim_events",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_claim_events",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_claims",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_claims",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_dns",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_dns",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_events",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_events",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_evidence",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_evidence",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_manifest_items",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_manifest_items",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_manifests",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_manifests",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_receipts",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_requests",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_requests",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_sequences",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: exp_trip_legs",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: exp_trip_legs",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: login_attempts",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: login_attempts",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_assets",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_assets",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_categories",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_categories",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_customers",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_customers",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_equipment_tariffs",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_equipment_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_items",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_items",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_locations",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_locations",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_parties",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_parties",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_personnel",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_personnel",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_routes",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_routes",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_suppliers",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_suppliers",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_trucking_tariffs",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_trucking_tariffs",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: md_units",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: md_units",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: permissions",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: permissions",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: role_permissions",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: role_permissions",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: roles",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: roles",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: schema_migrations",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: schema_migrations",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: user_branches",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: user_branches",
+            "passed": true
+        },
+        {
+            "name": "Engine InnoDB: users",
+            "passed": true
+        },
+        {
+            "name": "CHECK TABLE: users",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: audit_logs.fk_audit_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_assignment",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_contract_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_owner",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_owner_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_period",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_requester",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_revoker",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_branch_authorizations.fk_eq_authorization_unit",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_contracts.fk_eq_contract_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_contracts.fk_eq_contract_creator",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_contracts.fk_eq_contract_customer",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_contract_units.fk_eq_unit_asset",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_contract_units.fk_eq_unit_contract",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_contract_units.fk_eq_unit_current_period",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_document_sequences.fk_eq_sequence_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_events.fk_eq_event_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_events.fk_eq_event_ba",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_events.fk_eq_event_contract",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_events.fk_eq_event_operator",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_events.fk_eq_event_period",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_events.fk_eq_event_revision",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_events.fk_eq_event_timesheet",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_events.fk_eq_event_unit",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_evidence.fk_eq_evidence_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_evidence.fk_eq_evidence_ba",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_evidence.fk_eq_evidence_meter",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_evidence.fk_eq_evidence_revision",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_handover_documents.fk_eq_ba_contract",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_handover_documents.fk_eq_ba_correction",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_handover_documents.fk_eq_ba_creator",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_handover_units.fk_eq_ba_unit_detail",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_handover_units.fk_eq_ba_unit_header",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_meter_corrections.fk_eq_meter_authorizer",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_meter_corrections.fk_eq_meter_evidence",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_meter_corrections.fk_eq_meter_requester",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_meter_corrections.fk_eq_meter_revision",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_operator_assignments.fk_eq_operator_account",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_operator_assignments.fk_eq_operator_personnel",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_operator_assignments.fk_eq_operator_previous",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_operator_assignments.fk_eq_operator_unit",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_requests.fk_eq_request_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_requests.fk_eq_request_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheets.fk_eq_timesheet_assignment",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheets.fk_eq_timesheet_creator",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheets.fk_eq_timesheet_effective",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheets.fk_eq_timesheet_pending",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheets.fk_eq_timesheet_unit",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_revisions.fk_eq_revision_base",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_revisions.fk_eq_revision_creator",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_revisions.fk_eq_revision_previous",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_revisions.fk_eq_revision_root",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_revisions.fk_eq_revision_submitter",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_verifications.fk_eq_verification_reviewer",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_verifications.fk_eq_verification_revision",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_verifications.fk_eq_verification_root",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_timesheet_work_entries.fk_eq_work_revision",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_unit_periods.fk_eq_period_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_unit_periods.fk_eq_period_previous",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: eq_unit_periods.fk_eq_period_unit",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_claims.fk_exp_claim_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_claims.fk_exp_claim_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_claims.fk_exp_claim_dn",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_claim_events.fk_exp_claim_event_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_claim_events.fk_exp_claim_event_claim",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_current_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_current_location",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_customer",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_destination",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_origin",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_receiver",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_route",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_dns.fk_exp_dn_sender",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_events.fk_exp_event_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_events.fk_exp_event_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_events.fk_exp_event_dn",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_events.fk_exp_event_manifest",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_evidence.fk_exp_evidence_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_evidence.fk_exp_evidence_claim",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifests.fk_exp_manifest_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifests.fk_exp_manifest_destination",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifests.fk_exp_manifest_driver",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifests.fk_exp_manifest_origin",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifests.fk_exp_manifest_route",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifests.fk_exp_manifest_vehicle",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifest_items.fk_exp_item_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifest_items.fk_exp_item_dn",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifest_items.fk_exp_item_manifest",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifest_items.fk_exp_item_move_target",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_manifest_items.fk_exp_item_removed_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_receipts.fk_exp_receipt_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_receipts.fk_exp_receipt_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_receipts.fk_exp_receipt_dn",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_requests.fk_exp_request_actor",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_requests.fk_exp_request_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_sequences.fk_exp_sequence_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_trip_legs.fk_exp_leg_destination",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_trip_legs.fk_exp_leg_manifest",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_trip_legs.fk_exp_leg_origin",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: exp_trip_legs.fk_exp_leg_route",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_assets.fk_md_assets_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_customers.fk_md_customers_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_equipment_tariffs.fk_md_equipment_tariffs_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_equipment_tariffs.fk_md_equipment_tariff_asset",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_items.fk_md_items_category_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_items.fk_md_items_unit_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_locations.fk_md_locations_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_parties.fk_md_parties_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_personnel.fk_md_personnel_account_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_personnel.fk_md_personnel_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_routes.fk_md_routes_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_routes.fk_md_route_destination_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_routes.fk_md_route_destination_location",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_routes.fk_md_route_origin_location",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_suppliers.fk_md_suppliers_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_trucking_tariffs.fk_md_trucking_tariffs_branch_id",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: md_trucking_tariffs.fk_md_truck_tariff_route",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: role_permissions.fk_rp_permission",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: role_permissions.fk_rp_role",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: users.fk_users_role",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: user_branches.fk_ub_branch",
+            "passed": true
+        },
+        {
+            "name": "Tanpa orphan FK: user_branches.fk_ub_user",
+            "passed": true
+        },
+        {
+            "name": "Satu keanggotaan Manifest aktif per DN",
+            "passed": true
+        },
+        {
+            "name": "Satu penerimaan aktual per DN",
+            "passed": true
+        },
+        {
+            "name": "DN received\/completed mempunyai penerimaan aktual",
+            "passed": true
+        },
+        {
+            "name": "Penerimaan aktual utuh dan sesuai cabang tujuan",
+            "passed": true
+        },
+        {
+            "name": "Manifest completed\/cancelled tanpa anggota aktif",
+            "passed": true
+        },
+        {
+            "name": "Posisi Manifest berada dalam jumlah leg",
+            "passed": true
+        },
+        {
+            "name": "Klaim memiliki ledger awal",
+            "passed": true
+        },
+        {
+            "name": "Status klaim sesuai ledger terakhir",
+            "passed": true
+        },
+        {
+            "name": "Tidak ada tabel transaksi Finance",
+            "passed": true
+        }
+    ]
+}

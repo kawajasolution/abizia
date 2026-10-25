@@ -1,0 +1,111 @@
+{
+    "date": "2026-10-24T15:29:07+08:00",
+    "passed": 26,
+    "failed": 0,
+    "checks": [
+        {
+            "name": "A01 lokasi asal dinonaktifkan setelah DN dibuat ditolak",
+            "passed": true
+        },
+        {
+            "name": "A01 penolakan mempertahankan DN\/snapshot\/nomor\/versi",
+            "passed": true
+        },
+        {
+            "name": "A01 penolakan tanpa event\/audit\/nomor\/token parsial",
+            "passed": true
+        },
+        {
+            "name": "A01 lokasi aktif kembali dapat dikonfirmasi dengan token yang sebelumnya gagal",
+            "passed": true
+        },
+        {
+            "name": "A01 konfirmasi tidak menulis ulang snapshot",
+            "passed": true
+        },
+        {
+            "name": "A01 replay konfirmasi tidak menggandakan histori atau nomor",
+            "passed": true
+        },
+        {
+            "name": "A02 peran master pengirim berubah menjadi receiver ditolak",
+            "passed": true
+        },
+        {
+            "name": "A02 penolakan mempertahankan DN dan snapshot historis",
+            "passed": true
+        },
+        {
+            "name": "A02 penolakan tanpa event\/audit\/nomor\/token parsial",
+            "passed": true
+        },
+        {
+            "name": "A02 master both memenuhi peran pengirim",
+            "passed": true
+        },
+        {
+            "name": "A02 nama\/peran master terkini tidak mengganti snapshot lama",
+            "passed": true
+        },
+        {
+            "name": "A02 master sender tetap memenuhi konfirmasi positif",
+            "passed": true
+        },
+        {
+            "name": "A03 lokasi muat nonaktif setelah Manifest dikonfirmasi ditolak",
+            "passed": true
+        },
+        {
+            "name": "A03 penolakan tidak mengubah Manifest\/DN\/snapshot\/versi",
+            "passed": true
+        },
+        {
+            "name": "A03 penolakan tidak meninggalkan event\/audit\/token parsial",
+            "passed": true
+        },
+        {
+            "name": "A03 lokasi aktif kembali mengizinkan keberangkatan aktual",
+            "passed": true
+        },
+        {
+            "name": "A03 replay keberangkatan tidak menggandakan histori",
+            "passed": true
+        },
+        {
+            "name": "A03 lokasi muat stop transit nonaktif juga ditolak",
+            "passed": true
+        },
+        {
+            "name": "A03 penolakan di transit menjaga status\/posisi\/histori",
+            "passed": true
+        },
+        {
+            "name": "A03 keberangkatan lanjutan sah dari stop aktif",
+            "passed": true
+        },
+        {
+            "name": "A04 alasan pembatalan historis ditampilkan melalui HTTP",
+            "passed": true
+        },
+        {
+            "name": "A04 aktor dan waktu pada event pembatalan yang sama ditampilkan",
+            "passed": true
+        },
+        {
+            "name": "A04 membaca detail tidak menulis histori\/audit\/snapshot baru",
+            "passed": true
+        },
+        {
+            "name": "A04 histori pembatalan tidak bocor lintas cabang",
+            "passed": true
+        },
+        {
+            "name": "A04 alasan historis di-escape tanpa mengubah data tersimpan",
+            "passed": true
+        },
+        {
+            "name": "A04 tampilan aman mempertahankan alasan asli pada histori",
+            "passed": true
+        }
+    ]
+}

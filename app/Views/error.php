@@ -1,0 +1,1 @@
+<?php use Hls\Http\View as V; echo $this->component('alert',compact('message')); ?><a href="<?= V::escape($this->url($access ? '/' : '/login')) ?>">Kembali</a>
